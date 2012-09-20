@@ -14,4 +14,5 @@ GPL3
 
 Change Log
 ------------------------
-2012/04/12: Supported Redmine 1.3.2 
+r2 2012/09/20: Removed Japanese font style in master branch, and added ja branch for Japanese.
+r1 2012/04/12: Supported Redmine 1.3.2 
