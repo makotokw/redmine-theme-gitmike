@@ -332,6 +332,19 @@ table.list thead th {
 table.list td {padding: 4px;}
 table.list input[type="checkbox"] {margin-top: 6px;}
 
+table.list tbody tr.group span.count {
+	padding: 0 9px 1px 9px;
+	-webkit-border-radius: 9px;
+	-moz-border-radius: 9px;
+	border-radius: 9px;
+		background-color: #999999;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+	font-weight: bold;
+		font-size: 11.844px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 14px;
+}
+
 table.list tbody tr:hover {background-color: #EFF5F8;}
 table.list tr.issue a { color: #666; }
 /*tr.odd {background-color: transparent;}
