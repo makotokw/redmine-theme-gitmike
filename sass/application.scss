@@ -14,6 +14,7 @@ body {
 #header {
   font: $baseFont;
   background: #fff;
+  padding: 4px 8px 10px 6px;
   height: auto;
   a {
     color: $linkColor;
@@ -320,8 +321,11 @@ h2, h3, h4 {
   ul {
 
     @include clearfix();
+
     margin-top: 0;
     padding-left: 0;
+    background-color: transparent !important;
+
 
     li {
       margin: 0;
@@ -336,16 +340,25 @@ h2, h3, h4 {
         @include text-shadow(0 1px 0 #fff);
         font-weight: bold;
         text-decoration: none;
+        border-bottom: 2px solid #DADADA;
 
         &.selected {
-          border-bottom: 3px solid #D26911 !important;
+          color: #000;
+          border-bottom: 2px solid #D26911 !important;
+          background-color: #ebebeb;
+          @include background-image(linear-gradient(#fcfcfc, #ebebeb));
+          background-repeat: repeat-x;
           &:hover {
-            color: $linkColor;
+            color: #000;
           }
         }
         &:hover {
           color: $linkColor;
-          text-decoration: initial;
+          border-bottom: 2px solid #CFDCE8;
+          background-color: #dce6ef;
+          @include background-image(linear-gradient(#fafbfd, #dce6ef));
+          background-repeat: repeat-x;
+          text-decoration: underline;
         }
       }
     }

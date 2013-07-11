@@ -13,6 +13,7 @@ body {
 #header {
   font: 13px Helvetica, arial, freesans, clean, sans-serif;
   background: #fff;
+  padding: 4px 8px 10px 6px;
   height: auto; }
   #header a {
     color: #4183c4; }
@@ -291,7 +292,8 @@ h2, h3, h4 {
     overflow: hidden;
     *zoom: 1;
     margin-top: 0;
-    padding-left: 0; }
+    padding-left: 0;
+    background-color: transparent !important; }
     #main-menu ul li {
       margin: 0;
       padding: 0; }
@@ -303,14 +305,31 @@ h2, h3, h4 {
         color: #333;
         text-shadow: 0 1px 0 white;
         font-weight: bold;
-        text-decoration: none; }
+        text-decoration: none;
+        border-bottom: 2px solid #DADADA; }
         #main-menu ul li a.selected {
-          border-bottom: 3px solid #D26911 !important; }
+          color: #000;
+          border-bottom: 2px solid #D26911 !important;
+          background-color: #ebebeb;
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fcfcfc), color-stop(100%, #ebebeb));
+          background-image: -webkit-linear-gradient(#fcfcfc, #ebebeb);
+          background-image: -moz-linear-gradient(#fcfcfc, #ebebeb);
+          background-image: -o-linear-gradient(#fcfcfc, #ebebeb);
+          background-image: linear-gradient(#fcfcfc, #ebebeb);
+          background-repeat: repeat-x; }
           #main-menu ul li a.selected:hover {
-            color: #4183c4; }
+            color: #000; }
         #main-menu ul li a:hover {
           color: #4183c4;
-          text-decoration: initial; }
+          border-bottom: 2px solid #CFDCE8;
+          background-color: #dce6ef;
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafbfd), color-stop(100%, #dce6ef));
+          background-image: -webkit-linear-gradient(#fafbfd, #dce6ef);
+          background-image: -moz-linear-gradient(#fafbfd, #dce6ef);
+          background-image: -o-linear-gradient(#fafbfd, #dce6ef);
+          background-image: linear-gradient(#fafbfd, #dce6ef);
+          background-repeat: repeat-x;
+          text-decoration: underline; }
 
 /* Tables */
 table.list tbody td, table.list tbody tr:hover td {
