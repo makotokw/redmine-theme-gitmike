@@ -278,6 +278,14 @@ div {
   color: #636363;
   margin-top: 45px;
   padding: 15px;
+
+  .bgl {
+    .bgr {
+      &:after {
+        content: " and gitmike theme";
+      }
+    }
+  }
 }
 
 /* Headers */
@@ -341,6 +349,8 @@ h2, h3, h4 {
         font-weight: bold;
         text-decoration: none;
         border-bottom: 2px solid #DADADA;
+        height: 20px;
+        line-height: 20px;
 
         &.selected {
           color: #000;
