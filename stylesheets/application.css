@@ -329,6 +329,11 @@ table.list thead th {
 	padding-top:4px;
 }
 
+tr.assigned-to-me td.assigned_to,
+tr.created-by-me td.author {
+	font-weight: bold;
+}
+
 /*Quick search*/
 #quick-search {	margin-top: 8px;}
 
