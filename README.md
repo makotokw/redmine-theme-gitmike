@@ -24,12 +24,31 @@ git clone git://github.com/makotokw/redmine-theme-gitmike.git gitmike
 
 Open redmine on a browser and go to Administration > Settings > Display > Theme.
 
+## Development
+
+### Build Sass
+
+#### development
+
+```
+cd sass
+compass watch
+```
+
+#### release
+
+```
+cd sass
+compass compile -e production --force
+```
+
 ## License
 
 GPL3
 
 ## Change Log
 
+* r4 : Added assing_to and author column style on Issue Table when login user's one by @chocoby.
 * r3 2013/01/16: Tested in Redmine 2.2. Added count style and changed priority-{#id} to priority-{position_name} on Issue Table.
 * r2 2012/09/20: Removed Japanese font style in master branch, and added ja branch for Japanese.
 * r1 2012/04/12: Supported Redmine 1.3.2 

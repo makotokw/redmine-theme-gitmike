@@ -3,13 +3,20 @@
 @import 'themeheader';
 @import 'variables';
 @import 'functions';
+
 //@import 'ja';
 
+body {
+  color: #333333;
+  background-color: #fff
+}
+
 #header {
+  font: $baseFont;
   background: #fff;
   height: auto;
   a {
-    color: #4183C4;
+    color: $linkColor;
   }
   > h1 {
     background: url(../images/logo.png) no-repeat 10px 7px;
@@ -25,20 +32,29 @@
 }
 
 #top-menu {
-  padding: 7px 10px 2px 20px;
-  background: #FAFAFA;
-  @include background(linear-gradient(top, #fafafa, #eaeaea));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
-  border-bottom: 1px solid #CACACA;
-  @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.4), 0 0 10px rgba(0, 0, 0, 0.1));
+  font: $baseFont;
+  padding: 10px 10px 2px 20px;
+  background-color: #f3f3f3;
+  @include background-image(linear-gradient(#f9f9f9, #f3f3f3));
+  background-repeat: repeat-x;
+  @include text-shadow(0 1px 0 #fff);
+  border-bottom: 1px solid #e5e5e5;
+
   #loggedas {
     color: #222;
   }
   a {
-    color: #222;
+    color: #333;
     font-weight: bold;
+    padding: 5px;
+    margin-right: 0px;
     @include transition(color .15s ease-in 0);
     @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
+
+    &:hover {
+      color: $linkColor;
+      text-decoration: none;
+    }
   }
 }
 
@@ -62,9 +78,20 @@ div {
   }
 }
 
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  border: 1px solid;
+  @include border-radius(4px);
+}
+
 #errorExplanation, .nodata, .warning {
-  border: 1px solid silver;
-  @include text-shadow(0 1px white);
+  text-align: center;
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  color: #c09853;
+  @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
 }
 
 div {
@@ -84,7 +111,8 @@ div {
   width: 260px !important;
   padding: 0px 10px 20px 15px !important;
   background: whiteSmoke;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #ddd;
+
   zoom: 1;
   @include border-radius(4px);
   @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
@@ -92,11 +120,11 @@ div {
 
 div#content {
   > h2, h2.contacts_header {
-    border-bottom: 1px solid #C5D5DD;
+    border-bottom: 1px solid #d8e6ec;
     background: #E6F1F6;
     @include text-shadow(0px 1px white);
-    @include border-top-left-radius(4px);
-    @include border-top-right-radius(4px);
+    @include border-top-left-radius(2px);
+    @include border-top-right-radius(2px);
     padding: 8px 20px;
     margin: -6px -10px 10px;
   }
@@ -192,52 +220,6 @@ div#content > div.wiki {
   padding-top: 20px;
 }
 
-#main-menu {
-  left: 0px;
-  width: 100%;
-  height: 40px;
-  /*	overflow: hidden;*/
-  background: #FAFAFA;
-  @include background(linear-gradient(top, #fafafa, #eaeaea));
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
-  border: 1px solid #EAEAEA;
-  border-bottom-color: #CACACA;
-  @include border-radius(3px);
-
-  margin-right: 0;
-  position: relative;
-  li a {
-    background-color: transparent !important;
-    display: block;
-    float: left;
-    padding: 6px 12px;
-    color: #444;
-    text-shadow: 0 1px 0 #fff;
-    font-weight: bold;
-    text-decoration: none;
-    @include border-radius(6px);
-    &.selected {
-      @include box-shadow(inset 1px 1px 3px rgba(0, 0, 0, 0.1));
-      padding: 5px 12px;
-      @include text-shadow(0px -1px #666);
-      color: #F0F0F0;
-      border: none;
-      &:hover {
-        @include box-shadow(inset 1px 1px 3px rgba(0, 0, 0, 0.1));
-        padding: 5px 12px;
-        @include text-shadow(0px -1px #666);
-        color: #F0F0F0;
-        border: none;
-      }
-    }
-    &:hover {
-      background-color: transparent;
-      color: #000;
-      text-decoration: initial;
-    }
-  }
-}
-
 #header {
   padding-top: 10px;
   padding-left: 10px;
@@ -252,15 +234,17 @@ div#welcome-store-content {
 
 #content, #main.nosidebar #content {
   background: #fff;
-  border: 1px solid silver;
+  border: 1px solid #ddd;
   @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
   @include border-radius(4px);
 }
 
 a {
-  color: #4183C4;
-  &:link, &:visited {
-    color: #4183C4;
+  color: $linkColor;
+
+  &:link,
+  &:visited {
+    color: $linkColor;
   }
 }
 
@@ -269,7 +253,7 @@ div {
     background: #FFD;
     padding: 20px;
     margin-bottom: 6px;
-    border: 1px solid #D7D7D7;
+    border: 1px solid #ddd;
     margin: -11px -11px 15px -11px;
     &.tooltip {
       padding: 6px;
@@ -319,23 +303,52 @@ h2, h3, h4 {
 /* Menu */
 
 #main-menu {
-  li a {
-    background-color: #507AAA;
-    font-weight: bold;
-    &:hover {
-      background: #507AAA;
-      text-decoration: underline;
-    }
-    &.selected {
-      background-color: #D26911 !important;
-      &:hover {
-        background-color: #D26911 !important;
+  left: 0px;
+  width: 100%;
+  //height: 40px;
+  /*	overflow: hidden;*/
+  background: #FAFAFA;
+  @include background(linear-gradient(top, #fafafa, #eaeaea));
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
+  border: 1px solid #EAEAEA;
+  border-bottom-color: #CACACA;
+  @include border-radius(3px);
+
+  margin-right: 0;
+  position: relative;
+
+  ul {
+
+    @include clearfix();
+    margin-top: 0;
+    padding-left: 0;
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      a {
+        background-color: transparent !important;
+        display: block;
+        float: left;
+        padding: 10px 12px;
+        color: #333;
+        @include text-shadow(0 1px 0 #fff);
+        font-weight: bold;
+        text-decoration: none;
+
+        &.selected {
+          border-bottom: 3px solid #D26911 !important;
+          &:hover {
+            color: $linkColor;
+          }
+        }
+        &:hover {
+          color: $linkColor;
+          text-decoration: initial;
+        }
       }
     }
-  }
-  ul {
-    margin-top: 7px;
-    padding-left: 15px;
   }
 }
 
@@ -344,16 +357,16 @@ h2, h3, h4 {
 table.list {
   tbody {
     td, tr:hover td {
-      border: solid 1px #d7d7d7;
+      border: solid 1px #ddd;
     }
   }
   thead th {
     border-width: 1px;
     border-style: solid;
-    border-top-color: #d7d7d7;
-    border-right-color: #d7d7d7;
-    border-left-color: #d7d7d7;
-    border-bottom-color: #d7d7d7;
+    border-top-color: #ddd;
+    border-right-color: #ddd;
+    border-left-color: #ddd;
+    border-bottom-color: #ddd;
   }
 }
 
@@ -544,7 +557,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 input {
   &[type="text"], &[type="password"] {
     padding: 2px;
-    border: 1px solid #d7d7d7;
+    border: 1px solid #ddd;
     color: #444;
     font-size: .9em;
   }
@@ -552,7 +565,7 @@ input {
 
 textarea, select {
   padding: 2px;
-  border: 1px solid #d7d7d7;
+  border: 1px solid #ddd;
   color: #444;
   font-size: .9em;
 }
@@ -568,7 +581,7 @@ textarea:focus, select:focus {
 }
 
 option {
-  border-bottom: 1px dotted #d7d7d7;
+  border-bottom: 1px dotted #ddd;
 }
 
 /* Forum */
@@ -742,7 +755,7 @@ body.action-login {
     padding: 3em;
     background: white;
     @include box-shadow(0 0 3px #CCC);
-    border: 1px solid #D7D7D7;
+    border: 1px solid #ddd;
     @include border-radius(8px);
   }
 }
@@ -760,7 +773,7 @@ body.action-login {
 
 .controller-account.action-login div.flash, div.wiki div.flash {
   @include box-shadow(0 0 3px #CCC);
-  border: 1px solid #D7D7D7 !important;
+  border: 1px solid #ddd !important;
   @include border-radius(8px);
   margin: 5px;
 }
