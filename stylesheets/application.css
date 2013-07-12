@@ -177,11 +177,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 /* Fields */
 input[type="text"], input[type="password"] { padding: 2px; border: 1px solid #ddd; color: #444; font-size: .9em; }
 
-textarea, select { padding: 2px; border: 1px solid #ddd; color: #444; font-size: .9em; }
-
-input[type="text"]:focus, input[type="password"]:focus { border: 1px solid #888866; }
-
-textarea:focus, select:focus { border: 1px solid #888866; }
+textarea, select { padding: 2px; color: #444; font-size: .9em; }
 
 option { border-bottom: 1px dotted #ddd; }
 
