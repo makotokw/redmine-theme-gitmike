@@ -6,6 +6,8 @@
 	@see https://github.com/makotokw/redmine-theme-gitmike
 	@license GPL3 License
 */
+html, body, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, div, p, blockquote, th, td, form, fieldset, input, textarea, select, button, pre { font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif; }
+
 body { color: #333333; background-color: #fff; line-height: 1.4; }
 
 #header { font: 13px Helvetica, arial, freesans, clean, sans-serif; background: #fff; padding: 4px 8px 10px 6px; height: auto; }
