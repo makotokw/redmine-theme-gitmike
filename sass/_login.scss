@@ -1,0 +1,47 @@
+// Login form
+
+body.action-login {
+  #content, #main.nosidebar #content {
+    background: inherit;
+    border: 0px;
+    box-shadow: none;
+  }
+  #login-form table {
+    padding: 3em;
+    background: white;
+    @include box-shadow(0 0 3px #CCC);
+    border: 1px solid #ddd;
+    @include border-radius(8px);
+  }
+}
+
+#login-form input {
+  &#username, &#password {
+    outline: none;
+    margin: 0px;
+    border: 1px solid #ccc;
+    padding: 6px;
+    font-size: 140%;
+    @include border-radius(2px);
+  }
+}
+
+.controller-account.action-login div.flash, div.wiki div.flash {
+  @include box-shadow(0 0 3px #CCC);
+  border: 1px solid #ddd !important;
+  @include border-radius(8px);
+  margin: 5px;
+}
+
+#content .tabs ul li a {
+  @include border-top-left-radius(2px);
+  @include border-top-right-radius(2px);
+  line-height: 1.3em;
+  padding: 6px 10px 6px 10px;
+}
+
+#sidebar a.selected {
+  background-color: transparent;
+  color: gray;
+  font-weight: bold;
+}

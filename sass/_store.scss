@@ -1,0 +1,23 @@
+div#main-menu li a.products {
+  background: #F4786A !important;
+  @include text-shadow(none);
+  &.selected {
+    background-color: #E5E3DE !important;
+    color: #222;
+  }
+}
+
+a.buy-button.blue {
+  background: #4C728A !important;
+  @include background-image(linear-gradient(bottom, #4c728a 0%, #749bb4 100%) !important);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#749BB4', endColorstr='#4C728A')" !important;
+}
+
+#picture {
+  width: 446px !important;
+  top: 7px;
+}
+
+#title h2, #buttons, #title h1 {
+  min-width: 550px !important;
+}
