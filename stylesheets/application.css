@@ -1,10 +1,10 @@
 @import url(../../../stylesheets/application.css);
 /*
-	gitmike
-	This is github-like theme for Redmine.
-	It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
-	@see https://github.com/makotokw/redmine-theme-gitmike
-	@license GPL3 License
+  gitmike
+  This is github-like theme for Redmine.
+  It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
+  @see https://github.com/makotokw/redmine-theme-gitmike
+  @license GPL3 License
 */
 body { color: #333333; background-color: #fff; line-height: 1.4; }
 
@@ -46,7 +46,7 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
 
 #add-news, #add-message, #add-document { margin-bottom: 20px; }
 
-div#content h2.contacts_header { padding-bottom: 10px; /*	white-space: nowrap;*/ }
+div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/ }
 
 p.breadcrumb { margin: 4px 0 15px 0; }
 
@@ -94,7 +94,7 @@ h2, h3, h4 { border-bottom: 0px; }
 .wiki.wiki-page > h2 { border-bottom: 1px solid #ccc; padding-bottom: 6px; }
 
 /* Menu */
-#main-menu { left: 0px; width: 100%; /*	overflow: hidden;*/ background: #FAFAFA; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea)); background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: -moz-linear-gradient(top, #fafafa, #eaeaea); background: -o-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(top, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-right: 0; position: relative; }
+#main-menu { left: 0px; width: 100%; /* overflow: hidden;*/ background: #FAFAFA; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea)); background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: -moz-linear-gradient(top, #fafafa, #eaeaea); background: -o-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(top, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-right: 0; position: relative; }
 #main-menu ul { *zoom: 1; margin-top: 0; padding-left: 0; background-color: transparent !important; }
 #main-menu ul:before, #main-menu ul:after { display: table; content: ""; line-height: 0; }
 #main-menu ul:after { clear: both; }
@@ -234,7 +234,7 @@ div.journal .details:hover { background: #FFD; border: 1px solid silver !importa
 div.tooltip:hover span.tip { border: 1px solid #D9D9D9; zoom: 1; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
 
 table.progress td.closed { background: #AECCD7 none repeat scroll 0%; }
-table.progress td.done { background: #EAF2F5 none repeat scroll 0%; }
+table.progress td.done { background: #CFD9DD none repeat scroll 0%; }
 
 #history div.journal { border-top: 1px solid #DDD; }
 
@@ -299,3 +299,27 @@ a.buy-button.blue { background: #4C728A !important; background-image: -webkit-gr
 #picture { width: 446px !important; top: 7px; }
 
 #title h2, #buttons, #title h1 { min-width: 550px !important; }
+
+/*ProjectsList*/
+ul.projects.root {
+  -webkit-column-count:4;
+  -moz-column-count:4;
+  -ms-column-count:4;
+  -o-column-count:4;
+  column-count:4
+}
+
+ul.projects li.root {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5%;
+  vertical-align: top;
+  width: 90%;
+}
+
+#projects-index ul.projects ul.projects {
+  border-left: 1px solid #E0E0E0;
+}
