@@ -299,3 +299,27 @@ a.buy-button.blue { background: #4C728A !important; background-image: -webkit-gr
 #picture { width: 446px !important; top: 7px; }
 
 #title h2, #buttons, #title h1 { min-width: 550px !important; }
+
+/*ProjectsList*/
+ul.projects.root {
+  -webkit-column-count:4;
+  -moz-column-count:4;
+  -ms-column-count:4;
+  -o-column-count:4;
+  column-count:4
+}
+
+ul.projects li.root {
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 5%;
+  vertical-align: top;
+  width: 90%;
+}
+
+#projects-index ul.projects ul.projects {
+  border-left: 1px solid #E0E0E0;
+}
