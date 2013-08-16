@@ -234,7 +234,7 @@ div.journal .details:hover { background: #FFD; border: 1px solid silver !importa
 div.tooltip:hover span.tip { border: 1px solid #D9D9D9; zoom: 1; -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
 
 table.progress td.closed { background: #AECCD7 none repeat scroll 0%; }
-table.progress td.done { background: #EAF2F5 none repeat scroll 0%; }
+table.progress td.done { background: #CFD9DD none repeat scroll 0%; }
 
 #history div.journal { border-top: 1px solid #DDD; }
 
