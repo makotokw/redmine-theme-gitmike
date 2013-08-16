@@ -1,10 +1,10 @@
 @import url(../../../stylesheets/application.css);
 /*
-	gitmike
-	This is github-like theme for Redmine.
-	It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
-	@see https://github.com/makotokw/redmine-theme-gitmike
-	@license GPL3 License
+  gitmike
+  This is github-like theme for Redmine.
+  It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
+  @see https://github.com/makotokw/redmine-theme-gitmike
+  @license GPL3 License
 */
 body { color: #333333; background-color: #fff; line-height: 1.4; }
 
@@ -46,7 +46,7 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
 
 #add-news, #add-message, #add-document { margin-bottom: 20px; }
 
-div#content h2.contacts_header { padding-bottom: 10px; /*	white-space: nowrap;*/ }
+div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/ }
 
 p.breadcrumb { margin: 4px 0 15px 0; }
 
@@ -94,7 +94,7 @@ h2, h3, h4 { border-bottom: 0px; }
 .wiki.wiki-page > h2 { border-bottom: 1px solid #ccc; padding-bottom: 6px; }
 
 /* Menu */
-#main-menu { left: 0px; width: 100%; /*	overflow: hidden;*/ background: #FAFAFA; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea)); background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: -moz-linear-gradient(top, #fafafa, #eaeaea); background: -o-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(top, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-right: 0; position: relative; }
+#main-menu { left: 0px; width: 100%; /* overflow: hidden;*/ background: #FAFAFA; background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fafafa), color-stop(100%, #eaeaea)); background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: -moz-linear-gradient(top, #fafafa, #eaeaea); background: -o-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(top, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-right: 0; position: relative; }
 #main-menu ul { *zoom: 1; margin-top: 0; padding-left: 0; background-color: transparent !important; }
 #main-menu ul:before, #main-menu ul:after { display: table; content: ""; line-height: 0; }
 #main-menu ul:after { clear: both; }
