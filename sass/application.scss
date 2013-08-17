@@ -154,8 +154,7 @@ div#content {
   }
 }
 
-/*.controller-documents.action-index div#content  h2, */
-
+// .controller-documents.action-index div#content  h2,
 .controller-timelog.action-index div#content h2, .controller-time_entry_reports.action-report div#content h2, .controller-boards.action-show div#content h2, .controller-messages.action-show div#content h2, .controller-boards.action-show div#content div#add-message h2 {
   @include border-top-left-radius(0px);
   @include border-top-right-radius(0px);
@@ -174,7 +173,7 @@ div#content {
 
 div#content h2.contacts_header {
   padding-bottom: 10px;
-  /*	white-space: nowrap;*/
+  /* white-space: nowrap;*/
 }
 
 p.breadcrumb {
@@ -289,7 +288,7 @@ div {
   }
 }
 
-/* Headers */
+// Headers
 
 h2, h3, h4 {
   border-bottom: 0px;
@@ -310,13 +309,13 @@ h2, h3, h4 {
   }
 }
 
-/* Menu */
+// Menu
 
 #main-menu {
   left: 0px;
   width: 100%;
-  //height: 40px;
-  /*	overflow: hidden;*/
+  // height: 40px;
+  // overflow: hidden;
   background: #FAFAFA;
   @include background(linear-gradient(top, #fafafa, #eaeaea));
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
@@ -414,15 +413,7 @@ div#content > div.wiki {
   padding-top: 15px;
 }
 
-ul.projects {
-  &.root {
-    padding: 10px;
-  }
-  a.project {
-    font-weight: bold;
-    font-size: 1.1em;
-  }
-}
+@import 'projects';
 
 div.journal .details {
   border: 1px solid white;
@@ -488,7 +479,7 @@ div.modal {
 
 @import 'login';
 
-/*Contacts*/
+// Contacts
 
 div.filters .live_search {
   margin-left: 11px !important;
@@ -581,7 +572,7 @@ body {
   }
 }
 
-/*Invoices*/
+// Invoices
 
 table.invoice-lines {
   tbody tr.line-data:hover {
