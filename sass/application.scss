@@ -81,7 +81,11 @@ div {
   }
 }
 
-#errorExplanation, div.flash, .nodata, .warning, .conflict {
+#errorExplanation,
+div.flash,
+.nodata,
+.warning,
+.conflict {
   padding: 8px 35px 8px 14px;
   margin-bottom: 20px;
   font-size: 1.1em;
@@ -89,7 +93,13 @@ div {
   @include border-radius(4px);
 }
 
-#errorExplanation, .nodata, .warning {
+#errorExplanation {
+  padding-left: 30px;
+}
+
+#errorExplanation,
+.nodata,
+.warning {
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   color: #c09853;
