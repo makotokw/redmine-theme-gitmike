@@ -48,6 +48,7 @@ GPL3
 
 ## Change Log
 
+* r6 2013/11/23: Dashboard (@n-rodriguez). Fixed some issues #6 #7 #8 and #10 reported from @statschner
 * r5 2013/07/21: Improvement Forms
 * r4 2013/07/12: Tested in Redmine 2.3. Updated to look like GitHub. Added assing_to and author column style on Issue Table when login user's one by @chocoby.
 * r3 2013/01/16: Tested in Redmine 2.2. Added count style and changed priority-{#id} to priority-{position_name} on Issue Table.
