@@ -1,0 +1,49 @@
+
+
+.controller-wiki {
+  div#content {
+    & > div.contextual {
+      margin-top: 3px;
+    }
+    & > div.wiki {
+      padding: 10px;
+      padding-top: 20px;
+    }
+    p.breadcrumb {
+      margin: 4px 0 -4px 2px;
+    }
+  }
+}
+
+.wiki {
+
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  &.wiki-page {
+    & > h2 {
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  img {
+    max-width: 100%;
+  }
+  table img {
+    width: 100%;
+  }
+
+  pre {
+    padding: 6px 10px;
+    @include border-radius(3px);
+  }
+}
+
+
+

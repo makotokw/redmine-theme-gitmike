@@ -8,9 +8,13 @@
 //@import 'ja';
 
 body {
-  color: #333333;
+  color: #333;
   background-color: #fff;
   line-height: 1.4;
+}
+
+#content h1, h2, h3, h4 {
+  color: #333;
 }
 
 #header {
@@ -86,15 +90,11 @@ div.flash,
 .nodata,
 .warning,
 .conflict {
-  padding: 8px 35px 8px 14px;
+  padding: 8px 35px 8px 30px;
   margin-bottom: 20px;
   font-size: 1.1em;
   border: 1px solid;
   @include border-radius(4px);
-}
-
-#errorExplanation {
-  padding-left: 30px;
 }
 
 #errorExplanation,
@@ -216,19 +216,6 @@ p.subtitle {
 div.filters h2 .scope_title a {
   color: #222;
   text-decoration: none;
-}
-
-.wiki h1 {
-  font-size: 28px;
-}
-
-h2, .wiki h1, h3, .wiki h2 {
-  color: #222;
-}
-
-div#content > div.wiki {
-  padding: 10px;
-  padding-top: 20px;
 }
 
 #header {
@@ -401,36 +388,11 @@ img.gravatar {
   @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
 }
 
-.wiki {
-  img {
-    max-width: 100%;
-  }
-  table img {
-    width: 100%;
-  }
-}
-
-div.wiki pre, .wiki pre {
-  padding: 6px 10px;
-  @include border-radius(3px);
-}
-
-.controller-wiki div#content > div.contextual {
-  margin-top: 3px;
-}
-
-div#content > div.wiki {
-  padding-top: 15px;
-}
-
+@import 'wiki';
 @import 'projects';
 
 div.journal .details {
-  border: 1px solid white;
-  &:hover {
-    background: #FFD;
-    border: 1px solid silver !important;
-  }
+  padding-left: 30px;
 }
 
 #context-menu {
