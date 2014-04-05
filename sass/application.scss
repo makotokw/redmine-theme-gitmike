@@ -8,26 +8,34 @@
 //@import 'ja';
 
 body {
-  color: #333;
-  background-color: #fff;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+body, input, select, textarea, button {
+  font: $base-font;
   line-height: 1.4;
 }
 
+tt, code, pre {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+}
+
 #content h1, h2, h3, h4 {
-  color: #333;
+  color: $text-color;
 }
 
 #header {
-  font: $baseFont;
-  background: #fff;
+  background: $background-color;
   padding: 4px 8px 10px 6px;
   height: auto;
   a {
-    color: $linkColor;
+    color: $link-color;
   }
   > h1 {
-    background: url(../images/logo.png) no-repeat 10px 7px;
-    padding: 5px 50px;
+    background: url(../images/logo.png) no-repeat 10px 5px;
+    padding: 5px 45px;
     color: #393939;
   }
 }
@@ -35,11 +43,11 @@ body {
 #main {
   background: transparent;
   margin: 15px 15px 0px 15px;
-  background-color: #fff;
+  background-color: $background-color;
 }
 
 #top-menu {
-  font: $baseFont;
+  font: $base-font;
   padding: 10px 10px 2px 20px;
   background-color: #f3f3f3;
   @include background-image(linear-gradient(#f9f9f9, #f3f3f3));
@@ -51,7 +59,7 @@ body {
     color: #222;
   }
   a {
-    color: #333;
+    color: $text-color;
     font-weight: bold;
     padding: 5px;
     margin-right: 0px;
@@ -59,7 +67,7 @@ body {
     @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
 
     &:hover {
-      color: $linkColor;
+      color: $link-color;
       text-decoration: none;
     }
   }
@@ -72,8 +80,8 @@ div {
   }
   &#content > div.flash {
     &:first-child {
-      @include border-top-left-radius(8px);
-      @include border-top-right-radius(8px);
+      @include border-top-left-radius(4px);
+      @include border-top-right-radius(4px);
     }
     border: 0px solid;
     padding: 9px 35px 10px;
@@ -187,7 +195,7 @@ div#content h2.contacts_header {
 }
 
 p.breadcrumb {
-  margin: 4px 0 15px 0;
+  margin: 4px 0 14px 0;
 }
 
 div#content > div.contextual {
@@ -238,11 +246,11 @@ div#welcome-store-content {
 }
 
 a {
-  color: $linkColor;
+  color: $link-color;
 
   &:link,
   &:visited {
-    color: $linkColor;
+    color: $link-color;
   }
 }
 
@@ -360,7 +368,7 @@ h2, h3, h4 {
           }
         }
         &:hover {
-          color: $linkColor;
+          color: $link-color;
           border-bottom: 2px solid #CFDCE8;
           background-color: #dce6ef;
           @include background-image(linear-gradient(#fafbfd, #dce6ef));
@@ -567,5 +575,7 @@ span.invoice-status {
   }
 }
 
+@import 'settings';
+@import 'plugins';
 @import 'store';
 

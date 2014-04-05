@@ -6,16 +6,12 @@
       margin-top: 3px;
     }
     & > div.wiki {
-      padding: 10px;
-      padding-top: 20px;
-    }
-    p.breadcrumb {
-      margin: 4px 0 -4px 2px;
+      padding: 0 8px 8px 8px;
     }
   }
 }
 
-.wiki {
+div.wiki {
 
   h1 {
     font-size: 28px;
@@ -40,6 +36,12 @@
   }
 
   pre {
+    margin: 15px 0;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 19px;
+    overflow: auto;
     padding: 6px 10px;
     @include border-radius(3px);
   }
