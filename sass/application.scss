@@ -82,10 +82,12 @@ div {
     &:first-child {
       @include border-top-left-radius(4px);
       @include border-top-right-radius(4px);
+      @include border-bottom-left-radius(0);
+      @include border-bottom-right-radius(0);
     }
     border: 0px solid;
-    padding: 9px 35px 10px;
-    margin: -5px -10px 1px -10px;
+    padding: 10px 35px 10px;
+    margin: -6px -10px 6px -10px;
     background-position-x: 12px !important;
     background-position-y: 9px !important;
     position: relative;

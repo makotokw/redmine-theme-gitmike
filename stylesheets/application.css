@@ -26,8 +26,8 @@ tt, code, pre { font-family: Consolas, "Liberation Mono", Courier, monospace; fo
 #top-menu a:hover { color: #4183c4; text-decoration: none; }
 
 div.flash { border: 1px solid; text-shadow: 0 1px white; }
-div#content > div.flash { border: 0px solid; padding: 9px 35px 10px; margin: -5px -10px 1px -10px; background-position-x: 12px !important; background-position-y: 9px !important; position: relative; border-bottom: 1px solid #AECCD7; }
-div#content > div.flash:first-child { -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; }
+div#content > div.flash { border: 0px solid; padding: 10px 35px 10px; margin: -6px -10px 6px -10px; background-position-x: 12px !important; background-position-y: 9px !important; position: relative; border-bottom: 1px solid #AECCD7; }
+div#content > div.flash:first-child { -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; -webkit-border-bottom-left-radius: 0; -moz-border-radius-bottomleft: 0; border-bottom-left-radius: 0; -webkit-border-bottom-right-radius: 0; -moz-border-radius-bottomright: 0; border-bottom-right-radius: 0; }
 
 #errorExplanation, div.flash, .nodata, .warning, .conflict { padding: 8px 35px 8px 30px; margin-bottom: 20px; font-size: 1.1em; border: 1px solid; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
@@ -211,6 +211,7 @@ img.gravatar { -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-sha
 .controller-wiki div#content > div.contextual { margin-top: 3px; }
 .controller-wiki div#content > div.wiki { padding: 0 8px 8px 8px; }
 
+div.wiki { line-height: 1.7; }
 div.wiki p, div.wiki blockquote, div.wiki ul, div.wiki ol, div.wiki dl, div.wiki table, div.wiki pre { margin: 15px 0; }
 div.wiki ul, div.wiki ol { padding-left: 30px; }
 div.wiki h1 { font-size: 28px; }
