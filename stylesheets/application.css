@@ -211,6 +211,8 @@ img.gravatar { -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-sha
 .controller-wiki div#content > div.contextual { margin-top: 3px; }
 .controller-wiki div#content > div.wiki { padding: 0 8px 8px 8px; }
 
+div.wiki p, div.wiki blockquote, div.wiki ul, div.wiki ol, div.wiki dl, div.wiki table, div.wiki pre { margin: 15px 0; }
+div.wiki ul, div.wiki ol { padding-left: 30px; }
 div.wiki h1 { font-size: 28px; }
 div.wiki h2 { font-size: 20px; }
 div.wiki h3 { font-size: 14px; }
