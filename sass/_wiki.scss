@@ -13,6 +13,14 @@
 
 div.wiki {
 
+  p, blockquote, ul, ol, dl, table, pre {
+    margin: 15px 0;
+  }
+
+  ul, ol {
+    padding-left: 30px;
+  }
+
   h1 {
     font-size: 28px;
   }
