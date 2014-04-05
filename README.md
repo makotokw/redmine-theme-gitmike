@@ -26,20 +26,18 @@ Open redmine on a browser and go to Administration > Settings > Display > Theme.
 
 ## Development
 
-### Build Sass
+### Build Theme
 
 #### development
 
 ```
-cd sass
-compass watch
+grunt debug
 ```
 
 #### release
 
 ```
-cd sass
-compass compile -e production --force
+grunt
 ```
 
 ## License
@@ -48,6 +46,7 @@ GPL3
 
 ## Change Log
 
+* r7 2014/04/05: Fixed some issues #12 #14 #16 #17 (from @rumpelsepp) #13 (from @timdp) #18 (from @cyberjunky)
 * r6 2013/11/23: Dashboard (@n-rodriguez). Fixed some issues #6 #7 #8 and #10 reported from @statschner
 * r5 2013/07/21: Improvement Forms
 * r4 2013/07/12: Tested in Redmine 2.3. Updated to look like GitHub. Added assing_to and author column style on Issue Table when login user's one by @chocoby.

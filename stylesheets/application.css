@@ -6,24 +6,28 @@
  * @see https://github.com/makotokw/redmine-theme-gitmike
  * @license GPL3 License
  */
-body { color: #333; background-color: #fff; line-height: 1.4; }
+body { color: #333333; background-color: white; }
 
-#content h1, h2, h3, h4 { color: #333; }
+body, input, select, textarea, button { font: 12px Helvetica, arial, freesans, clean, sans-serif; line-height: 1.4; }
 
-#header { font: 13px Helvetica, arial, freesans, clean, sans-serif; background: #fff; padding: 4px 8px 10px 6px; height: auto; }
+tt, code, pre { font-family: Consolas, "Liberation Mono", Courier, monospace; font-size: 12px; }
+
+#content h1, h2, h3, h4 { color: #333333; }
+
+#header { background: white; padding: 4px 8px 10px 6px; height: auto; }
 #header a { color: #4183c4; }
-#header > h1 { background: url(../images/logo.png) no-repeat 10px 7px; padding: 5px 50px; color: #393939; }
+#header > h1 { background: url(../images/logo.png) no-repeat 10px 5px; padding: 5px 45px; color: #393939; }
 
-#main { background: transparent; margin: 15px 15px 0px 15px; background-color: #fff; }
+#main { background: transparent; margin: 15px 15px 0px 15px; background-color: white; }
 
-#top-menu { font: 13px Helvetica, arial, freesans, clean, sans-serif; padding: 10px 10px 2px 20px; background-color: #f3f3f3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #f3f3f3)); background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3); background-image: -moz-linear-gradient(#f9f9f9, #f3f3f3); background-image: -o-linear-gradient(#f9f9f9, #f3f3f3); background-image: linear-gradient(#f9f9f9, #f3f3f3); background-repeat: repeat-x; text-shadow: 0 1px 0 white; border-bottom: 1px solid #e5e5e5; }
+#top-menu { font: 12px Helvetica, arial, freesans, clean, sans-serif; padding: 10px 10px 2px 20px; background-color: #f3f3f3; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #f3f3f3)); background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3); background-image: -moz-linear-gradient(#f9f9f9, #f3f3f3); background-image: -o-linear-gradient(#f9f9f9, #f3f3f3); background-image: linear-gradient(#f9f9f9, #f3f3f3); background-repeat: repeat-x; text-shadow: 0 1px 0 white; border-bottom: 1px solid #e5e5e5; }
 #top-menu #loggedas { color: #222; }
-#top-menu a { color: #333; font-weight: bold; padding: 5px; margin-right: 0px; -webkit-transition: color 0.15s ease-in 0; -moz-transition: color 0.15s ease-in 0; -o-transition: color 0.15s ease-in 0; transition: color 0.15s ease-in 0; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
+#top-menu a { color: #333333; font-weight: bold; padding: 5px; margin-right: 0px; -webkit-transition: color 0.15s ease-in 0; -moz-transition: color 0.15s ease-in 0; -o-transition: color 0.15s ease-in 0; transition: color 0.15s ease-in 0; text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5); }
 #top-menu a:hover { color: #4183c4; text-decoration: none; }
 
 div.flash { border: 1px solid; text-shadow: 0 1px white; }
 div#content > div.flash { border: 0px solid; padding: 9px 35px 10px; margin: -5px -10px 1px -10px; background-position-x: 12px !important; background-position-y: 9px !important; position: relative; border-bottom: 1px solid #AECCD7; }
-div#content > div.flash:first-child { -webkit-border-top-left-radius: 8px; -moz-border-radius-topleft: 8px; border-top-left-radius: 8px; -webkit-border-top-right-radius: 8px; -moz-border-radius-topright: 8px; border-top-right-radius: 8px; }
+div#content > div.flash:first-child { -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-top-right-radius: 4px; -moz-border-radius-topright: 4px; border-top-right-radius: 4px; }
 
 #errorExplanation, div.flash, .nodata, .warning, .conflict { padding: 8px 35px 8px 30px; margin-bottom: 20px; font-size: 1.1em; border: 1px solid; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 
@@ -49,7 +53,7 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
 
 div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/ }
 
-p.breadcrumb { margin: 4px 0 15px 0; }
+p.breadcrumb { margin: 4px 0 14px 0; }
 
 div#content > div.contextual { margin-top: 10px; margin-right: 10px; }
 
@@ -205,16 +209,16 @@ option { border-bottom: 1px dotted #ddd; }
 img.gravatar { -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05); }
 
 .controller-wiki div#content > div.contextual { margin-top: 3px; }
-.controller-wiki div#content > div.wiki { padding: 10px; padding-top: 20px; }
-.controller-wiki div#content p.breadcrumb { margin: 4px 0 -4px 2px; }
+.controller-wiki div#content > div.wiki { padding: 0 8px 8px 8px; }
 
-.wiki h1 { font-size: 28px; }
-.wiki h2 { font-size: 20px; }
-.wiki h3 { font-size: 14px; }
-.wiki.wiki-page > h2 { border-bottom: 1px solid #eee; }
-.wiki img { max-width: 100%; }
-.wiki table img { width: 100%; }
-.wiki pre { padding: 6px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+div.wiki h1 { font-size: 28px; }
+div.wiki h2 { font-size: 20px; }
+div.wiki h3 { font-size: 14px; }
+div.wiki.wiki-page > h2 { border-bottom: 1px solid #eee; }
+div.wiki ul.toc { padding: 10px; }
+div.wiki img { max-width: 100%; }
+div.wiki table img { width: 100%; }
+div.wiki pre { margin: 15px 0; background-color: #f8f8f8; border: 1px solid #ddd; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 
 #projects-index ul.projects ul.projects { border-left: 3px solid #E0E0E0; }
 ul.projects.root { padding: 10px; }
@@ -287,6 +291,10 @@ table.invoice-lines th { border: 0px !important; }
 span.invoice-status.draft { background-color: #AAA !important; }
 span.invoice-status.sent { background-color: #3F8AF7 !important; }
 span.invoice-status.paid { background-color: green !important; }
+
+.enabled_scm th { text-align: left; }
+
+.jstt_smiles #group_of_smiles { border: 1px solid #ddd !important; margin-top: -6px; padding: 6px; }
 
 div#main-menu li a.products { background: #F4786A !important; text-shadow: none; }
 div#main-menu li a.products.selected { background-color: #E5E3DE !important; color: #222; }
