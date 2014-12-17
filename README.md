@@ -30,6 +30,7 @@ Open redmine on a browser and go to Administration > Settings > Display > Theme.
 cd redmine/public/theme
 git clone git://github.com/makotokw/redmine-theme-gitmike.git gitmike
 cd gitmike
+gem install compass
 npm install -g grunt-cli
 npm install
 grunt debug
