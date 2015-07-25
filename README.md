@@ -10,6 +10,8 @@ It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
 
 ## Installation
 
+### Install theme
+
 1. Download from https://github.com/makotokw/redmine-theme-gitmike/tags
 1. Move to `redmine/public/theme/gitmike`
 
@@ -22,7 +24,10 @@ git clone git://github.com/makotokw/redmine-theme-gitmike.git gitmike
 
 ### Change theme
 
-Open redmine on a browser and go to Administration > Settings > Display > Theme.
+1. Open your redmine on a browser
+1. Login as admin user
+1. Go to ``Administration > Settings > Display``
+1. Select ``Gitmike`` on ``Theme``
 
 ## Development
 
