@@ -56,7 +56,7 @@ div.wiki {
     line-height: 19px;
     overflow: auto;
     padding: 6px 10px;
-    @include border-radius(3px);
+    border-radius: 3px;
   }
 }
 

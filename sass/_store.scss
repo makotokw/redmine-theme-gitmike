@@ -1,6 +1,6 @@
 div#main-menu li a.products {
   background: #F4786A !important;
-  @include text-shadow(none);
+  text-shadow: none;
   &.selected {
     background-color: #E5E3DE !important;
     color: #222;
@@ -9,7 +9,7 @@ div#main-menu li a.products {
 
 a.buy-button.blue {
   background: #4C728A !important;
-  @include background-image(linear-gradient(bottom, #4c728a 0%, #749bb4 100%) !important);
+  background-image: linear-gradient(to top, #4c728a 0%, #749bb4 100%) !important;
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#749BB4', endColorstr='#4C728A')" !important;
 }
 

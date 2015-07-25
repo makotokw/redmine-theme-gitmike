@@ -2,7 +2,7 @@
 
 @import 'themeheader';
 @import 'variables';
-@import 'functions';
+@import 'compass/css3';
 @import 'mixins';
 
 //@import 'ja';
@@ -50,9 +50,9 @@ tt, code, pre {
   font: $base-font;
   padding: 10px 10px 2px 20px;
   background-color: #f3f3f3;
-  @include background-image(linear-gradient(#f9f9f9, #f3f3f3));
+  background-image: linear-gradient(#f9f9f9, #f3f3f3);
   background-repeat: repeat-x;
-  @include text-shadow(0 1px 0 #fff);
+  text-shadow: 0 1px 0 #fff;
   border-bottom: 1px solid #e5e5e5;
 
   #loggedas {
@@ -63,8 +63,8 @@ tt, code, pre {
     font-weight: bold;
     padding: 5px;
     margin-right: 0px;
-    @include transition(color .15s ease-in 0);
-    @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
+    transition: color .15s ease-in 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 
     &:hover {
       color: $link-color;
@@ -80,10 +80,10 @@ div {
   }
   &#content > div.flash {
     &:first-child {
-      @include border-top-left-radius(4px);
-      @include border-top-right-radius(4px);
-      @include border-bottom-left-radius(0);
-      @include border-bottom-right-radius(0);
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
     border: 0px solid;
     padding: 10px 35px 10px;
@@ -104,7 +104,7 @@ div.flash,
   margin-bottom: 20px;
   font-size: 1.1em;
   border: 1px solid;
-  @include border-radius(4px);
+  border-radius: 4px;
 }
 
 #errorExplanation,
@@ -113,7 +113,7 @@ div.flash,
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   color: #c09853;
-  @include text-shadow(0 1px 0 rgba(255, 255, 255, 0.5));
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 div {
@@ -136,17 +136,17 @@ div {
   border: 1px solid #ddd;
 
   zoom: 1;
-  @include border-radius(4px);
-  @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 div#content {
   > h2, h2.contacts_header {
     border-bottom: 1px solid #d8e6ec;
     background: #E6F1F6;
-    @include text-shadow(0px 1px white);
-    @include border-top-left-radius(2px);
-    @include border-top-right-radius(2px);
+    text-shadow: 0px 1px white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     padding: 8px 20px;
     margin: -6px -10px 10px;
   }
@@ -154,9 +154,9 @@ div#content {
     div.filters h2, #add-news > h2, #add-message > h2, #add-document > h2 {
       border-bottom: 1px solid #C5D5DD;
       background: #E6F1F6;
-      @include text-shadow(0px 1px white);
-      @include border-top-left-radius(4px);
-      @include border-top-right-radius(4px);
+      text-shadow: 0px 1px white;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
       padding: 8px 20px;
       margin: -6px -10px 10px;
     }
@@ -176,8 +176,8 @@ div#content {
 
 // .controller-documents.action-index div#content  h2,
 .controller-timelog.action-index div#content h2, .controller-time_entry_reports.action-report div#content h2, .controller-boards.action-show div#content h2, .controller-messages.action-show div#content h2, .controller-boards.action-show div#content div#add-message h2 {
-  @include border-top-left-radius(0px);
-  @include border-top-right-radius(0px);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   border-top: 1px solid #AECCD7;
   /*padding: 9px 20px 12px;*/
   margin: -2px -10px 10px;
@@ -243,8 +243,8 @@ div#welcome-store-content {
 #content, #main.nosidebar #content {
   background: #fff;
   border: 1px solid #ddd;
-  @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
-  @include border-radius(4px);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
 }
 
 a {
@@ -324,11 +324,11 @@ h2, h3, h4 {
   // height: 40px;
   // overflow: hidden;
   background: #FAFAFA;
-  @include background(linear-gradient(top, #fafafa, #eaeaea));
+  background: linear-gradient(to bottom, #fafafa, #eaeaea);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
   border: 1px solid #EAEAEA;
   border-bottom-color: #CACACA;
-  @include border-radius(3px);
+  border-radius: 3px;
 
   margin-right: 0;
   position: relative;
@@ -352,7 +352,7 @@ h2, h3, h4 {
         float: left;
         padding: 10px 12px;
         color: #333;
-        @include text-shadow(0 1px 0 #fff);
+        text-shadow: 0 1px 0 #fff;
         font-weight: bold;
         text-decoration: none;
         border-bottom: 2px solid #DADADA;
@@ -363,7 +363,7 @@ h2, h3, h4 {
           color: #000;
           border-bottom: 2px solid #D26911 !important;
           background-color: #ebebeb;
-          @include background-image(linear-gradient(#fcfcfc, #ebebeb));
+          background-image: linear-gradient(#fcfcfc, #ebebeb);
           background-repeat: repeat-x;
           &:hover {
             color: #000;
@@ -373,7 +373,7 @@ h2, h3, h4 {
           color: $link-color;
           border-bottom: 2px solid #CFDCE8;
           background-color: #dce6ef;
-          @include background-image(linear-gradient(#fafbfd, #dce6ef));
+          background-image: linear-gradient(#fafbfd, #dce6ef);
           background-repeat: repeat-x;
           text-decoration: underline;
         }
@@ -390,12 +390,12 @@ h2, h3, h4 {
 
 .box {
   background-color: #fcfcfc;
-  @include border-radius(8px);
+  border-radius: 8px;
   padding: 16px;
 }
 
 img.gravatar {
-  @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 @import 'wiki';
@@ -406,9 +406,9 @@ div.journal .details {
 }
 
 #context-menu {
-  @include box-shadow(0 0 3px #CCC);
+  box-shadow: 0 0 3px #CCC;
   ul li ul {
-    @include box-shadow(0 0 3px #CCC);
+    box-shadow: 0 0 3px #CCC;
   }
   li:hover {
     border: 1px solid #eee !important;
@@ -425,7 +425,7 @@ div.journal .details {
 div.tooltip:hover span.tip {
   border: 1px solid #D9D9D9;
   zoom: 1;
-  @include box-shadow(0px 3px 5px rgba(0, 0, 0, 0.05));
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 table.progress td {
@@ -448,10 +448,10 @@ div.modal {
     background: transparent;
     color: inherit;
   }
-  @include border-radius(8px);
+  border-radius: 8px;
   border: 1px solid #CCC;
   padding: 30px 42px;
-  @include box-shadow(0 4px 16px rgba(0, 0, 0, 0.2));
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
 
 #modalbg {
@@ -468,8 +468,8 @@ div.filters .live_search {
 }
 
 input.live_search_field {
-  @include border-radius(12px);
-  @include box-shadow(inset 0px 1px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 12px;
+  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
   outline: none;
   padding: 3px 10px !important;
   border: 1px solid #C3C3C3;
@@ -520,7 +520,7 @@ label#search_overlabel {
 span {
   &.tag a, &.deal-status {
     color: white;
-    @include text-shadow(0 -1px 1px rgba(0, 0, 0, 0.25));
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
     font-size: 9px !important;
     line-height: 1 !important;
     margin: 2px 0px 2px 0px;
@@ -530,18 +530,18 @@ span {
     position: relative;
     text-align: center;
     border-top: 1px solid rgba(255, 255, 255, 0.25);
-    @include border-radius(14px);
+    border-radius: 14px;
     padding: 4px 6px 4px !important;
     background: black url(../images/dark-overlay.png) repeat-x scroll 0 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    @include box-shadow(inset 0 1px 0 hsla(0, 100%, 100%, 0.3));
+    box-shadow: inset 0 1px 0 hsla(0, 100%, 100%, 0.3);
   }
   &.tag a:hover {
-    @include text-shadow(none);
+    text-shadow: none;
   }
   &.deal-status a:hover {
     color: black;
-    @include text-shadow(none);
+    text-shadow: none;
   }
 }
 

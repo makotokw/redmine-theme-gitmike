@@ -13,9 +13,13 @@
   },
   "homepage": "https://github.com/makotokw/redmine-theme-gitmike",
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "load-grunt-tasks": "~0.4.0",
-    "grunt-contrib-compass": "~0.7.2",
-    "grunt-contrib-watch": "~0.6.1"
+    "browser-sync": "^2.8.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-ruby-sass": "^1.0.5",
+    "gulp-util": "^3.0.6"
   }
 }
