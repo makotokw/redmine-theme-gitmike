@@ -35,3 +35,14 @@
     }
   }
 }
+
+// project description in project list
+.projects {
+  li {
+    .wiki {
+      p {
+        margin-top: 0;
+      }
+    }
+  }
+}
