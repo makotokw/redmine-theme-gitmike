@@ -47,6 +47,7 @@ GPL3
 
 ## Change Log
 
+* **1.0.7** (2015/07/31): Fixed issue #25 in Redmine 3.0
 * **1.0.6** (2014/04/05): Fixed some issues #12 #14 #17 #19 (from @rumpelsepp) #13 (from @timdp) #18 (from @cyberjunky)
 * **1.0.5** (2013/11/23): Dashboard (@n-rodriguez). Fixed some issues #6 #7 #8 and #10 reported from @statschner
 * **1.0.4** (2013/07/21): Improvement Forms
