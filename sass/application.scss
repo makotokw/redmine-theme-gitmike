@@ -316,72 +316,7 @@ h2, h3, h4 {
   }
 }
 
-// Menu
-
-#main-menu {
-  left: 0px;
-  width: 100%;
-  // height: 40px;
-  // overflow: hidden;
-  background: #FAFAFA;
-  background: linear-gradient(to bottom, #fafafa, #eaeaea);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
-  border: 1px solid #EAEAEA;
-  border-bottom-color: #CACACA;
-  border-radius: 3px;
-
-  margin-right: 0;
-  position: relative;
-
-  ul {
-
-    @include clearfix();
-
-    margin-top: 0;
-    padding-left: 0;
-    background-color: transparent !important;
-
-
-    li {
-      margin: 0;
-      padding: 0;
-
-      a {
-        background-color: transparent !important;
-        display: block;
-        float: left;
-        padding: 10px 12px;
-        color: #333;
-        text-shadow: 0 1px 0 #fff;
-        font-weight: bold;
-        text-decoration: none;
-        border-bottom: 2px solid #DADADA;
-        height: 20px;
-        line-height: 20px;
-
-        &.selected {
-          color: #000;
-          border-bottom: 2px solid #D26911 !important;
-          background-color: #ebebeb;
-          background-image: linear-gradient(#fcfcfc, #ebebeb);
-          background-repeat: repeat-x;
-          &:hover {
-            color: #000;
-          }
-        }
-        &:hover {
-          color: $link-color;
-          border-bottom: 2px solid #CFDCE8;
-          background-color: #dce6ef;
-          background-image: linear-gradient(#fafbfd, #dce6ef);
-          background-repeat: repeat-x;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-}
-
+@import 'mainmenu';
 @import 'tables';
 @import 'forms';
 

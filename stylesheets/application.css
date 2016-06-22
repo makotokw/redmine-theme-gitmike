@@ -91,15 +91,18 @@ h2, h3, h4 { border-bottom: 0px; }
 .wiki.wiki-page h1 { border-bottom: 1px solid #ccc; }
 .wiki.wiki-page > h2 { border-bottom: 1px solid #ccc; padding-bottom: 6px; }
 
-#main-menu { left: 0px; width: 100%; background: #FAFAFA; background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(to bottom, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; border-radius: 3px; margin-right: 0; position: relative; }
+#main-menu { left: 0; width: 100%; background: #FAFAFA; background: -webkit-linear-gradient(top, #fafafa, #eaeaea); background: linear-gradient(to bottom, #fafafa, #eaeaea); -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')"; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; border-radius: 3px; margin-right: 0; position: relative; }
 #main-menu ul { *zoom: 1; margin-top: 0; padding-left: 0; background-color: transparent !important; }
 #main-menu ul:before, #main-menu ul:after { display: table; content: ""; line-height: 0; }
 #main-menu ul:after { clear: both; }
+#main-menu ul .menu-children { background: #fff !important; border: 1px solid #EAEAEA; border-bottom-color: #CACACA; }
+#main-menu ul .menu-children li a { border-bottom: none; }
+#main-menu ul .menu-children li a:hover { color: #4183C4; background: none; border-bottom: none; }
 #main-menu ul li { margin: 0; padding: 0; }
 #main-menu ul li a { background-color: transparent !important; display: block; float: left; padding: 10px 12px; color: #333; text-shadow: 0 1px 0 #fff; font-weight: bold; text-decoration: none; border-bottom: 2px solid #DADADA; height: 20px; line-height: 20px; }
 #main-menu ul li a.selected { color: #000; border-bottom: 2px solid #D26911 !important; background-color: #ebebeb; background-image: -webkit-linear-gradient(#fcfcfc, #ebebeb); background-image: linear-gradient(#fcfcfc, #ebebeb); background-repeat: repeat-x; }
 #main-menu ul li a.selected:hover { color: #000; }
-#main-menu ul li a:hover { color: #4183C4; border-bottom: 2px solid #CFDCE8; background-color: #dce6ef; background-image: -webkit-linear-gradient(#fafbfd, #dce6ef); background-image: linear-gradient(#fafbfd, #dce6ef); background-repeat: repeat-x; text-decoration: underline; }
+#main-menu ul li a:hover { color: #4183C4; border-bottom: 2px solid #CFDCE8; background-color: #dce6ef; background-image: -webkit-linear-gradient(#fafbfd, #dce6ef); background-image: linear-gradient(#fafbfd, #dce6ef); background-repeat: repeat-x; }
 
 table.list tbody td, table.list tbody tr:hover td { border: solid 1px #ddd; }
 table.list thead th { border-width: 1px; border-style: solid; border-top-color: #ddd; border-right-color: #ddd; border-left-color: #ddd; border-bottom-color: #ddd; }

@@ -1,5 +1,11 @@
+### gitmike ###
+.tmp/
+
 ### Node ###
 node_modules
+
+### Bower ###
+bower_components/
 
 ### Sass ###
 .sass-cache
