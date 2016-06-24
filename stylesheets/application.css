@@ -18,7 +18,9 @@ tt, code, pre { font-family: Consolas, "Liberation Mono", Courier, monospace; fo
 #header a { color: #4183C4; }
 #header > h1 { background: url(../images/logo.png) no-repeat 10px 5px; padding: 5px 45px; color: #393939; }
 
-#main { background: transparent; margin: 15px 15px 0px 15px; background-color: white; }
+#main { background: transparent; margin: 15px 15px 0px 15px; background-color: white; position: relative; }
+
+#sidebar-toggle { position: absolute; top: 0; right: 0; z-index: 10; }
 
 #top-menu { font: 12px Helvetica, arial, freesans, clean, sans-serif; padding: 10px 10px 2px 20px; background-color: #f3f3f3; background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3); background-image: linear-gradient(#f9f9f9, #f3f3f3); background-repeat: repeat-x; text-shadow: 0 1px 0 #fff; border-bottom: 1px solid #e5e5e5; }
 #top-menu #loggedas { color: #222; }
@@ -55,7 +57,7 @@ div#content h2.contacts_header { padding-bottom: 10px; /* white-space: nowrap;*/
 
 p.breadcrumb { margin: 4px 0 14px 0; }
 
-div#content > div.contextual { margin-top: 10px; margin-right: 10px; }
+div#content > div.contextual { margin-top: 10px; margin-right: 30px; }
 
 #roadmap { margin: 10px; }
 
