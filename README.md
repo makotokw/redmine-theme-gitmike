@@ -47,7 +47,7 @@ GPL3
 
 ## Change Log
 
-* **1.0.9** (2016/07/10): Fixed some issues #28 for Redmine 3.3
+* **1.0.9** (2016/07/10): Fixed some issues #27, #28 for Redmine 3.3
 * **1.0.8** (2016/06/23): Support new menu item in Redmine 3.3
 * **1.0.7** (2015/07/31): Fixed issue #25 in Redmine 3.0
 * **1.0.6** (2014/04/05): Fixed some issues #12 #14 #17 #19 (from @rumpelsepp) #13 (from @timdp) #18 (from @cyberjunky)
