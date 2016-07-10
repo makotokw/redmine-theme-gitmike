@@ -31,7 +31,8 @@ tt, code, pre {
 
 /* line 29, ../sass/application.scss */
 #header {
-  background: white;
+  background-color: #fafafa;
+  border-bottom: 1px solid #eee;
   padding: 4px 8px 10px 6px;
   height: auto;
 }
@@ -48,12 +49,11 @@ tt, code, pre {
 
 /* line 43, ../sass/application.scss */
 #main {
-  background: transparent;
-  margin: 15px 15px 0px 15px;
+  margin: 15px 15px 0 15px;
   background-color: white;
 }
 
-/* line 49, ../sass/application.scss */
+/* line 48, ../sass/application.scss */
 #top-menu {
   font: 12px Helvetica, arial, freesans, clean, sans-serif;
   padding: 10px 10px 2px 20px;
@@ -64,34 +64,34 @@ tt, code, pre {
   text-shadow: 0 1px 0 #fff;
   border-bottom: 1px solid #e5e5e5;
 }
-/* line 58, ../sass/application.scss */
+/* line 53, ../sass/application.scss */
 #top-menu #loggedas {
   color: #222;
 }
-/* line 61, ../sass/application.scss */
+/* line 56, ../sass/application.scss */
 #top-menu a {
   color: #333;
   font-weight: bold;
   padding: 5px;
-  margin-right: 0px;
-  -webkit-transition: color .15s ease-in 0;
-  transition: color .15s ease-in 0;
+  margin-right: 0;
+  -webkit-transition: color .15s ease-in;
+  transition: color .15s ease-in;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
-/* line 69, ../sass/application.scss */
+/* line 64, ../sass/application.scss */
 #top-menu a:hover {
   color: #4183C4;
   text-decoration: none;
 }
 
-/* line 77, ../sass/application.scss */
+/* line 72, ../sass/application.scss */
 div.flash {
   border: 1px solid;
   text-shadow: 0 1px white;
 }
-/* line 81, ../sass/application.scss */
+/* line 76, ../sass/application.scss */
 div#content > div.flash {
-  border: 0px solid;
+  border: 0 solid;
   padding: 10px 35px 10px;
   margin: -6px -10px 6px -10px;
   background-position-x: 12px !important;
@@ -99,7 +99,7 @@ div#content > div.flash {
   position: relative;
   border-bottom: 1px solid #AECCD7;
 }
-/* line 82, ../sass/application.scss */
+/* line 77, ../sass/application.scss */
 div#content > div.flash:first-child {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -107,7 +107,7 @@ div#content > div.flash:first-child {
   border-bottom-right-radius: 0;
 }
 
-/* line 98, ../sass/application.scss */
+/* line 93, ../sass/application.scss */
 #errorExplanation,
 div.flash,
 .nodata,
@@ -120,7 +120,7 @@ div.flash,
   border-radius: 4px;
 }
 
-/* line 110, ../sass/application.scss */
+/* line 105, ../sass/application.scss */
 #errorExplanation,
 .nodata,
 .warning {
@@ -130,57 +130,57 @@ div.flash,
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* line 120, ../sass/application.scss */
+/* line 115, ../sass/application.scss */
 div.filters h2 .scope_title a {
   color: #444;
 }
-/* line 123, ../sass/application.scss */
+/* line 118, ../sass/application.scss */
 div#content {
   margin-right: 300px;
   width: auto;
 }
-/* line 127, ../sass/application.scss */
+/* line 122, ../sass/application.scss */
 div#main.nosidebar div#content {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
-/* line 132, ../sass/application.scss */
+/* line 127, ../sass/application.scss */
 #sidebar {
   width: 260px !important;
-  padding: 0px 10px 20px 15px !important;
+  padding: 0 10px 20px 15px !important;
   background: whiteSmoke;
   border: 1px solid #ddd;
   zoom: 1;
   border-radius: 4px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* line 144, ../sass/application.scss */
+/* line 139, ../sass/application.scss */
 div#content > h2, div#content h2.contacts_header {
   border-bottom: 1px solid #d8e6ec;
   background: #E6F1F6;
-  text-shadow: 0px 1px white;
+  text-shadow: 0 1px white;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding: 8px 20px;
   margin: -6px -10px 10px;
 }
-/* line 154, ../sass/application.scss */
+/* line 149, ../sass/application.scss */
 div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-message > h2, div#content > #add-document > h2 {
   border-bottom: 1px solid #C5D5DD;
   background: #E6F1F6;
-  text-shadow: 0px 1px white;
+  text-shadow: 0 1px white;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 8px 20px;
   margin: -6px -10px 10px;
 }
 
-/* line 166, ../sass/application.scss */
+/* line 161, ../sass/application.scss */
 .controller-boards.action-index #add-message {
   position: static;
 }
-/* line 168, ../sass/application.scss */
+/* line 163, ../sass/application.scss */
 .controller-boards.action-index #add-message #message-form > p {
   position: relative;
   padding: 10px;
@@ -189,7 +189,7 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
   border-bottom: 1px solid #AECCD7;
 }
 
-/* line 178, ../sass/application.scss */
+/* line 173, ../sass/application.scss */
 .controller-timelog.action-index div#content h2, .controller-time_entry_reports.action-report div#content h2, .controller-boards.action-show div#content h2, .controller-messages.action-show div#content h2, .controller-boards.action-show div#content div#add-message h2 {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
@@ -198,92 +198,92 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
   margin: -2px -10px 10px;
 }
 
-/* line 186, ../sass/application.scss */
+/* line 181, ../sass/application.scss */
 .controller-timelog.action-index div#content .contextual, .controller-time_entry_reports.action-report div#content .contextual {
   margin-top: 50px;
 }
 
-/* line 190, ../sass/application.scss */
+/* line 185, ../sass/application.scss */
 #add-news, #add-message, #add-document {
   margin-bottom: 20px;
 }
 
-/* line 194, ../sass/application.scss */
+/* line 189, ../sass/application.scss */
 div#content h2.contacts_header {
   padding-bottom: 10px;
   /* white-space: nowrap;*/
 }
 
-/* line 199, ../sass/application.scss */
+/* line 194, ../sass/application.scss */
 p.breadcrumb {
   margin: 4px 0 14px 0;
 }
 
-/* line 203, ../sass/application.scss */
+/* line 198, ../sass/application.scss */
 div#content > div.contextual {
   margin-top: 10px;
   margin-right: 10px;
 }
 
-/* line 208, ../sass/application.scss */
+/* line 203, ../sass/application.scss */
 #roadmap {
   margin: 10px;
 }
 
-/* line 212, ../sass/application.scss */
+/* line 207, ../sass/application.scss */
 p.subtitle {
-  margin: 0px 0 12px 0;
+  margin: 0 0 12px 0;
 }
 
-/* line 216, ../sass/application.scss */
+/* line 211, ../sass/application.scss */
 .contextual a {
   color: #888;
 }
-/* line 218, ../sass/application.scss */
+/* line 213, ../sass/application.scss */
 .contextual a:link, .contextual a:visited {
   color: #888;
 }
-/* line 221, ../sass/application.scss */
+/* line 216, ../sass/application.scss */
 .contextual a:hover, .contextual a:visited:hover {
   color: #333;
 }
 
-/* line 226, ../sass/application.scss */
+/* line 221, ../sass/application.scss */
 div.filters h2 .scope_title a {
   color: #222;
   text-decoration: none;
 }
 
-/* line 231, ../sass/application.scss */
+/* line 226, ../sass/application.scss */
 #header {
   padding-top: 10px;
   padding-left: 10px;
   background-position-y: 11%;
 }
 
-/* line 238, ../sass/application.scss */
+/* line 233, ../sass/application.scss */
 div#welcome-store-content h1, div#welcome-store-content h2, div#welcome-store-content h3, div#welcome-store-content h4 {
   color: #222;
 }
 
-/* line 243, ../sass/application.scss */
+/* line 238, ../sass/application.scss */
 #content, #main.nosidebar #content {
   background: #fff;
   border: 1px solid #ddd;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
   border-radius: 4px;
 }
 
-/* line 250, ../sass/application.scss */
+/* line 245, ../sass/application.scss */
 a {
   color: #4183C4;
 }
-/* line 253, ../sass/application.scss */
+/* line 248, ../sass/application.scss */
 a:link, a:visited {
   color: #4183C4;
 }
 
-/* line 260, ../sass/application.scss */
+/* line 255, ../sass/application.scss */
 div.issue {
   background: #FFD;
   padding: 20px;
@@ -291,50 +291,50 @@ div.issue {
   border: 1px solid #ddd;
   margin: -11px -11px 15px -11px;
 }
-/* line 266, ../sass/application.scss */
+/* line 261, ../sass/application.scss */
 div.issue.tooltip {
   padding: 6px;
   margin: 0 0 6px 0;
 }
-/* line 271, ../sass/application.scss */
+/* line 266, ../sass/application.scss */
 div.contact.details, div.deal.details {
   padding: 15px !important;
   margin: -11px -11px 6px;
 }
 
-/* line 277, ../sass/application.scss */
+/* line 272, ../sass/application.scss */
 #sidebar h3 {
   color: #222;
 }
 
-/* line 281, ../sass/application.scss */
+/* line 276, ../sass/application.scss */
 #footer {
   background-color: #F8F8F8;
-  border: 0px;
+  border: 0;
   border-top: 1px solid #E0E0E0;
   color: #636363;
   margin-top: 45px;
   padding: 15px;
 }
-/* line 291, ../sass/application.scss */
+/* line 286, ../sass/application.scss */
 #footer .bgl .bgr:after {
   content: " and gitmike theme";
 }
 
-/* line 300, ../sass/application.scss */
+/* line 295, ../sass/application.scss */
 h2, h3, h4 {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
 
-/* line 305, ../sass/application.scss */
+/* line 300, ../sass/application.scss */
 .wiki h1, .wiki h2, .wiki h3 {
-  border-bottom: 0px;
+  border-bottom: 0;
 }
-/* line 309, ../sass/application.scss */
+/* line 304, ../sass/application.scss */
 .wiki.wiki-page h1 {
   border-bottom: 1px solid #ccc;
 }
-/* line 312, ../sass/application.scss */
+/* line 307, ../sass/application.scss */
 .wiki.wiki-page > h2 {
   border-bottom: 1px solid #ccc;
   padding-bottom: 6px;
@@ -421,11 +421,6 @@ h2, h3, h4 {
 /* line 69, ../sass/_mainmenu.scss */
 #main-menu ul li a:hover {
   color: #4183C4;
-  border-bottom: 2px solid #CFDCE8;
-  background-color: #dce6ef;
-  background-image: -webkit-linear-gradient(#fafbfd, #dce6ef);
-  background-image: linear-gradient(#fafbfd, #dce6ef);
-  background-repeat: repeat-x;
 }
 
 /* line 5, ../sass/_tables.scss */
@@ -859,16 +854,16 @@ option {
   font-size: 12px;
 }
 
-/* line 326, ../sass/application.scss */
+/* line 321, ../sass/application.scss */
 .box {
   background-color: #fcfcfc;
   border-radius: 8px;
   padding: 16px;
 }
 
-/* line 332, ../sass/application.scss */
+/* line 327, ../sass/application.scss */
 img.gravatar {
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* line 5, ../sass/_wiki.scss */
@@ -978,68 +973,68 @@ div.wiki pre {
   margin-top: 0;
 }
 
-/* line 339, ../sass/application.scss */
+/* line 334, ../sass/application.scss */
 div.journal .details {
   padding-left: 30px;
 }
 
-/* line 343, ../sass/application.scss */
+/* line 338, ../sass/application.scss */
 #context-menu {
-  box-shadow: 0 0 3px #CCC;
+  box-shadow: 0 0 3px #ccc;
 }
-/* line 345, ../sass/application.scss */
+/* line 340, ../sass/application.scss */
 #context-menu ul li ul {
-  box-shadow: 0 0 3px #CCC;
+  box-shadow: 0 0 3px #ccc;
 }
-/* line 348, ../sass/application.scss */
+/* line 343, ../sass/application.scss */
 #context-menu li:hover {
   border: 1px solid #eee !important;
   background-color: #eee;
 }
-/* line 352, ../sass/application.scss */
+/* line 347, ../sass/application.scss */
 #context-menu ul {
-  border-top: 1px solid #DDD;
-  border-left: 1px solid #DDD;
-  border-bottom: 1px solid #DDD !important;
-  border-right: 1px solid #DDD !important;
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd !important;
+  border-right: 1px solid #ddd !important;
 }
 
-/* line 360, ../sass/application.scss */
+/* line 355, ../sass/application.scss */
 div.tooltip:hover span.tip {
   border: 1px solid #D9D9D9;
   zoom: 1;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 
-/* line 367, ../sass/application.scss */
+/* line 362, ../sass/application.scss */
 table.progress td.closed {
   background: #AECCD7 none repeat scroll 0%;
 }
-/* line 370, ../sass/application.scss */
+/* line 365, ../sass/application.scss */
 table.progress td.done {
   background: #EAF2F5 none repeat scroll 0%;
 }
 
-/* line 375, ../sass/application.scss */
+/* line 370, ../sass/application.scss */
 #history div.journal {
   border-top: 1px solid #DDD;
 }
 
 /* Modal form*/
-/* line 381, ../sass/application.scss */
+/* line 376, ../sass/application.scss */
 div.modal {
   border-radius: 8px;
   border: 1px solid #CCC;
   padding: 30px 42px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
-/* line 382, ../sass/application.scss */
+/* line 377, ../sass/application.scss */
 div.modal h3.title {
   background: transparent;
   color: inherit;
 }
 
-/* line 392, ../sass/application.scss */
+/* line 387, ../sass/application.scss */
 #modalbg {
   background: white;
   opacity: 0.75;
@@ -1093,26 +1088,26 @@ body.action-login #login-form table {
   font-weight: bold;
 }
 
-/* line 401, ../sass/application.scss */
+/* line 396, ../sass/application.scss */
 div.filters .live_search {
   margin-left: 11px !important;
 }
 
-/* line 405, ../sass/application.scss */
+/* line 400, ../sass/application.scss */
 input.live_search_field {
   border-radius: 12px;
-  box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.15);
   outline: none;
   padding: 3px 10px !important;
   border: 1px solid #C3C3C3;
 }
 
-/* line 413, ../sass/application.scss */
+/* line 408, ../sass/application.scss */
 .live_search input.live_search_field {
   font-size: 12px !important;
 }
 
-/* line 417, ../sass/application.scss */
+/* line 412, ../sass/application.scss */
 label#search_overlabel {
   font-size: 12px !important;
   padding-left: 12px !important;
@@ -1121,48 +1116,48 @@ label#search_overlabel {
   top: 11px !important;
 }
 
-/* line 426, ../sass/application.scss */
+/* line 421, ../sass/application.scss */
 table.contacts.index tbody tr:hover {
   background-color: #EFF5F8 !important;
 }
-/* line 429, ../sass/application.scss */
+/* line 424, ../sass/application.scss */
 table.contacts.index tbody tr.context-menu-selection:hover {
   background-color: #507AAA !important;
 }
 
-/* line 434, ../sass/application.scss */
+/* line 429, ../sass/application.scss */
 h2 span.tag {
-  letter-spacing: 0px;
+  letter-spacing: 0;
   top: -4px;
   position: relative;
 }
-/* line 438, ../sass/application.scss */
+/* line 433, ../sass/application.scss */
 h2 span.tag a {
   margin-bottom: -1px;
 }
 
-/* line 443, ../sass/application.scss */
+/* line 438, ../sass/application.scss */
 div.filters .live_search {
-  letter-spacing: 0px;
+  letter-spacing: 0;
 }
 
-/* line 447, ../sass/application.scss */
+/* line 442, ../sass/application.scss */
 label#search_overlabel {
   margin-top: -4px;
 }
 
-/* line 451, ../sass/application.scss */
+/* line 446, ../sass/application.scss */
 .live_search input.live_search_field {
   margin-top: -6px;
 }
 
-/* line 456, ../sass/application.scss */
+/* line 451, ../sass/application.scss */
 span.tag a, span.deal-status {
   color: white;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
   font-size: 9px !important;
   line-height: 1 !important;
-  margin: 2px 0px 2px 0px;
+  margin: 2px 0 2px 0;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
@@ -1175,43 +1170,43 @@ span.tag a, span.deal-status {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
-/* line 474, ../sass/application.scss */
+/* line 469, ../sass/application.scss */
 span.tag a:hover {
   text-shadow: none;
 }
-/* line 477, ../sass/application.scss */
+/* line 472, ../sass/application.scss */
 span.deal-status a:hover {
   color: black;
   text-shadow: none;
 }
 
-/* line 484, ../sass/application.scss */
+/* line 479, ../sass/application.scss */
 body.controller-contacts #content, body.controller-notes #content, body.controller-contacts_tasks #content, body.controller-contacts_duplicates #content, body.controller-sale_funel #content, body.controller-deals #content {
   margin-right: 340px;
 }
-/* line 487, ../sass/application.scss */
+/* line 482, ../sass/application.scss */
 body.controller-contacts #sidebar, body.controller-notes #sidebar, body.controller-contacts_tasks #sidebar, body.controller-contacts_duplicates #sidebar, body.controller-sale_funel #sidebar, body.controller-deals #sidebar {
   width: 300px !important;
 }
 
-/* line 495, ../sass/application.scss */
+/* line 4, ../sass/_invoice.scss */
 table.invoice-lines tbody tr.line-data:hover {
   background-color: #EFF5F8 !important;
 }
-/* line 498, ../sass/application.scss */
+/* line 7, ../sass/_invoice.scss */
 table.invoice-lines th {
-  border: 0px !important;
+  border: 0 !important;
 }
 
-/* line 504, ../sass/application.scss */
+/* line 13, ../sass/_invoice.scss */
 span.invoice-status.draft {
   background-color: #AAA !important;
 }
-/* line 507, ../sass/application.scss */
+/* line 16, ../sass/_invoice.scss */
 span.invoice-status.sent {
   background-color: #3F8AF7 !important;
 }
-/* line 510, ../sass/application.scss */
+/* line 19, ../sass/_invoice.scss */
 span.invoice-status.paid {
   background-color: green !important;
 }
@@ -1256,4 +1251,28 @@ a.buy-button.blue {
 /* line 21, ../sass/_store.scss */
 #title h2, #buttons, #title h1 {
   min-width: 550px !important;
+}
+
+/*
+  redmine's body is set to min-width: 900px
+  add first breakpoint here and start adding responsiveness
+*/
+@media all and (max-width: 899px) {
+  /* line 7, ../sass/_responsive.scss */
+  #main {
+    margin: 0;
+  }
+
+  /* line 11, ../sass/_responsive.scss */
+  div#content > div.contextual {
+    margin-top: 0;
+    margin-right: 0;
+  }
+
+  /* line 16, ../sass/_responsive.scss */
+  div#content > h2,
+  div#content h2.contacts_header {
+    background-color: #fafafa;
+    border-bottom: 1px solid #eee;
+  }
 }
