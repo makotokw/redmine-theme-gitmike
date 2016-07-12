@@ -17,6 +17,9 @@ function compass(env) {
             sass: 'sass',
             force: env !== 'development'
         }))
+        .on('error', function(err) {
+            // Would like to catch the error here
+        })
         .pipe(plugins.autoprefixer({
             cascade: false
         }))
