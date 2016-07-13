@@ -14,7 +14,7 @@ body {
 
 /* line 15, ../sass/application.scss */
 body, input, select, textarea, button {
-  font: 12px Helvetica, arial, freesans, clean, sans-serif;
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.4;
 }
 
@@ -62,7 +62,7 @@ tt, code, pre {
 
 /* line 60, ../sass/application.scss */
 #top-menu {
-  font: 12px Helvetica, arial, freesans, clean, sans-serif;
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   padding: 10px 10px 2px 20px;
   background-color: #f3f3f3;
   background-image: -webkit-linear-gradient(#f9f9f9, #f3f3f3);
