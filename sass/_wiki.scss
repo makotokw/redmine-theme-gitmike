@@ -57,14 +57,14 @@ div.wiki {
   ul, ol {
     padding-left: 2em;
     ul, ol {
-      margin-top: 0;
-      margin-bottom: 0;
+      margin-top: 8px;
+      margin-bottom: 8px;
       ol {
-        list-style-type: lower-alpha;
+        //list-style-type: lower-alpha;
       }
     }
     ol {
-      list-style-type: lower-roman;
+      //list-style-type: lower-roman;
     }
   }
 

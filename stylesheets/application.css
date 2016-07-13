@@ -929,16 +929,8 @@ div.wiki ul, div.wiki ol {
 }
 /* line 59, ../sass/_wiki.scss */
 div.wiki ul ul, div.wiki ul ol, div.wiki ol ul, div.wiki ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-/* line 62, ../sass/_wiki.scss */
-div.wiki ul ul ol, div.wiki ul ol ol, div.wiki ol ul ol, div.wiki ol ol ol {
-  list-style-type: lower-alpha;
-}
-/* line 66, ../sass/_wiki.scss */
-div.wiki ul ol, div.wiki ol ol {
-  list-style-type: lower-roman;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 /* line 71, ../sass/_wiki.scss */
 div.wiki h1,
