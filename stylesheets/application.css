@@ -468,23 +468,22 @@ table.list td {
 table.list input[type="checkbox"] {
   margin-top: 6px;
 }
-/* line 44, ../sass/_tables.scss */
-table.list tbody tr.group span.count {
-  border-radius: 2px;
-  background-color: #eee;
-  color: #999;
-  text-shadow: 0 1px 0 #fff;
-  font-weight: bold;
-  font: 12px Helvetica, arial, freesans, clean, sans-serif;
-  line-height: 1.4;
-  padding: 2px 5px;
-  box-shadow: inset 0 -1px 0 #e3e3e3;
-}
-/* line 57, ../sass/_tables.scss */
+/* line 46, ../sass/_tables.scss */
 table.list tbody tr:hover {
   background-color: #EFF5F8;
 }
-/* line 61, ../sass/_tables.scss */
+/* line 51, ../sass/_tables.scss */
+table.list tbody tr.group span.count {
+  display: inline-block;
+  padding: 2px 5px;
+  font: 12px Helvetica, arial, freesans, clean, sans-serif;
+  font-weight: bold;
+  line-height: 1;
+  color: #555;
+  background-color: #eee;
+  border-radius: 20px;
+}
+/* line 64, ../sass/_tables.scss */
 table.list tr.issue a {
   color: #666;
 }
@@ -492,145 +491,145 @@ table.list tr.issue a {
 /*tr.odd {background-color: transparent;}
 tr.even {background-color: transparent;}
 table.list th {background-color: transparent;}*/
-/* line 70, ../sass/_tables.scss */
+/* line 74, ../sass/_tables.scss */
 tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover {
   color: #900;
   font-weight: bold;
 }
 
-/* line 76, ../sass/_tables.scss */
+/* line 80, ../sass/_tables.scss */
 tr.odd.priority-highest {
   background: #ffc4c4;
 }
-/* line 79, ../sass/_tables.scss */
+/* line 83, ../sass/_tables.scss */
 tr.even.priority-highest {
   color: #900;
   font-weight: bold;
 }
 
-/* line 85, ../sass/_tables.scss */
+/* line 89, ../sass/_tables.scss */
 table.list tbody tr.even.priority-highest:hover {
   color: #900;
   font-weight: bold;
 }
 
-/* line 91, ../sass/_tables.scss */
+/* line 95, ../sass/_tables.scss */
 tr.even.priority-highest {
   background: #ffd4d4;
 }
-/* line 95, ../sass/_tables.scss */
+/* line 99, ../sass/_tables.scss */
 tr.priority-highest a, tr.priority-highest:hover a {
   color: #900;
 }
-/* line 99, ../sass/_tables.scss */
+/* line 103, ../sass/_tables.scss */
 tr.odd.priority-highest td, tr.even.priority-highest td {
   border-color: #ffb4b4;
 }
-/* line 102, ../sass/_tables.scss */
+/* line 106, ../sass/_tables.scss */
 tr.odd.priority-high2 {
   color: #900;
 }
 
-/* line 107, ../sass/_tables.scss */
+/* line 111, ../sass/_tables.scss */
 table.list tbody tr.odd.priority-high2:hover {
   color: #900;
 }
 
-/* line 112, ../sass/_tables.scss */
+/* line 116, ../sass/_tables.scss */
 tr.odd.priority-high2 {
   background: #ffc4c4;
 }
-/* line 115, ../sass/_tables.scss */
+/* line 119, ../sass/_tables.scss */
 tr.even.priority-high2 {
   color: #900;
 }
 
-/* line 120, ../sass/_tables.scss */
+/* line 124, ../sass/_tables.scss */
 table.list tbody tr.even.priority-high2:hover {
   color: #900;
 }
 
-/* line 125, ../sass/_tables.scss */
+/* line 129, ../sass/_tables.scss */
 tr.even.priority-high2 {
   background: #ffd4d4;
 }
-/* line 128, ../sass/_tables.scss */
+/* line 132, ../sass/_tables.scss */
 tr.priority-high2 a {
   color: #900;
 }
-/* line 131, ../sass/_tables.scss */
+/* line 135, ../sass/_tables.scss */
 tr.odd.priority-high2 td, tr.even.priority-high2 td {
   border-color: #ffb4b4;
 }
-/* line 134, ../sass/_tables.scss */
+/* line 138, ../sass/_tables.scss */
 tr.odd.priority-high3 {
   color: #900;
 }
 
-/* line 139, ../sass/_tables.scss */
+/* line 143, ../sass/_tables.scss */
 table.list tbody tr.odd.priority-high3:hover {
   color: #900;
 }
 
-/* line 144, ../sass/_tables.scss */
+/* line 148, ../sass/_tables.scss */
 tr.odd.priority-high3 {
   background: #fee;
 }
-/* line 147, ../sass/_tables.scss */
+/* line 151, ../sass/_tables.scss */
 tr.even.priority-high3 {
   color: #900;
 }
 
-/* line 152, ../sass/_tables.scss */
+/* line 156, ../sass/_tables.scss */
 table.list tbody tr.even.priority-high3:hover {
   color: #900;
 }
 
-/* line 157, ../sass/_tables.scss */
+/* line 161, ../sass/_tables.scss */
 tr.even.priority-high3 {
   background: #fff2f2;
 }
-/* line 160, ../sass/_tables.scss */
+/* line 164, ../sass/_tables.scss */
 tr.priority-high3 a {
   color: #900;
 }
-/* line 163, ../sass/_tables.scss */
+/* line 167, ../sass/_tables.scss */
 tr.odd.priority-high3 td, tr.even.priority-high3 td {
   border-color: #fcc;
 }
-/* line 166, ../sass/_tables.scss */
+/* line 170, ../sass/_tables.scss */
 tr.odd.priority-lowest {
   color: #559;
 }
 
-/* line 171, ../sass/_tables.scss */
+/* line 175, ../sass/_tables.scss */
 table.list tbody tr.odd.priority-lowest:hover {
   color: #559;
 }
 
-/* line 176, ../sass/_tables.scss */
+/* line 180, ../sass/_tables.scss */
 tr.odd.priority-lowest {
   background: #eaf7ff;
 }
-/* line 179, ../sass/_tables.scss */
+/* line 183, ../sass/_tables.scss */
 tr.even.priority-lowest {
   color: #559;
 }
 
-/* line 184, ../sass/_tables.scss */
+/* line 188, ../sass/_tables.scss */
 table.list tbody tr.even.priority-lowest:hover {
   color: #559;
 }
 
-/* line 189, ../sass/_tables.scss */
+/* line 193, ../sass/_tables.scss */
 tr.even.priority-lowest {
   background: #f2faff;
 }
-/* line 192, ../sass/_tables.scss */
+/* line 196, ../sass/_tables.scss */
 tr.priority-lowest a {
   color: #559;
 }
-/* line 195, ../sass/_tables.scss */
+/* line 199, ../sass/_tables.scss */
 tr.odd.priority-lowest td, tr.even.priority-lowest td {
   border-color: #add7f3;
 }
@@ -946,64 +945,65 @@ div.wiki h6 {
 }
 /* line 83, ../sass/_wiki.scss */
 div.wiki h1 {
+  margin-top: 0;
   padding-bottom: 0.3em;
   font-size: 2.25em;
   line-height: 1.2;
   border-bottom: 1px solid #eee;
 }
-/* line 90, ../sass/_wiki.scss */
+/* line 92, ../sass/_wiki.scss */
 div.wiki h2 {
   padding-bottom: 0.3em;
   font-size: 1.75em;
   line-height: 1.225;
   border-bottom: 1px solid #eee;
 }
-/* line 98, ../sass/_wiki.scss */
+/* line 100, ../sass/_wiki.scss */
 div.wiki h3 {
   font-size: 1.5em;
   line-height: 1.43;
 }
-/* line 103, ../sass/_wiki.scss */
+/* line 105, ../sass/_wiki.scss */
 div.wiki h4 {
   font-size: 1.25em;
 }
-/* line 107, ../sass/_wiki.scss */
+/* line 109, ../sass/_wiki.scss */
 div.wiki h5 {
   font-size: 1em;
 }
-/* line 111, ../sass/_wiki.scss */
+/* line 113, ../sass/_wiki.scss */
 div.wiki h6 {
   font-size: 1em;
   color: #777;
 }
-/* line 118, ../sass/_wiki.scss */
+/* line 120, ../sass/_wiki.scss */
 div.wiki.wiki-page > h2 {
   border-bottom: 1px solid #eee;
 }
-/* line 123, ../sass/_wiki.scss */
+/* line 125, ../sass/_wiki.scss */
 div.wiki blockquote {
   padding: 0 15px;
   color: #777;
   border-left: 4px solid #ddd;
 }
-/* line 128, ../sass/_wiki.scss */
+/* line 130, ../sass/_wiki.scss */
 div.wiki blockquote > :first-child {
   margin-top: 0;
 }
-/* line 131, ../sass/_wiki.scss */
+/* line 133, ../sass/_wiki.scss */
 div.wiki blockquote > :last-child {
   margin-bottom: 0;
 }
-/* line 136, ../sass/_wiki.scss */
+/* line 138, ../sass/_wiki.scss */
 div.wiki ul.toc {
   padding: 10px;
 }
-/* line 140, ../sass/_wiki.scss */
+/* line 142, ../sass/_wiki.scss */
 div.wiki img {
   border-style: none;
   max-width: 100%;
 }
-/* line 145, ../sass/_wiki.scss */
+/* line 147, ../sass/_wiki.scss */
 div.wiki table {
   border-spacing: 0;
   border-collapse: collapse;
@@ -1011,31 +1011,31 @@ div.wiki table {
   word-break: normal;
   word-break: keep-all;
 }
-/* line 152, ../sass/_wiki.scss */
+/* line 154, ../sass/_wiki.scss */
 div.wiki table th {
   font-weight: bold;
 }
-/* line 155, ../sass/_wiki.scss */
+/* line 157, ../sass/_wiki.scss */
 div.wiki table th, div.wiki table td {
   padding: 6px 13px;
   border: 1px solid #ddd;
 }
-/* line 159, ../sass/_wiki.scss */
+/* line 161, ../sass/_wiki.scss */
 div.wiki table tr {
   background-color: #fff;
   border-top: 1px solid #ccc;
 }
-/* line 162, ../sass/_wiki.scss */
+/* line 164, ../sass/_wiki.scss */
 div.wiki table tr:nth-child(2n) {
   background-color: #f8f8f8;
 }
-/* line 167, ../sass/_wiki.scss */
+/* line 169, ../sass/_wiki.scss */
 div.wiki table img {
   max-width: 100%;
   box-sizing: content-box;
   background-color: #fff;
 }
-/* line 174, ../sass/_wiki.scss */
+/* line 176, ../sass/_wiki.scss */
 div.wiki pre {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   margin: 15px 0;
@@ -1047,7 +1047,7 @@ div.wiki pre {
   padding: 6px 10px;
   border-radius: 3px;
 }
-/* line 186, ../sass/_wiki.scss */
+/* line 188, ../sass/_wiki.scss */
 div.wiki kbd {
   display: inline-block;
   padding: 3px 5px;
@@ -1061,7 +1061,7 @@ div.wiki kbd {
   border-radius: 3px;
   box-shadow: inset 0 -1px 0 #bbb;
 }
-/* line 200, ../sass/_wiki.scss */
+/* line 202, ../sass/_wiki.scss */
 div.wiki hr {
   box-sizing: content-box;
   height: 0;
@@ -1071,12 +1071,12 @@ div.wiki hr {
   border-bottom: 1px solid #eee;
   overflow: visible;
 }
-/* line 208, ../sass/_wiki.scss */
+/* line 210, ../sass/_wiki.scss */
 div.wiki hr::before {
   display: table;
   content: "";
 }
-/* line 212, ../sass/_wiki.scss */
+/* line 214, ../sass/_wiki.scss */
 div.wiki hr::after {
   display: table;
   clear: both;
