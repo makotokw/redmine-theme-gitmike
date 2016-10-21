@@ -1380,17 +1380,6 @@ span.invoice-status.paid {
 }
 
 /* line 1, ../sass/_store.scss */
-div#main-menu li a.products {
-  background: #F4786A !important;
-  text-shadow: none;
-}
-/* line 4, ../sass/_store.scss */
-div#main-menu li a.products.selected {
-  background-color: #E5E3DE !important;
-  color: #222;
-}
-
-/* line 10, ../sass/_store.scss */
 a.buy-button.blue {
   background: #4C728A !important;
   background-image: -webkit-linear-gradient(bottom, #4c728a 0%, #749bb4 100%) !important;
@@ -1398,13 +1387,13 @@ a.buy-button.blue {
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#749BB4', endColorstr='#4C728A')" !important;
 }
 
-/* line 16, ../sass/_store.scss */
+/* line 7, ../sass/_store.scss */
 #picture {
   width: 446px !important;
   top: 7px;
 }
 
-/* line 21, ../sass/_store.scss */
+/* line 12, ../sass/_store.scss */
 #title h2, #buttons, #title h1 {
   min-width: 550px !important;
 }
