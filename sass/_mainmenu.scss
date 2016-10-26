@@ -27,7 +27,10 @@
       background: #fff !important;
       border: 1px solid #EAEAEA;
       border-bottom-color: #CACACA;
-      z-index: 11;
+
+      // hack Redmine 3.3.0 and 3.3.1
+      // http://www.redmine.org/issues/24000#note-4
+      z-index: 45;
 
       li {
         a {
