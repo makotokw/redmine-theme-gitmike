@@ -383,23 +383,24 @@ h2, h3, h4 {
   background: #fff !important;
   border: 1px solid #EAEAEA;
   border-bottom-color: #CACACA;
+  z-index: 11;
 }
-/* line 32, ../sass/_mainmenu.scss */
+/* line 33, ../sass/_mainmenu.scss */
 #main-menu ul .menu-children li a {
   border-bottom: none;
 }
-/* line 34, ../sass/_mainmenu.scss */
+/* line 35, ../sass/_mainmenu.scss */
 #main-menu ul .menu-children li a:hover {
   color: #4183C4;
   background: none;
   border-bottom: none;
 }
-/* line 43, ../sass/_mainmenu.scss */
+/* line 44, ../sass/_mainmenu.scss */
 #main-menu ul li {
   margin: 0;
   padding: 0;
 }
-/* line 47, ../sass/_mainmenu.scss */
+/* line 48, ../sass/_mainmenu.scss */
 #main-menu ul li a {
   background-color: transparent !important;
   display: block;
@@ -412,7 +413,7 @@ h2, h3, h4 {
   height: 20px;
   line-height: 20px;
 }
-/* line 59, ../sass/_mainmenu.scss */
+/* line 60, ../sass/_mainmenu.scss */
 #main-menu ul li a.selected {
   color: #000;
   border-bottom: 2px solid #D26911 !important;
@@ -421,11 +422,11 @@ h2, h3, h4 {
   background-image: linear-gradient(#fcfcfc, #ebebeb);
   background-repeat: repeat-x;
 }
-/* line 65, ../sass/_mainmenu.scss */
+/* line 66, ../sass/_mainmenu.scss */
 #main-menu ul li a.selected:hover {
   color: #000;
 }
-/* line 69, ../sass/_mainmenu.scss */
+/* line 70, ../sass/_mainmenu.scss */
 #main-menu ul li a:hover {
   color: #4183C4;
 }
