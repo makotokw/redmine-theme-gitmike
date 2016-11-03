@@ -244,6 +244,7 @@ div.wiki table tr { background-color: #fff; border-top: 1px solid #ccc; }
 div.wiki table tr:nth-child(2n) { background-color: #f8f8f8; }
 div.wiki table img { max-width: 100%; box-sizing: content-box; background-color: #fff; }
 div.wiki pre { font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace; margin: 15px 0; background-color: #f8f8f8; border: 1px solid #ddd; font-size: 13px; line-height: 19px; overflow: auto; padding: 6px 10px; border-radius: 3px; }
+div.wiki code:not([class]) { background-color: #f8f8f8; border: 1px solid #ddd; border-radius: 3px; padding-top: 0.2em; padding-bottom: 0.2em; }
 div.wiki kbd { display: inline-block; padding: 3px 5px; font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace; line-height: 10px; color: #555; vertical-align: middle; background-color: #fcfcfc; border: solid 1px #ccc; border-bottom-color: #bbb; border-radius: 3px; box-shadow: inset 0 -1px 0 #bbb; }
 div.wiki hr { box-sizing: content-box; height: 0; margin: 15px 0; background: transparent; border: 0; border-bottom: 1px solid #eee; overflow: visible; }
 div.wiki hr::before { display: table; content: ""; }
