@@ -1,0 +1,69 @@
+
+/* Logo */
+
+#header > h1 { background: url(../images/nyss_logo.png) no-repeat 10px 5px !important }
+
+
+/* Issue Priorities */
+
+/* immediate */
+tr.priority-7, table.list tr.priority-7 a { color: #fff; font-weight: bold; }
+#tr.priority-7.issue td { border-bottom: solid 1px #970d00; }
+tr.odd.priority-7 { background: #9b4842; }
+tr.even.priority-7 { background: #a4443c; }
+
+/* urgent */
+tr.priority-6 { font-weight: bold; } 
+#tr.priority-6.issue td { border-bottom: solid 1px #d1413c; }
+tr.odd.priority-6 { background: #f9776d !important; }
+tr.even.priority-6 { background: #ff6d5c !important; }
+
+/* high */
+tr.priority-5 { font-weight: bold; }
+#tr.priority-5.issue td { border-bottom: solid 1px #e16638; }
+tr.odd.priority-5 { background: #ffad89 !important; }
+tr.even.priority-5 { background: #ffac75 !important; }
+
+/* normal */
+#tr.priority-4.issue td { border-bottom: solid 1px #c58100; }
+tr.odd.priority-4 { background: #fdf9d4; }
+tr.even.priority-4 { background: #fbf5c0; }
+
+/* low */
+#tr.priority-3.issue td { border-bottom: solid 1px #ffa700; }
+tr.odd.priority-3 { background: #fffef2 !important; }
+tr.even.priority-3 { background: #f9f7e4 !important; }
+
+
+/* Issue Statuses: Resolved, Resolved Pending Upgrade, Resolved Verified */
+
+tr.status-3, tr.status-9, tr.status-10 { color: #1b520e !important; }
+table.list tr.status-3 a, table.list tr.status-9 a, table.list tr.status-10 a { color: #1b520e; }
+#tr.issue.status-3 td, tr.issue.status-9 td, tr.issue.status-10 td { border-bottom: solid 1px #7faf73; }
+
+/* resolved */
+tr.odd.status-3 { background: #afea9f !important; }
+tr.even.status-3 { background: #bbf4ab !important; }
+
+/* resolved verified */
+tr.odd.status-9 { background: #afca9f !important; }
+tr.even.status-9 { background: #bbd4ab !important; }
+
+/* resolved pending upgrade */
+tr.odd.status-10 { background: #cffa7f !important; }
+tr.even.status-10 { background: #dfff8f !important; }
+
+
+/* hover fix for resolved */
+table.list tbody tr:hover { background-color:#f9fdff !important; color: #000 !important; }
+table.list tbody tr:hover a { color: #000 !important;}
+
+p.breadcrumb {
+	background-color:#EEEEBB;
+	border-bottom:1px solid white;
+	font-size:0.9em;
+	margin:7px -10px 6px;
+	padding:6px;
+	text-indent:15px;
+}
+
