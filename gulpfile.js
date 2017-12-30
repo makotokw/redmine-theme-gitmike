@@ -18,7 +18,7 @@ function compass(env) {
             force: env !== 'development'
         }))
         .on('error', function(err) {
-            // Would like to catch the error here
+            console.log(err);
         })
         .pipe(plugins.autoprefixer({
             cascade: false

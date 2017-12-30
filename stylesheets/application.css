@@ -251,9 +251,7 @@ div.wiki hr::after { display: table; clear: both; content: ""; }
 
 #projects-index ul.projects ul.projects { border-left: 3px solid #E0E0E0; }
 #projects-index ul.projects.root { padding: 10px; }
-@media (min-width: 1024px) { #projects-index ul.projects.root { -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
-  #projects-index ul.projects.root li.root { border: 1px solid #DDD; border-radius: 4px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); display: inline-block; margin: 0 0 10px; padding: 5%; vertical-align: top; width: 90%; } }
-@media (min-width: 1284px) { #projects-index ul.projects.root { -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; } }
+@media (min-width: 900px) { #projects-index ul.projects.root li.root { border: 1px solid #DDD; border-radius: 4px; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05); display: inline-block; margin: 0 0 10px; padding: 5%; vertical-align: top; width: 90%; } }
 #projects-index ul.projects a.project { font-weight: bold; font-size: 1.1em; }
 
 .projects li .wiki p { margin-top: 0; }
