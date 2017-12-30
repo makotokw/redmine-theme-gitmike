@@ -325,6 +325,13 @@ span.invoice-status.paid { background-color: green !important; }
 
 .jstt_smiles #group_of_smiles { border: 1px solid #ddd !important; margin-top: -6px; padding: 6px; }
 
+#top-menu .easy-gantt { background-image: none; }
+
+.gantt .easy-gantt__menu .gantt-menu-problems-count.gantt-with-problems { width: 24px; line-height: 24px; }
+.gantt .gantt-menu-button { background-repeat: no-repeat; text-shadow: none; }
+.gantt .gantt-menu-button.button-positive { background-color: #4ebf67; border-color: #338d47; }
+.gantt .gantt-menu-button#button_sample { background-image: none; }
+
 a.buy-button.blue { background: #4C728A !important; background-image: -webkit-linear-gradient(bottom, #4c728a 0%, #749bb4 100%) !important; background-image: linear-gradient(to top, #4c728a 0%, #749bb4 100%) !important; -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#749BB4', endColorstr='#4C728A')" !important; }
 
 #picture { width: 446px !important; top: 7px; }
