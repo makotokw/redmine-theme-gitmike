@@ -47,6 +47,7 @@ GPL3
 
 ## Change Log
 
+* **1.1.1** (2017/12/30): Fixed issue #36 for Redmine 3.4 and fixed #38 for Easy Gantt plugin
 * **1.1.0** (2016/10/27): Fixed some issues #31 #32 (from @addow) and improved wiki to be close to GitHub
 * **1.0.9** (2016/07/10): Fixed some issues #27 #28 for Redmine 3.3
 * **1.0.8** (2016/06/23): Support new menu item in Redmine 3.3
