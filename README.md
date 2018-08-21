@@ -41,7 +41,7 @@ gulp debug
 
 ## License
 
-GPL3
+GNU General Public License (GPL) Version 2
 
 ## Change Log
 
