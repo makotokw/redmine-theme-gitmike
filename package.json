@@ -13,14 +13,11 @@
   },
   "homepage": "https://github.com/makotokw/redmine-theme-gitmike",
   "devDependencies": {
-    "browser-sync": "^2.8.0",
-    "github-markdown-css": "^2.3.0",
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
+    "browser-sync": "^2.26.7",
+    "github-markdown-css": "^3.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
     "gulp-compass": "^2.1.0",
-    "gulp-load-plugins": "^0.10.0",
-    "gulp-plumber": "^1.0.1",
-    "gulp-ruby-sass": "^1.0.5",
-    "gulp-util": "^3.0.6"
+    "gulp-util": "^3.0.8"
   }
 }

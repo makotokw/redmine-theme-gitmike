@@ -34,8 +34,8 @@ cd redmine/public/theme
 git clone git://github.com/makotokw/redmine-theme-gitmike.git gitmike
 cd gitmike
 gem install compass
-npm install -g gulp
-npm install
+npm install -g gulp-cli
+yarn
 gulp debug
 ```
 

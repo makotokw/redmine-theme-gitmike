@@ -1,14 +1,13 @@
-/*jshint node: true */
 'use strict';
 
 var gulp = require('gulp');
-var plugins = require('gulp-load-plugins')();
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
+var gulpCompass = require('gulp-compass');
+var gulpAutoPrefixer = require('gulp-autoprefixer');
+var browserSync = require('browser-sync').create();
 
 function compass(env) {
-    gulp.src('./sass/*.scss')
-        .pipe(plugins.compass({
+    return gulp.src('./sass/*.scss')
+        .pipe(gulpCompass({
             config_file: 'sass/config.rb',
             environment: env,
             comments: env === 'development',
@@ -17,39 +16,35 @@ function compass(env) {
             sass: 'sass',
             force: env !== 'development'
         }))
-        .on('error', function(err) {
+        .on('error', function (err) {
             console.log(err);
         })
-        .pipe(plugins.autoprefixer({
+        .pipe(gulpAutoPrefixer({
             cascade: false
         }))
         .pipe(gulp.dest('stylesheets'))
-        .pipe(reload({stream: true, once: true}));
+        .pipe(browserSync.stream())
+    ;
 }
 
-gulp.task('compass', function () {
-    compass('production');
+gulp.task('compass:prod', function () {
+    return compass('production');
 });
 
 gulp.task('compass:dev', function () {
-    compass('development');
+    return compass('development');
 });
 
-gulp.task('browser-sync', function () {
-    browserSync({
+gulp.task('browser-sync', function (done) {
+    browserSync.init({
         port: 3001,
-        proxy: "127.0.0.1:3000"
+        proxy: '127.0.0.1:3000'
     });
+    done();
 });
 
-gulp.task('browser-sync:reload', function () {
-    browserSync.reload();
-});
+gulp.task('debug', gulp.series('compass:dev', 'browser-sync', function () {
+    gulp.watch('sass/**/*.scss', gulp.task('compass:dev'));
+}));
 
-gulp.task('debug', ['compass:dev', 'browser-sync'],
-    function () {
-        gulp.watch('sass/**/*.scss', ['compass:dev']);
-    }
-);
-
-gulp.task('default', ['compass']);
+gulp.task('default', gulp.series('compass:prod'));
