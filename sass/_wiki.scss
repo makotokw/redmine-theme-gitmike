@@ -1,3 +1,5 @@
+$wiki-padding: 8px !default;
+
 // wiki
 .controller-wiki {
   div#content {
@@ -5,7 +7,7 @@
       margin-top: 3px;
     }
     & > div.wiki {
-      padding: 0 8px 8px 8px;
+      padding: 0 $wiki-padding $wiki-padding $wiki-padding;
     }
   }
 }
@@ -155,8 +157,8 @@ div.wiki {
       font-weight: bold;
     }
     th, td {
-      padding: 6px 13px;
       border: 1px solid #ddd;
+      padding: 6px 13px;
     }
     tr {
       background-color: #fff;
@@ -167,9 +169,9 @@ div.wiki {
     }
 
     img {
-      max-width: 100%;
-      box-sizing: content-box;
       background-color: #fff;
+      box-sizing: content-box;
+      max-width: 100%;
     }
   }
 
@@ -208,13 +210,27 @@ div.wiki {
     border-bottom: 1px solid #eee;
     overflow: visible;
     &::before {
-      display: table;
       content: "";
+      display: table;
     }
     &::after {
-      display: table;
       clear: both;
       content: "";
+      display: table;
+    }
+  }
+}
+
+// wiki-preview since Redmine 4
+.tabular {
+  .jstEditor {
+    .wiki-preview {
+      padding: $wiki-padding;
+      width: auto;
+
+      p {
+        padding: 0 !important;
+      }
     }
   }
 }

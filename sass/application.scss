@@ -2,7 +2,6 @@
 
 @import 'themeheader';
 @import 'variables';
-@import 'compass/css3';
 @import 'mixins';
 
 //@import 'ja';
@@ -340,6 +339,7 @@ img.gravatar {
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
 }
 
+@import 'tabs';
 @import 'wiki';
 @import 'projects';
 
