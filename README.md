@@ -45,6 +45,7 @@ GNU General Public License (GPL) Version 2
 
 ## Change Log
 
+* **1.2.0** (2019/10/01): Support Redmine 4.0
 * **1.1.1** (2017/12/30): Fixed issue #36 for Redmine 3.4 and fixed #38 for Easy Gantt plugin
 * **1.1.0** (2016/10/27): Fixed some issues #31 #32 (from @addow) and improved wiki to be close to GitHub
 * **1.0.9** (2016/07/10): Fixed some issues #27 #28 for Redmine 3.3
