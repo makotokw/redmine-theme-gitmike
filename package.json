@@ -13,10 +13,14 @@
   },
   "homepage": "https://github.com/makotokw/redmine-theme-gitmike",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
-    "github-markdown-css": "^3.0.1",
+    "browser-sync": "^2.26.14",
+    "github-markdown-css": "^4.0.0",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.0",
-    "gulp-compass": "^2.1.0"
-  }
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0"
+  },
+  "browserslist": [
+    "defaults"
+  ]
 }
