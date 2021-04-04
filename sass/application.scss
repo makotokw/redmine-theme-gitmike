@@ -4,8 +4,6 @@
 @import 'variables';
 @import 'mixins';
 
-//@import 'ja';
-
 body {
   color: $text-color;
   background-color: $background-color;
@@ -86,10 +84,7 @@ div {
   }
   &#content > div.flash {
     &:first-child {
-      border-top-left-radius: 4px;
-      border-top-right-radius: 4px;
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border-radius: 4px 4px 0 0;
     }
     border: 0 solid;
     padding: 10px 35px 10px;
@@ -370,10 +365,10 @@ div.tooltip:hover span.tip {
 
 table.progress td {
   &.closed {
-    background: #AECCD7 none repeat scroll 0%;
+    background: #AECCD7 none repeat scroll 0;
   }
   &.done {
-    background: #EAF2F5 none repeat scroll 0%;
+    background: #EAF2F5 none repeat scroll 0;
   }
 }
 
@@ -469,7 +464,6 @@ span {
     display: inline-block;
     position: relative;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 14px;
     padding: 4px 6px 4px !important;
     background: black url(../images/dark-overlay.png) repeat-x scroll 0 0;
