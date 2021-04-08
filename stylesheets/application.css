@@ -127,21 +127,22 @@ div.filters h2 .scope_title a {
   color: #444;
 }
 
-div#content {
-  margin-right: 15px;
-  width: auto;
-}
-
-div#main.nosidebar div#content {
-  margin-right: 0;
-}
-
 #sidebar {
   background: whiteSmoke;
   border: 1px solid #ddd;
   zoom: 1;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+div#content {
+  margin-right: 15px;
+  width: auto;
+  padding: 10px 16px 10px 16px;
+}
+
+#main.nosidebar div#content {
+  margin-right: 0;
 }
 
 div#content > h2, div#content h2.contacts_header {
@@ -151,7 +152,7 @@ div#content > h2, div#content h2.contacts_header {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding: 8px 20px;
-  margin: -6px -10px 10px;
+  margin: -10px -16px 10px;
 }
 
 div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-message > h2, div#content > #add-document > h2 {
@@ -161,7 +162,11 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   padding: 8px 20px;
-  margin: -6px -10px 10px;
+  margin: -10px -16px 10px;
+}
+
+div#content > div.contextual {
+  margin-right: 5px;
 }
 
 .controller-boards.action-index #add-message {
@@ -176,18 +181,6 @@ div#content > div.filters h2, div#content > #add-news > h2, div#content > #add-m
   border-bottom: 1px solid #AECCD7;
 }
 
-.controller-timelog.action-index div#content h2, .controller-time_entry_reports.action-report div#content h2, .controller-boards.action-show div#content h2, .controller-messages.action-show div#content h2, .controller-boards.action-show div#content div#add-message h2 {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-top: 1px solid #AECCD7;
-  /*padding: 9px 20px 12px;*/
-  margin: -2px -10px 10px;
-}
-
-.controller-timelog.action-index div#content .contextual, .controller-time_entry_reports.action-report div#content .contextual {
-  margin-top: 50px;
-}
-
 #add-news, #add-message, #add-document {
   margin-bottom: 20px;
 }
@@ -199,11 +192,6 @@ div#content h2.contacts_header {
 
 p.breadcrumb {
   margin: 4px 0 14px 0;
-}
-
-div#content > div.contextual {
-  margin-top: 10px;
-  margin-right: 10px;
 }
 
 #roadmap {
