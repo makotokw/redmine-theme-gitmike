@@ -84,15 +84,14 @@ div {
   }
   &#content > div.flash {
     &:first-child {
+      border-width: 0 0 1px 0;
       border-radius: 4px 4px 0 0;
+      margin: $negative-margin-on-content;
     }
-    border: 0 solid;
     padding: 10px 35px 10px;
-    margin: -6px -10px 6px -10px;
     background-position-x: 12px !important;
     background-position-y: 9px !important;
     position: relative;
-    border-bottom: 1px solid #AECCD7;
   }
 }
 
@@ -135,7 +134,7 @@ div.filters {
 div#content {
   margin-right: 15px;
   width: auto;
-  padding: 10px 16px;
+  padding: $content-padding;
 
   #main.nosidebar & {
     margin-right: 0;
@@ -148,8 +147,7 @@ div#content {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 8px 20px;
-    // negative mgrgin for fitting parent (#content)
-    margin: -10px -16px 20px;
+    margin: $negative-margin-on-content;
     &.inline-flex {
       border: none;
       background: none;
@@ -165,8 +163,7 @@ div#content {
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       padding: 8px 20px;
-      // negative mgrgin for fitting parent (#content)
-      margin: -10px -16px 10px;
+      margin: $negative-margin-on-content;
     }
   }
   > div.contextual {
