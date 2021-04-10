@@ -135,7 +135,7 @@ div.filters {
 div#content {
   margin-right: 15px;
   width: auto;
-  padding: 10px 16px 10px 16px;
+  padding: 10px 16px;
 
   #main.nosidebar & {
     margin-right: 0;
@@ -145,11 +145,17 @@ div#content {
     border-bottom: 1px solid #d8e6ec;
     background: #E6F1F6;
     text-shadow: 0 1px white;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
     padding: 8px 20px;
     // negative mgrgin for fitting parent (#content)
-    margin: -10px -16px 10px;
+    margin: -10px -16px 20px;
+    &.inline-flex {
+      border: none;
+      background: none;
+      // negative mgrgin for parent (#content)
+      margin: -10px -8px 10px -16px;
+    }
   }
   > {
     div.filters h2, #add-news > h2, #add-message > h2, #add-document > h2 {
