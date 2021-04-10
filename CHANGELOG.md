@@ -1,10 +1,12 @@
 
-## 1.2.1 (yyyy-mm-dd)
+## 1.2.1 (2021-04-10)
 
+  - Support Redmine 4.2
   - Switched from Ruby Sass and Compass to [node-sass](https://github.com/sass/node-sass) 
 
-Bugfixes:
+Bugfixes: 
   - Fixed issue of huge left 300px padding #43
+  - Fixed issue of inline-flex header #44
   - Fixed issue #42 for select_to_select2 plugin
 
 ## 1.2.0 (2019-10-01)
