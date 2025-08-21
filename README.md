@@ -30,12 +30,17 @@ git clone https://github.com/makotokw/redmine-theme-gitmike.git gitmike
 ## Development
 
 ```
+# Redmine 5.x or earliar
 cd redmine/public/theme
+# Redmine 6 or later
+#cd redmine/theme
 git clone https://github.com/makotokw/redmine-theme-gitmike.git gitmike
 cd gitmike
-npm install -g gulp-cli
 yarn
-gulp debug
+# Start watch mode
+yarn dev
+# Or build once for production
+yarn build
 ```
 
 ## License

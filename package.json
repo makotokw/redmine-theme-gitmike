@@ -8,19 +8,21 @@
   },
   "author": "Makoto Kawasaki",
   "license": "GPL-2.0",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "bugs": {
     "url": "https://github.com/makotokw/redmine-theme-gitmike/issues"
   },
   "homepage": "https://github.com/makotokw/redmine-theme-gitmike",
-  "devDependencies": {
-    "browser-sync": "^2.26.14",
-    "github-markdown-css": "^4.0.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.1.0",
-    "node-sass": "^5.0.0"
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
   },
-  "browserslist": [
-    "defaults"
-  ]
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "sass": "^1.77.0",
+    "vite": "^5.4.0"
+  }
 }
