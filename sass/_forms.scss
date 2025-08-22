@@ -1,3 +1,4 @@
+@use "sass:color";
 
 // Buttons
 
@@ -8,7 +9,7 @@ $grayDark:              #333 !default;
 $gray:                  #555 !default;
 $grayLight:             #999 !default;
 $btnBackground: $grayLight;
-$btnBackgroundHighlight: lighten($btnBackground, 10%);
+$btnBackgroundHighlight: color.adjust($btnBackground, $lightness: 10%);
 $btnBorder: #ddd;
 
 @mixin buttonBackground($startColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
@@ -21,13 +22,13 @@ $btnBorder: #ddd;
   &:hover, &:focus, &:active, &.active, &.disabled, &[disabled] {
     color: $textColor;
     background-color: $endColor;
-    *background-color: darken($endColor, 5%);
+    *background-color: color.adjust($endColor, $lightness: -5%);
   }
 
 // IE 7 + 8 can't handle box-shadow to show active, so we darken a bit ourselves
   &:active,
   &.active {
-    background-color: darken($endColor, 10%) \9;
+    background-color: color.adjust($endColor, $lightness: -10%) \9;
   }
 }
 
@@ -45,7 +46,7 @@ $btnBorder: #ddd;
   background-image: linear-gradient(#fafafa, #eaeaea);
   border-radius: 3px;
   border: 1px solid #ddd;
-  border-bottom-color: darken(#ddd, 10%);
+  border-bottom-color: color.adjust(#ddd, $lightness: -10%);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   vertical-align: middle;
   cursor: pointer;
@@ -93,7 +94,7 @@ $btnBorder: #ddd;
   @include buttonBackground($btnBackground, $btnBackgroundHighlight, $grayDark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid $btnBorder;
   *border: 0; // Remove the border to prevent IE7's black border on input:focus
-  border-bottom-color: darken($btnBorder, 10%);
+  border-bottom-color: color.adjust($btnBorder, $lightness: -10%);
   border-radius: 3px;
   @include ie7-restore-left-whitespace(); // Give IE7 some love
   box-shadow: inset 0 1px 0 rgba(255,255,255,.2), 0 1px 2px rgba(0,0,0,.05);

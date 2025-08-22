@@ -1,12 +1,12 @@
-@import url(../../../stylesheets/application.css);
 /*!
- * gitmike
- * This is github-like theme for Redmine.
- * It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
- * @version 1.2.1
- * @see https://github.com/makotokw/redmine-theme-gitmike
- * @license GPL3 License
- */
+* gitmike
+* This is github-like theme for Redmine.
+* It is based on A1 theme version 1.0.3 by Kirill Bezrukov www.redminecrm.com.
+* @version 1.2.1
+* @see https://github.com/makotokw/redmine-theme-gitmike
+* @license GPL3 License
+*/
+@import url(../../../stylesheets/application.css);
 body {
   color: #333;
   background-color: white;
@@ -38,14 +38,14 @@ tt, code, pre {
 }
 
 #header > h1 {
-  background: url(../images/logo.png) no-repeat 10px 5px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8wOC8xMtgzu/EAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAADKklEQVRIicXXT2hcVRTH8c/MRJSCFdFiXAhBBYOiJr1DIZjiH4rWIq3opl2YZXctLtzYFP/ShaKIFASzUOjGLkqlG1G7CaYSqHPjiAqVgu1GKNRNGvwDOhkX776ZNy8TkozVHBjue/fe9/ved+fcc86rtNttm2HVTaFiKL+oVCqrThobG6vUarUJPIdJjOKWNLyICziH061Wa77ZbK7YxvLOVvKO1cAhhD04hrF1vkwT0zHGzwYChxBuxgz2l4SvJfEr6X44LWprad5JHIwxLq0bHEIYxpd4sDD3DI5jNsbYKi2yhsdwCPsKQ9/jyRjjlTXB6U2/LkAvYyrGOBdCuDvG+HMI4TBew9/4AO/iN9yPW3ECIwX4I41GY6kI7ufVMwXoAnYk6BDOhhBO4f0E2IZXcRFnsSvGOIcd6VlJa6YM6QEnR8r/08vYHWO8mu634HY832exd+AJbIf0zO6kAfvr9fqevuDx8fGKzHtzmypA4RUrHahsL4QQHi/Apwpjx+r1eseROuBqtTqhe2TOpC0DIYT7cHgNaG4fhRC2JPiczCkl7YkVYFlwyO14Sewt3LBO8AiOrKLVYRTBk6m9htm8M4QwqfeIrMdeCiHck65nk2aR0QMeTW2zdE6PbhAKN8q8XdJqlhg94Dz25hFJCGEUTw0AhgMhhG0lzZyxZnZ6ZkAoWQLau9pgEbyY2uFC34R/Z4+WNHNGD/hCasdS7KUb9ga1h5NWfkxzRg/4XGq3ygI+1PDHgNBPcWfSygNPzugBny5cH0rtIj4eEPwefsKL/RgdcLvdntd1+30hhJ0J/A7+2iB0QZbhhnQdtIn5FeCFhYU2pgsPn8BIjPESXt4A9EdZwLkNDxX6pxuNRicp98vHn+hmqN8xsry8/Gu1Wj2KN9aAtnCvLDd/LmUrnGw0GgeKE/ud44Oy5E2WCs9Xq9XJGOObsq3/Kv2u4k98gw8xh+9wF84XoBeTZo9ttPTZhaeLmSvNr8mc6dkEzu0X7IwxXtposTePB0qLXcK3/otir7SAvXjd/1XeFq1Q0L+Nm2QOVC7of8AXrVbr1HUp6K+XlcGb9u30DyeRLmJ/gl4UAAAAAElFTkSuQmCC) no-repeat 10px 5px;
   padding: 5px 45px;
   color: #393939;
 }
 
-@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
   #header > h1 {
-    background: url(../images/logo@2x.png) no-repeat 10px 5px;
+    background: url(data:image/png;base64,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) no-repeat 10px 5px;
     background-size: 30px 30px;
   }
 }
@@ -74,7 +74,7 @@ tt, code, pre {
   font-weight: bold;
   padding: 5px;
   margin-right: 0;
-  transition: color .15s ease-in;
+  transition: color 0.15s ease-in;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
@@ -412,7 +412,7 @@ table.list td {
   padding: 4px;
 }
 
-table.list input[type="checkbox"] {
+table.list input[type=checkbox] {
   margin-top: 6px;
 }
 
@@ -438,6 +438,7 @@ table.list tr.issue a {
 /*tr.odd {background-color: transparent;}
 tr.even {background-color: transparent;}
 table.list th {background-color: transparent;}*/
+
 tr.odd.priority-highest, table.list tbody tr.odd.priority-highest:hover {
   color: #900;
   font-weight: bold;
@@ -568,7 +569,8 @@ tr.odd.priority-lowest td, tr.even.priority-lowest td {
 /*input[type="button"], input[type="submit"], input[type="reset"] { background-color: #f2f2f2; color: #222222; border: 1px outset #cccccc; }
 input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover { background-color: #ccccbb; }
 */
-.button, input[type="submit"] {
+
+.button, input[type=submit] {
   position: relative;
   display: inline-block;
   padding: 5px 11px;
@@ -581,34 +583,33 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
   background-image: linear-gradient(#fafafa, #eaeaea);
   border-radius: 3px;
   border: 1px solid #ddd;
-  border-bottom-color: #c4c4c4;
+  border-bottom-color: rgb(195.5, 195.5, 195.5);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
   vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   -webkit-touch-callout: none;
   -webkit-appearance: none;
 }
 
-.button:hover, input:hover[type="submit"] {
+.button:hover, input[type=submit]:hover {
   text-decoration: none;
   background-color: #dadada;
   background-image: linear-gradient(#eaeaea, #dadada);
   border-color: #ccc #ccc #b5b5b5;
 }
 
-.button:active, input:active[type="submit"] {
+.button:active, input[type=submit]:active {
   background-color: #dadada;
   background-image: none;
   border-color: #b5b5b5;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
 }
 
-.button:disabled, input:disabled[type="submit"], .button:disabled:hover, input:disabled:hover[type="submit"], .button[disabled], input[disabled][type="submit"], .button[disabled]:hover, input[disabled]:hover[type="submit"] {
-  opacity: .5;
+.button:disabled, input[type=submit]:disabled, .button:disabled:hover, .button[disabled], input[disabled][type=submit], .button[disabled]:hover {
+  opacity: 0.5;
   color: #666;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
   background-image: none;
@@ -627,31 +628,30 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
   cursor: pointer;
   color: #333;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #a3a3a3;
-  background-image: linear-gradient(to bottom, #999, #b3b3b3);
+  background-color: rgb(163.2, 163.2, 163.2);
+  background-image: linear-gradient(to bottom, #999, rgb(178.5, 178.5, 178.5));
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF999999', endColorstr='#FFB3B3B3', GradientType=0);
-  border-color: #b3b3b3 #b3b3b3 #8c8c8c;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FF999999", endColorstr="#FFB3B3B3", GradientType=0);
+  border-color: rgb(178.5, 178.5, 178.5) rgb(178.5, 178.5, 178.5) rgb(140.25, 140.25, 140.25);
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #b3b3b3;
-  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+  *background-color: rgb(178.5, 178.5, 178.5); /* Darken IE7 buttons by default so they stand out more given they won't have borders */
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   border: 1px solid #ddd;
   *border: 0;
-  border-bottom-color: #c4c4c4;
+  border-bottom-color: rgb(195.5, 195.5, 195.5);
   border-radius: 3px;
-  *margin-left: .3em;
+  *margin-left: 0.3em;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
   color: #333;
-  background-color: #b3b3b3;
-  *background-color: #a6a6a6;
+  background-color: rgb(178.5, 178.5, 178.5);
+  *background-color: rgb(165.75, 165.75, 165.75);
 }
 
 .btn:active, .btn.active {
-  background-color: #999999 \9;
+  background-color: #999999 \9 ;
 }
 
 .btn:first-child {
@@ -662,7 +662,7 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
   color: #333;
   text-decoration: none;
   background-position: 0 -15px;
-  transition: background-position .1s linear;
+  transition: background-position 0.1s linear;
 }
 
 .btn:focus {
@@ -680,11 +680,14 @@ input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hove
 .btn.disabled, .btn[disabled] {
   cursor: default;
   background-image: none;
-  opacity: .65;
+  opacity: 0.65;
   box-shadow: none;
 }
 
-input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], input.date, textarea, select {
+input[type=text], input[type=password], input[type=email], input[type=number], input[type=tel], input[type=url],
+input.date,
+textarea,
+select {
   outline: none;
   padding: 3px 4px;
   color: #333;
@@ -695,11 +698,17 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
   vertical-align: middle;
 }
 
-#content input[type="text"], #content input[type="password"], #content input[type="email"], #content input[type="number"], #content input[type="tel"], #content input[type="url"], #content input.date, #content textarea, #content select {
+#content input[type=text], #content input[type=password], #content input[type=email], #content input[type=number], #content input[type=tel], #content input[type=url],
+#content input.date,
+#content textarea,
+#content select {
   background-color: #fafafa;
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="url"]:focus, input.date:focus, textarea:focus, select:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=number]:focus, input[type=tel]:focus, input[type=url]:focus,
+input.date:focus,
+textarea:focus,
+select:focus {
   border-color: #51a7e8;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(81, 167, 232, 0.5);
 }
@@ -767,7 +776,7 @@ option {
   background-color: #fff;
   border: 1px solid #ddd;
   border-top: 1px solid #CDCDCD;
-  box-shadow: 0 1px 0 #F1F1F1,inset 0 1px 1px #E0E0E0;
+  box-shadow: 0 1px 0 #F1F1F1, inset 0 1px 1px #E0E0E0;
   border-radius: 3px;
   box-sizing: content-box;
   color: #333;
@@ -1080,6 +1089,7 @@ table.progress td.done {
 }
 
 /* Modal form*/
+
 div.modal {
   border-radius: 8px;
   border: 1px solid #CCC;
@@ -1207,9 +1217,9 @@ span.tag a, span.deal-status {
   text-align: center;
   border-radius: 14px;
   padding: 4px 6px 4px !important;
-  background: black url(../images/dark-overlay.png) repeat-x scroll 0 0;
+  background: black url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAiCAYAAACeLbMRAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFlJREFUeNpsjbEKACEMQ4MgLi5d/IQe3P//lVOHUu0klOM85JZHEkgCVWWIyIXeOyd3R5pzPtjWzJDGGF+1EdkfjsbRjeVQ7xFaawwiYtRaGaWUGzlnXgIMAI4uVjA9/xwHAAAAAElFTkSuQmCC) repeat-x scroll 0 0;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: inset 0 1px 0 hsla(0, 100%, 100%, 0.3);
 }
 
 span.tag a:hover {
@@ -1300,6 +1310,7 @@ a.buy-button.blue {
   redmine's body is set to min-width: 900px
   add first breakpoint here and start adding responsiveness
 */
+
 @media all and (max-width: 899px) {
   #main {
     margin: 0;
@@ -1308,7 +1319,8 @@ a.buy-button.blue {
     margin-top: 0;
     margin-right: 0;
   }
-  div#content > h2, div#content h2.contacts_header {
+  div#content > h2,
+  div#content h2.contacts_header {
     background-color: #fafafa;
     border-bottom: 1px solid #eee;
   }
