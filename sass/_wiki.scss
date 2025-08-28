@@ -1,31 +1,18 @@
 $wiki-padding: 8px !default;
 
-// wiki
-.controller-wiki {
-  div#content {
-    & > div.contextual {
-      margin-top: 3px;
-    }
-    & > div.wiki {
-      padding: 0 $wiki-padding $wiki-padding $wiki-padding;
-    }
-  }
-}
-
 div.wiki {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
   color: #333;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   word-wrap: break-word;
 
-  &:before {
+  &::before {
     display: table;
     content: "";
   }
 
-  &:after {
+  &::after {
     display: table;
     clear: both;
     content: "";
@@ -48,9 +35,6 @@ div.wiki {
     }
   }
 
-  p {
-  }
-
   p, blockquote, ul, ol, dl, table, pre {
     margin-top: 0;
     margin-bottom: 16px;
@@ -58,13 +42,16 @@ div.wiki {
 
   ul, ol {
     padding-left: 2em;
+
     ul, ol {
       margin-top: 8px;
       margin-bottom: 8px;
+
       ol {
         //list-style-type: lower-alpha;
       }
     }
+
     ol {
       //list-style-type: lower-roman;
     }
@@ -104,14 +91,17 @@ div.wiki {
     font-size: 1.5em;
     line-height: 1.43;
   }
+
   h4 {
     //font-size: 14px;
     font-size: 1.25em;
   }
+
   h5 {
     //font-size: 12px;
     font-size: 1em;
   }
+
   h6 {
     //font-size: 11px;
     font-size: 1em;
@@ -132,6 +122,7 @@ div.wiki {
     &>:first-child {
       margin-top: 0;
     }
+
     &>:last-child {
       margin-bottom: 0;
     }
@@ -156,13 +147,16 @@ div.wiki {
     th {
       font-weight: bold;
     }
+
     th, td {
       border: 1px solid #ddd;
       padding: 6px 13px;
     }
+
     tr {
       background-color: #fff;
       border-top: 1px solid #ccc;
+
       &:nth-child(2n) {
         background-color: #f8f8f8;
       }
@@ -209,10 +203,12 @@ div.wiki {
     border: 0;
     border-bottom: 1px solid #eee;
     overflow: visible;
+
     &::before {
       content: "";
       display: table;
     }
+
     &::after {
       clear: both;
       content: "";
@@ -234,6 +230,19 @@ div.wiki {
     }
   }
 }
+
+.controller-wiki {
+  div#content {
+    & > div.contextual {
+      margin-top: 3px;
+    }
+
+    & > div.wiki {
+      padding: 0 $wiki-padding $wiki-padding;
+    }
+  }
+}
+
 
 
 

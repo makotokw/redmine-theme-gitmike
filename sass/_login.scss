@@ -6,6 +6,7 @@ body.action-login {
     border: 0;
     box-shadow: none;
   }
+
   #login-form table {
     padding: 3em;
     background: white;
@@ -26,7 +27,8 @@ body.action-login {
   }
 }
 
-.controller-account.action-login div.flash, div.wiki div.flash {
+div.wiki div.flash,
+.controller-account.action-login div.flash {
   box-shadow: 0 0 3px #CCC;
   border: 1px solid #ddd !important;
   border-radius: 8px;
@@ -37,7 +39,7 @@ body.action-login {
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   line-height: 1.3em;
-  padding: 6px 10px 6px 10px;
+  padding: 6px 10px;
 }
 
 #sidebar a.selected {

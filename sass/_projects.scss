@@ -1,7 +1,5 @@
 #projects-index {
-
   ul.projects {
-
     // sub projects
     ul.projects {
       border-left: 3px solid #E0E0E0;
@@ -9,12 +7,12 @@
 
     &.root {
       padding: 10px;
-      @media (min-width: 900px) {
 
+      @media (width >= 900px) {
         li.root {
           border: 1px solid #DDD;
           border-radius: 4px;
-          box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
           display: inline-block;
           margin: 0 0 10px;
           padding: 5%;

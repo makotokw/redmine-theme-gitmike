@@ -18,6 +18,7 @@
     background-image: none;
   }
 }
+
 .gantt {
   .easy-gantt__menu {
     .gantt-menu-problems-count.gantt-with-problems {
@@ -25,15 +26,16 @@
       line-height: 24px;
     }
   }
+
   .gantt-menu-button {
     background-repeat: no-repeat;
     text-shadow: none;
-    &.active {
-    }
+
     &.button-positive {
       background-color: #4ebf67;
       border-color: #338d47;
     }
+
     &#button_sample {
       background-image: none;
     }

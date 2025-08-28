@@ -21,51 +21,53 @@ tt, code, pre {
 }
 
 #header {
-  @include github-pagehead();
-  padding: 4px 8px 10px 6px;
+  @include github-pagehead;
   height: auto;
+  padding: 10px 8px 10px 10px;
+  background-position-y: 11%;
+
   a {
     color: $link-color;
   }
+
   > h1 {
-    background: url(../images/logo.png) no-repeat 10px 5px;
+    background: url("../images/logo.png") no-repeat 10px 5px;
     padding: 5px 45px;
     color: #393939;
   }
 }
 
-@media only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min-device-pixel-ratio: 2) {
+@media only screen and (resolution >= 2dppx),
+only screen and (resolution >= 192dpi) {
   #header {
     > h1 {
-      background: url(../images/logo@2x.png) no-repeat 10px 5px;
+      background: url("../images/logo@2x.png") no-repeat 10px 5px;
       background-size: 30px 30px;
     }
   }
 }
 
 #main {
-  margin: 15px 15px 0 15px;
+  margin: 15px 15px 0;
   background-color: $background-color;
 }
 
 #top-menu {
   font: $base-font;
   padding: 10px 10px 2px 20px;
-  @include github-header();
+  @include github-header;
 
   #loggedas {
     color: #222;
   }
+
   a {
     color: $text-color;
     font-weight: bold;
     padding: 5px;
     margin-right: 0;
     transition: color .15s ease-in;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
 
     &:hover {
       color: $link-color;
@@ -79,13 +81,15 @@ div {
     border: 1px solid;
     text-shadow: 0 1px white;
   }
+
   &#content > div.flash {
     &:first-child {
-      border-width: 0 0 1px 0;
+      border-width: 0 0 1px;
       border-radius: 4px 4px 0 0;
       margin: $negative-margin-on-content;
     }
-    padding: 10px 35px 10px;
+
+    padding: 10px 35px;
     background-position-x: 12px !important;
     background-position-y: 9px !important;
     position: relative;
@@ -110,22 +114,19 @@ div.flash,
   background-color: #fcf8e3;
   border: 1px solid #fbeed5;
   color: #c09853;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-}
-
-div.filters {
-  h2 .scope_title a {
-    color: #444;
-  }
+  text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
 }
 
 #sidebar {
-  background: whiteSmoke;
+  background: whitesmoke;
   border: 1px solid #ddd;
-
   zoom: 1;
   border-radius: 4px;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
+
+  h3 {
+    color: #222;
+  }
 }
 
 div#content {
@@ -145,6 +146,7 @@ div#content {
     border-top-right-radius: 4px;
     padding: 8px 20px;
     margin: $negative-margin-on-content;
+
     &.inline-flex {
       border: none;
       background: none;
@@ -152,6 +154,7 @@ div#content {
       margin: -10px -8px 10px -16px;
     }
   }
+
   > {
     div.filters h2, #add-news > h2, #add-message > h2, #add-document > h2 {
       border-bottom: 1px solid #C5D5DD;
@@ -163,6 +166,7 @@ div#content {
       margin: $negative-margin-on-content;
     }
   }
+
   > div.contextual {
     margin-right: 5px;
   }
@@ -170,6 +174,7 @@ div#content {
 
 .controller-boards.action-index #add-message {
   position: static;
+
   #message-form > p {
     position: relative;
     padding: 10px;
@@ -185,11 +190,10 @@ div#content {
 
 div#content h2.contacts_header {
   padding-bottom: 10px;
-  /* white-space: nowrap;*/
 }
 
 p.breadcrumb {
-  margin: 4px 0 14px 0;
+  margin: 4px 0 14px;
 }
 
 #roadmap {
@@ -197,28 +201,19 @@ p.breadcrumb {
 }
 
 p.subtitle {
-  margin: 0 0 12px 0;
+  margin: 0 0 12px;
 }
 
 .contextual a {
   color: #888;
+
   &:link, &:visited {
     color: #888;
   }
+
   &:hover, &:visited:hover {
     color: #333;
   }
-}
-
-div.filters h2 .scope_title a {
-  color: #222;
-  text-decoration: none;
-}
-
-#header {
-  padding-top: 10px;
-  padding-left: 10px;
-  background-position-y: 11%;
 }
 
 div#welcome-store-content {
@@ -230,7 +225,7 @@ div#welcome-store-content {
 #content, #main.nosidebar #content {
   background: #fff;
   border: 1px solid #ddd;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
   border-radius: 4px;
 }
 
@@ -243,26 +238,24 @@ a {
   }
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 div {
   &.issue {
     background: #FFD;
     padding: 20px;
-    margin-bottom: 6px;
     border: 1px solid #ddd;
-    margin: -11px -11px 15px -11px;
+    margin: -11px -11px 15px;
+
     &.tooltip {
       padding: 6px;
-      margin: 0 0 6px 0;
+      margin: 0 0 6px;
     }
   }
+
   &.contact.details, &.deal.details {
     padding: 15px !important;
     margin: -11px -11px 6px;
   }
-}
-
-#sidebar h3 {
-  color: #222;
 }
 
 #footer {
@@ -275,7 +268,7 @@ div {
 
   .bgl {
     .bgr {
-      &:after {
+      &::after {
         content: " and gitmike theme";
       }
     }
@@ -292,10 +285,12 @@ h2, h3, h4 {
   h1, h2, h3 {
     border-bottom: 0;
   }
+
   &.wiki-page {
     h1 {
       border-bottom: 1px solid #ccc;
     }
+
     > h2 {
       border-bottom: 1px solid #ccc;
       padding-bottom: 6px;
@@ -307,7 +302,6 @@ h2, h3, h4 {
 @import 'tables';
 @import 'forms';
 
-
 // Misc
 
 .box {
@@ -317,7 +311,7 @@ h2, h3, h4 {
 }
 
 img.gravatar {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
 }
 
 @import 'tabs';
@@ -330,13 +324,16 @@ div.journal .details {
 
 #context-menu {
   box-shadow: 0 0 3px #ccc;
+
   ul li ul {
     box-shadow: 0 0 3px #ccc;
   }
+
   li:hover {
     border: 1px solid #eee !important;
     background-color: #eee;
   }
+
   ul {
     border-top: 1px solid #ddd;
     border-left: 1px solid #ddd;
@@ -348,13 +345,14 @@ div.journal .details {
 div.tooltip:hover span.tip {
   border: 1px solid #D9D9D9;
   zoom: 1;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
 }
 
 table.progress td {
   &.closed {
     background: #AECCD7 none repeat scroll 0;
   }
+
   &.done {
     background: #EAF2F5 none repeat scroll 0;
   }
@@ -371,10 +369,11 @@ div.modal {
     background: transparent;
     color: inherit;
   }
+
   border-radius: 8px;
   border: 1px solid #CCC;
   padding: 30px 42px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
 }
 
 #modalbg {
@@ -386,20 +385,31 @@ div.modal {
 
 // Contacts
 
-div.filters .live_search {
-  margin-left: 11px !important;
+div.filters {
+  h2 .scope_title a {
+    color: #222;
+    text-decoration: none;
+  }
+
+  .live_search {
+    margin-left: 11px !important;
+    letter-spacing: 0;
+  }
 }
 
 input.live_search_field {
   border-radius: 12px;
-  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 4px rgb(0 0 0 / 15%);
   outline: none;
   padding: 3px 10px !important;
   border: 1px solid #C3C3C3;
 }
 
-.live_search input.live_search_field {
-  font-size: 12px !important;
+.live_search {
+  input.live_search_field {
+    margin-top: -6px;
+    font-size: 12px !important;
+  }
 }
 
 label#search_overlabel {
@@ -414,6 +424,7 @@ table.contacts.index tbody tr {
   &:hover {
     background-color: #EFF5F8 !important;
   }
+
   &.context-menu-selection:hover {
     background-color: #507AAA !important;
   }
@@ -423,59 +434,61 @@ h2 span.tag {
   letter-spacing: 0;
   top: -4px;
   position: relative;
+
   a {
     margin-bottom: -1px;
   }
 }
 
-div.filters .live_search {
-  letter-spacing: 0;
-}
-
-label#search_overlabel {
-  margin-top: -4px;
-}
-
-.live_search input.live_search_field {
-  margin-top: -6px;
-}
-
 span {
   &.tag a, &.deal-status {
     color: white;
-    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 1px rgb(0 0 0 / 25%);
     font-size: 9px !important;
     line-height: 1 !important;
-    margin: 2px 0 2px 0;
+    margin: 2px 0;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     position: relative;
     text-align: center;
     border-radius: 14px;
-    padding: 4px 6px 4px !important;
-    background: black url(../images/dark-overlay.png) repeat-x scroll 0 0;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 hsla(0, 100%, 100%, 0.3);
+    padding: 4px 6px !important;
+    background: black url("../images/dark-overlay.png") repeat-x scroll 0 0;
+    border: 1px solid rgb(0 0 0 / 20%);
+    box-shadow: inset 0 1px 0 hsl(0deg 100% 100% / 30%);
   }
+
   &.tag a:hover {
     text-shadow: none;
   }
+
   &.deal-status a:hover {
     color: black;
     text-shadow: none;
   }
 }
 
+/* stylelint-disable-next-line no-duplicate-selectors */
 body {
-  &.controller-contacts #content, &.controller-notes #content, &.controller-contacts_tasks #content, &.controller-contacts_duplicates #content, &.controller-sale_funel #content, &.controller-deals #content {
+  .controller-contacts #content,
+  .controller-notes #content,
+  .controller-contacts_tasks #content,
+  .controller-contacts_duplicates #content,
+  .controller-sale_funel #content,
+  .controller-deals #content {
     margin-right: 340px;
   }
-  &.controller-contacts #sidebar, &.controller-notes #sidebar, &.controller-contacts_tasks #sidebar, &.controller-contacts_duplicates #sidebar, &.controller-sale_funel #sidebar, &.controller-deals #sidebar {
+
+  .controller-contacts #sidebar,
+  .controller-notes #sidebar,
+  .controller-contacts_tasks #sidebar,
+  .controller-contacts_duplicates #sidebar,
+  .controller-sale_funel #sidebar,
+  .controller-deals #sidebar {
     width: 300px !important;
   }
 }
-
 
 @import 'invoice';
 @import 'settings';

@@ -4,6 +4,7 @@ table.invoice-lines {
   tbody tr.line-data:hover {
     background-color: #EFF5F8 !important;
   }
+
   th {
     border: 0 !important;
   }
@@ -13,9 +14,11 @@ span.invoice-status {
   &.draft {
     background-color: #AAA !important;
   }
+
   &.sent {
     background-color: #3F8AF7 !important;
   }
+
   &.paid {
     background-color: green !important;
   }

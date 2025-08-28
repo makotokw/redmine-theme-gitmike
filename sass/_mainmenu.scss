@@ -7,17 +7,14 @@
   // overflow: hidden;
   background: #FAFAFA;
   background: linear-gradient(to bottom, #fafafa, #eaeaea);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa',endColorstr='#eaeaea')";
   border: 1px solid #EAEAEA;
   border-bottom-color: #CACACA;
   border-radius: 3px;
-
   margin-right: 0;
   position: relative;
 
   ul {
-
-    @include clearfix();
+    @include clearfix;
 
     margin-top: 0;
     padding-left: 0;
@@ -35,6 +32,7 @@
       li {
         a {
           border-bottom: none;
+
           &:hover {
             color: $link-color;
             background: none;
@@ -66,10 +64,12 @@
           background-color: #ebebeb;
           background-image: linear-gradient(#fcfcfc, #ebebeb);
           background-repeat: repeat-x;
+
           &:hover {
             color: #000;
           }
         }
+
         &:hover {
           color: $link-color;
         }

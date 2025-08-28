@@ -17,12 +17,17 @@
   "homepage": "https://github.com/makotokw/redmine-theme-gitmike",
   "scripts": {
     "dev": "vite build --watch",
-    "build": "vite build"
+    "build": "vite build",
+    "lint:scss": "stylelint sass/**/*.scss",
+    "lint:scss:fix": "stylelint sass/**/*.scss --fix"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
+    "postcss-scss": "^4.0.9",
     "sass-embedded": "^1.79.4",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard-scss": "^15.0.1",
     "vite": "^5.4.0"
   }
 }
