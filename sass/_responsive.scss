@@ -1,8 +1,9 @@
+@use 'mixins' as mixins;
+
 /*
   redmine's body is set to min-width: 900px
   add first breakpoint here and start adding responsiveness
 */
-
 @media all and (width <= 899px) {
   #main {
     margin: 0;
@@ -17,6 +18,6 @@
 
   div#content > h2,
   div#content h2.contacts_header {
-    @include github-pagehead;
+    @include mixins.github-page-head;
   }
 }

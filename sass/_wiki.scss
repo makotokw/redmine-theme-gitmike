@@ -21,7 +21,6 @@ div.wiki {
   a {
     background-color: transparent;
     text-decoration: none;
-    text-decoration-skip: objects;
 
     &:active,
     &:hover {
@@ -70,7 +69,6 @@ div.wiki {
   }
 
   h1 {
-    //font-size: 30px;
     margin-top: 0;
     padding-bottom: 0.3em;
     font-size: 2.25em;
@@ -79,7 +77,6 @@ div.wiki {
   }
 
   h2 {
-    //font-size: 21px;
     padding-bottom: 0.3em;
     font-size: 1.75em;
     line-height: 1.225;
@@ -87,18 +84,15 @@ div.wiki {
   }
 
   h3 {
-    //font-size: 16px;
     font-size: 1.5em;
     line-height: 1.43;
   }
 
   h4 {
-    //font-size: 14px;
     font-size: 1.25em;
   }
 
   h5 {
-    //font-size: 12px;
     font-size: 1em;
   }
 
@@ -141,7 +135,6 @@ div.wiki {
     border-spacing: 0;
     border-collapse: collapse;
     overflow: auto;
-    word-break: normal;
     word-break: keep-all;
 
     th {

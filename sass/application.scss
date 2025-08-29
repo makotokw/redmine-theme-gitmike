@@ -1,13 +1,18 @@
 @import 'variables';
 @import 'mixins';
 
+:root {
+  --fonts-main: $base-font-family;
+}
+
 body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
   color: $text-color;
   background-color: $background-color;
 }
 
 body, input, select, textarea, button {
-  font: $base-font;
   line-height: 1.4;
 }
 
@@ -21,7 +26,7 @@ tt, code, pre {
 }
 
 #header {
-  @include github-pagehead;
+  @include github-page-head;
   height: auto;
   padding: 10px 8px 10px 10px;
   background-position-y: 11%;
@@ -53,8 +58,7 @@ only screen and (resolution >= 192dpi) {
 }
 
 #top-menu {
-  font: $base-font;
-  padding: 10px 10px 2px 20px;
+  padding: 10px;
   @include github-header;
 
   #loggedas {

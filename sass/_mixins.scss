@@ -172,14 +172,15 @@
 
 // github
 @mixin github-header {
-  background-color: #f3f3f3;
-  background-image: linear-gradient(#f9f9f9, #f3f3f3);
+  background-color: #f4f6f8;
+  background-image: linear-gradient(#f3f5f7, #f4f6f8);
   background-repeat: repeat-x;
   text-shadow: 0 1px 0 #fff;
   border-bottom: 1px solid #e5e5e5;
 }
 
-@mixin github-pagehead {
-  background-color: #fafafa;
+@mixin github-page-head {
+  background: #f6f8fa;
+  box-shadow: inset 0 -1px 0 0 rgb(209 217 224);
   border-bottom: 1px solid #eee;
 }
