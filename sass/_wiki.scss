@@ -5,7 +5,7 @@ div.wiki {
   color: #333;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   &::before {
     display: table;
@@ -235,7 +235,6 @@ div.wiki {
     }
   }
 }
-
 
 
 

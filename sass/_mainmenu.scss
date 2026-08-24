@@ -14,11 +14,11 @@
   position: relative;
 
   ul {
-    @include clearfix;
-
     margin-top: 0;
     padding-left: 0;
     background-color: transparent !important;
+
+    @include clearfix;
 
     .menu-children {
       background: #fff !important;

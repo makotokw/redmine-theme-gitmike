@@ -2,7 +2,7 @@
 @import 'mixins';
 
 :root {
-  --fonts-main: $base-font-family;
+  --fonts-main: #{$base-font-family};
 }
 
 body {
@@ -87,16 +87,16 @@ div {
   }
 
   &#content > div.flash {
+    padding: 10px 35px;
+    background-position-x: 12px !important;
+    background-position-y: 9px !important;
+    position: relative;
+
     &:first-child {
       border-width: 0 0 1px;
       border-radius: 4px 4px 0 0;
       margin: $negative-margin-on-content;
     }
-
-    padding: 10px 35px;
-    background-position-x: 12px !important;
-    background-position-y: 9px !important;
-    position: relative;
   }
 }
 
@@ -369,15 +369,15 @@ table.progress td {
 /* Modal form*/
 
 div.modal {
-  h3.title {
-    background: transparent;
-    color: inherit;
-  }
-
   border-radius: 8px;
   border: 1px solid #CCC;
   padding: 30px 42px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+
+  h3.title {
+    background: transparent;
+    color: inherit;
+  }
 }
 
 #modalbg {
@@ -499,4 +499,3 @@ body {
 @import 'plugins';
 @import 'store';
 @import 'responsive';
-
