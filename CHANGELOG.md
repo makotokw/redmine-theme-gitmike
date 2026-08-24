@@ -1,22 +1,24 @@
 
 ## 1.2.1 (2021-04-10)
 
+New features:
   - Support Redmine 4.2
-  - Switched from Ruby Sass and Compass to [node-sass](https://github.com/sass/node-sass) 
+  - Replaced Ruby Sass and Compass with Node Sass
 
 Bugfixes: 
-  - Fixed issue of huge left 300px padding #43
-  - Fixed issue of inline-flex header #44
+  - Fixed the issue of huge left 300 px padding #43
+  - Fixed the issue of inline-flex header #44
   - Fixed issue #42 for select_to_select2 plugin
 
 ## 1.2.0 (2019-10-01)
 
+New features:
   - Support Redmine 4.0
 
 ## 1.1.1 (2017-12-30)
 
 Bugfixes:
-  - Fixed issue #36 for Redmine 3.4 and fixed #38 for Easy Gantt plugin
+  - Fixed issue #36 for Redmine 3.4 and fixed #38 for the Easy Gantt plugin
 
 ## 1.1.0 (2016/10/27)
 
@@ -30,6 +32,7 @@ Bugfixes:
 
 ## 1.0.8 (2016-06-23)
 
+New features:
   - Support new menu item in Redmine 3.3
 
 ## 1.0.7 (2015-07-31)
@@ -65,9 +68,8 @@ Bugfixes:
 
 ## 1.0.1 (2012-09-20)
 
-  - Removed Japanese font style in master branch, and added ja branch for Japanese
+  - Removed Japanese font style in the master branch and added ja branch for Japanese
 
 ## 1.0.0 (2012-04-12)
 
   - Supported Redmine 1.3.2
-
