@@ -4,9 +4,6 @@
 ### Node ###
 node_modules
 
-### Bower ###
-bower_components/
-
 ### Sass ###
 .sass-cache
 *.css.map
@@ -20,3 +17,14 @@ bower_components/
 .DS_Store
 .AppleDouble
 .LSOverride
+
+### AI ###
+.worktrees/
+.claude/*.local.json
+.junie/memory
+.private-journal/
+.superpowers/
+*.local.md
+*.override.md
+doc/specs/
+
