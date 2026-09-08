@@ -1,0 +1,56 @@
+// Shared components
+
+.box {
+  background-color: #fcfcfc;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+img.gravatar {
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
+}
+
+#context-menu {
+  box-shadow: 0 0 3px #ccc;
+
+  ul {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+  }
+
+  ul li ul {
+    box-shadow: 0 0 3px #ccc;
+  }
+
+  li:hover {
+    border: 1px solid #eee !important;
+    background-color: #eee;
+  }
+}
+
+div.tooltip:hover span.tip {
+  border: 1px solid #D9D9D9;
+  zoom: 1;
+  box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
+}
+
+// Modal forms
+
+div.modal {
+  border-radius: 8px;
+  border: 1px solid #CCC;
+  padding: 30px 42px;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+
+  h3.title {
+    background: transparent;
+    color: inherit;
+  }
+}
+
+#modalbg {
+  background: white;
+  opacity: 0.75;
+}

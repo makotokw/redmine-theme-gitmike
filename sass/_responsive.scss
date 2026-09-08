@@ -16,8 +16,7 @@
     }
   }
 
-  div#content > h2,
-  div#content h2.contacts_header {
+  div#content > h2 {
     @include mixins.github-page-head;
   }
 }

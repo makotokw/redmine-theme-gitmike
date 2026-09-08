@@ -1,3 +1,11 @@
+// Redmine welcome store
+
+div#welcome-store-content {
+  h1, h2, h3, h4 {
+    color: #222;
+  }
+}
+
 a.buy-button.blue {
   background: #4C728A linear-gradient(to top, #4c728a 0%, #749bb4 100%) !important;
 }

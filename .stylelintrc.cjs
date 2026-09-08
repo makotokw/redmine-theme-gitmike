@@ -14,9 +14,6 @@ module.exports = {
     'selector-id-pattern': null,
     'selector-class-pattern': null,
 
-    // TODO: enable this rule
-    'no-invalid-position-at-import-rule': null,
-
     // `ignore: ['selectors-within-list']` exempts comma-separated selector
     // lists (e.g. `#errorExplanation, .nodata, .warning { ... }`) from the
     // check. This theme uses that pattern heavily to group unrelated

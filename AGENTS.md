@@ -27,13 +27,15 @@ yarn lint:scss:fix    # stylelint --fix
 
 ## Sass Structure
 
-`sass/application.scss` is the entry point. It is not a clean list of partial imports: global/base rules are written directly inline and are interleaved with `@import` statements that pull in per-area partials in a specific order (`mainmenu` -> `tables` -> `forms` -> ... -> `tabs` -> `wiki` -> `projects` -> ... -> `login` -> ... -> `invoice` -> `settings` -> `plugins` -> `store` -> `responsive`).
+`sass/application.scss` is the entry point and contains no rules of its own. It imports shared foundations first, then Redmine features, optional plugins, and responsive overrides. This order is load-bearing because it determines the cascade in the compiled CSS.
 
 When adding rules for a specific Redmine area, prefer extending the matching `_<area>.scss` partial instead of adding more inline rules to `application.scss`.
 
 - `_variables.scss`: fonts, colors, and spacing tokens used across partials.
 - `_mixins.scss`: shared mixins, including gradients, grid helpers, and GitHub-style chrome mixins such as `github-header` and `github-page-head`.
-- Other `_*.scss` files are single-purpose partials named after the Redmine feature or page they style, such as forms, tables, tabs, wiki, projects, invoice, settings, plugins, store, responsive, mainmenu, and login.
+- Other root `_*.scss` files are single-purpose partials named after a Redmine feature or shared concern, such as forms, tables, components, issues, wiki, projects, settings, responsive, mainmenu, and login.
+- `_base.scss` holds global/base rules (element defaults, layout, header, sidebar, footer, flash messages, and headings). `_components.scss` holds reusable UI such as boxes, context menus, tooltips, and modals.
+- `_plugins.scss` is the single plugin entry point. Plugin-specific rules live under `sass/plugins/`, one partial per plugin or tightly coupled plugin family.
 
 Use the modern `sass:color` module (`color.mix`, `color.adjust`) in new Sass code. Avoid deprecated global Sass color functions.
 
@@ -47,8 +49,8 @@ Notable intentional deviations:
 
 - `selector-id-pattern` and `selector-class-pattern` are disabled because this theme must target Redmine's core CSS IDs and classes, which do not follow a naming convention controlled by Gitmike.
 - `no-descending-specificity` is enabled with `ignore: ['selectors-within-list']` (this exempts comma-separated selector-list rules, which this theme uses heavily for grouped declarations, from the check).
-- A handful of remaining violations are caused by Redmine-generated fixed ID selectors (`#header`, `#top-menu`, `#main-menu`) whose higher specificity intentionally overrides the general-purpose selectors declared later in the same file — the general-purpose selector on the losing side of each comparison carries a `// stylelint-disable-next-line no-descending-specificity` comment immediately above it. **Do not "clean up" these comments or try to restructure the ID selectors that cause them** — in particular, do not wrap the ID in `:where()` to lower its specificity: that silently changes cascade behavior (a later, equal-specificity general rule starts winning over the ID selector's intended override).
-- `no-invalid-position-at-import-rule` is still disabled with a `TODO` note. Do not silently fix this in unrelated changes; it reflects a real ordering issue that needs a deliberate cleanup pass.
+- A handful of remaining violations are caused by Redmine-generated fixed ID selectors (`#header`, `#top-menu`, `#main-menu`) whose higher specificity intentionally overrides the general-purpose selectors declared later in the same partial — the general-purpose selector on the losing side of each comparison carries a `// stylelint-disable-next-line no-descending-specificity` comment immediately above it. **Do not "clean up" these comments or try to restructure the ID selectors that cause them** — in particular, do not wrap the ID in `:where()` to lower its specificity: that silently changes cascade behavior (a later, equal-specificity general rule starts winning over the ID selector's intended override). Note that `no-descending-specificity` is evaluated per file, so a comment and the higher-specificity ID rule it defends against must be in the same partial for the check to see them.
+- `no-invalid-position-at-import-rule` is enabled (inherited from `stylelint-config-standard-scss`). `sass/application.scss` must stay a pure `@import` list with no rules before the imports; add new global rules to `_base.scss` (or the matching area partial), never inline in `application.scss`.
 
 ## Verification
 

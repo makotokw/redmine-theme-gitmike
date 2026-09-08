@@ -1,0 +1,19 @@
+// Issue details and history
+
+div.journal .details {
+  padding-left: 30px;
+}
+
+table.progress td {
+  &.closed {
+    background: #AECCD7 none repeat scroll 0;
+  }
+
+  &.done {
+    background: #EAF2F5 none repeat scroll 0;
+  }
+}
+
+#history div.journal {
+  border-top: 1px solid #DDD;
+}
