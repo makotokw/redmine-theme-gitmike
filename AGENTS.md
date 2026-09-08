@@ -46,7 +46,9 @@ The Stylelint config is `.stylelintrc.cjs`, extending `stylelint-config-standard
 Notable intentional deviations:
 
 - `selector-id-pattern` and `selector-class-pattern` are disabled because this theme must target Redmine's core CSS IDs and classes, which do not follow a naming convention controlled by Gitmike.
-- `no-descending-specificity` and `no-invalid-position-at-import-rule` are disabled with a `TODO` note. Do not silently fix these in unrelated changes; they reflect real ordering issues that need a deliberate cleanup pass.
+- `no-descending-specificity` is enabled with `ignore: ['selectors-within-list']` (this exempts comma-separated selector-list rules, which this theme uses heavily for grouped declarations, from the check).
+- A handful of remaining violations are caused by Redmine-generated fixed ID selectors (`#header`, `#top-menu`, `#main-menu`) whose higher specificity intentionally overrides the general-purpose selectors declared later in the same file — the general-purpose selector on the losing side of each comparison carries a `// stylelint-disable-next-line no-descending-specificity` comment immediately above it. **Do not "clean up" these comments or try to restructure the ID selectors that cause them** — in particular, do not wrap the ID in `:where()` to lower its specificity: that silently changes cascade behavior (a later, equal-specificity general rule starts winning over the ID selector's intended override).
+- `no-invalid-position-at-import-rule` is still disabled with a `TODO` note. Do not silently fix this in unrelated changes; it reflects a real ordering issue that needs a deliberate cleanup pass.
 
 ## Verification
 

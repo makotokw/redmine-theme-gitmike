@@ -208,6 +208,7 @@ p.subtitle {
   margin: 0 0 12px;
 }
 
+// stylelint-disable-next-line no-descending-specificity
 .contextual a {
   color: #888;
 
@@ -233,6 +234,7 @@ div#welcome-store-content {
   border-radius: 4px;
 }
 
+// stylelint-disable-next-line no-descending-specificity
 a {
   color: $link-color;
 
@@ -291,6 +293,7 @@ h2, h3, h4 {
   }
 
   &.wiki-page {
+    // stylelint-disable-next-line no-descending-specificity
     h1 {
       border-bottom: 1px solid #ccc;
     }
@@ -329,6 +332,13 @@ div.journal .details {
 #context-menu {
   box-shadow: 0 0 3px #ccc;
 
+  ul {
+    border-top: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
+    border-right: 1px solid #ddd !important;
+  }
+
   ul li ul {
     box-shadow: 0 0 3px #ccc;
   }
@@ -336,13 +346,6 @@ div.journal .details {
   li:hover {
     border: 1px solid #eee !important;
     background-color: #eee;
-  }
-
-  ul {
-    border-top: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd !important;
-    border-right: 1px solid #ddd !important;
   }
 }
 
@@ -390,6 +393,7 @@ div.modal {
 // Contacts
 
 div.filters {
+  // stylelint-disable-next-line no-descending-specificity
   h2 .scope_title a {
     color: #222;
     text-decoration: none;
@@ -439,6 +443,7 @@ h2 span.tag {
   top: -4px;
   position: relative;
 
+  // stylelint-disable-next-line no-descending-specificity
   a {
     margin-bottom: -1px;
   }
@@ -463,10 +468,12 @@ span {
     box-shadow: inset 0 1px 0 hsl(0deg 100% 100% / 30%);
   }
 
+  // stylelint-disable-next-line no-descending-specificity
   &.tag a:hover {
     text-shadow: none;
   }
 
+  // stylelint-disable-next-line no-descending-specificity
   &.deal-status a:hover {
     color: black;
     text-shadow: none;

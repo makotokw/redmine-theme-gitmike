@@ -336,6 +336,9 @@ h2, h3, h4 {
   color: #4183C4;
 }
 
+table.list td {
+  padding: 4px;
+}
 table.list tbody td,
 table.list tbody tr:hover td {
   border: solid 1px #ddd;
@@ -425,9 +428,6 @@ table.list tr.even.priority-lowest td, table.list tr.even.priority-lowest:hover 
 }
 table.list tr.priority-lowest a {
   color: #559;
-}
-table.list td {
-  padding: 4px;
 }
 table.list thead th {
   border-width: 1px;
@@ -873,18 +873,18 @@ div.journal .details {
 #context-menu {
   box-shadow: 0 0 3px #ccc;
 }
+#context-menu ul {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd !important;
+  border-right: 1px solid #ddd !important;
+}
 #context-menu ul li ul {
   box-shadow: 0 0 3px #ccc;
 }
 #context-menu li:hover {
   border: 1px solid #eee !important;
   background-color: #eee;
-}
-#context-menu ul {
-  border-top: 1px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-bottom: 1px solid #ddd !important;
-  border-right: 1px solid #ddd !important;
 }
 
 div.tooltip:hover span.tip {

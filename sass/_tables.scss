@@ -1,6 +1,10 @@
 // Tables
 
 table.list {
+  td {
+    padding: 4px;
+  }
+
   tbody {
     td,
     tr:hover td {
@@ -137,10 +141,6 @@ table.list {
     &.priority-lowest a {
       color: #559;
     }
-  }
-
-  td {
-    padding: 4px;
   }
 
   thead {
