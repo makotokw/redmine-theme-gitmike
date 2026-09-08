@@ -3,9 +3,36 @@ $base-font-family: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", h
 $base-font-size: 14px;
 
 // Colors
-$link-color: #4183C4;
-$text-color: #333;
-$background-color: white;
+$color-canvas-default: #ffffff;
+$color-canvas-subtle: #f6f8fa;
+
+$color-fg-default: #1f2328;
+$color-fg-muted: #656d76;
+$color-fg-subtle: #6e7781;
+
+$color-border-default: #d0d7de;
+$color-border-muted: #d8dee4;
+
+$color-accent-fg: #0969da;
+$color-accent-emphasis: #0969da;
+$color-accent-subtle: #ddf4ff;
+$color-accent-muted: #54aeff;
+
+$color-success-fg: #1a7f37;
+$color-success-emphasis: #2da44e;
+
+$color-danger-fg: #d1242f;
+$color-danger-subtle: #ffebe9;
+$color-danger-muted: #ffcecb;
+
+$color-attention-fg: #9a6700;
+$color-attention-subtle: #fff8c5;
+$color-attention-muted: #d4a72c;
+
+// Legacy aliases (kept so existing references keep working)
+$link-color: $color-accent-fg;
+$text-color: $color-fg-default;
+$background-color: $color-canvas-default;
 
 // Spacing
 $content-padding: 10px 16px;

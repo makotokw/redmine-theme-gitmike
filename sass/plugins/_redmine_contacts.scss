@@ -1,8 +1,8 @@
 // RedmineUP CRM (Contacts, Deals and related pages)
 
 div#content h2.contacts_header {
-  border-bottom: 1px solid #d8e6ec;
-  background: #E6F1F6;
+  border-bottom: 1px solid $color-border-default;
+  background: $color-canvas-subtle;
   text-shadow: 0 1px white;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -20,7 +20,7 @@ div {
 
 div.filters {
   h2 .scope_title a {
-    color: #222;
+    color: $color-fg-default;
     text-decoration: none;
   }
 
@@ -35,7 +35,7 @@ input.live_search_field {
   box-shadow: inset 0 1px 4px rgb(0 0 0 / 15%);
   outline: none;
   padding: 3px 10px !important;
-  border: 1px solid #C3C3C3;
+  border: 1px solid $color-border-default;
 }
 
 .live_search {
@@ -55,11 +55,11 @@ label#search_overlabel {
 
 table.contacts.index tbody tr {
   &:hover {
-    background-color: #EFF5F8 !important;
+    background-color: $color-canvas-subtle !important;
   }
 
   &.context-menu-selection:hover {
-    background-color: #507AAA !important;
+    background-color: $color-accent-emphasis !important;
   }
 }
 

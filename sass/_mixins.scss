@@ -2,6 +2,7 @@
 // --------------------------------------------------
 
 @use "sass:color";
+@use "variables";
 
 // UTILITY MIXINS
 // --------------------------------------------------
@@ -56,7 +57,7 @@
 // --------------------------------------------------
 
 // Gradient Bar Colors for buttons and alerts
-@mixin gradient-bar($primaryColor, $secondaryColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+@mixin gradient-bar($primaryColor, $secondaryColor, $textColor: variables.$color-canvas-default, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
   color: $textColor;
   text-shadow: $textShadow;
   @include gradient-vertical($primaryColor, $secondaryColor);
@@ -64,7 +65,7 @@
 }
 
 // Gradients
-@mixin gradient-vertical($startColor: #555, $endColor: #333) {
+@mixin gradient-vertical($startColor: variables.$color-fg-muted, $endColor: variables.$color-fg-default) {
   background-color: color.mix($startColor, $endColor, 60%);
   background-image: linear-gradient(to bottom, $startColor, $endColor);
   background-repeat: repeat-x;
@@ -75,7 +76,7 @@
 
 // Button backgrounds
 // ------------------
-@mixin button-background($startColor, $endColor, $textColor: #fff, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
+@mixin button-background($startColor, $endColor, $textColor: variables.$color-canvas-default, $textShadow: 0 -1px 0 rgba(0,0,0,.25)) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   @include gradient-bar($startColor, $endColor, $textColor, $textShadow);
 
@@ -172,15 +173,15 @@
 
 // github
 @mixin github-header {
-  background-color: #f4f6f8;
-  background-image: linear-gradient(#f3f5f7, #f4f6f8);
+  background-color: variables.$color-canvas-subtle;
+  background-image: linear-gradient(color.adjust(variables.$color-canvas-subtle, $lightness: 1%), variables.$color-canvas-subtle);
   background-repeat: repeat-x;
-  text-shadow: 0 1px 0 #fff;
-  border-bottom: 1px solid #e5e5e5;
+  text-shadow: 0 1px 0 variables.$color-canvas-default;
+  border-bottom: 1px solid variables.$color-border-default;
 }
 
 @mixin github-page-head {
-  background: #f6f8fa;
+  background: variables.$color-canvas-subtle;
   box-shadow: inset 0 -1px 0 0 rgb(209 217 224);
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid variables.$color-border-muted;
 }

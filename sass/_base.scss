@@ -35,7 +35,7 @@ tt, code, pre {
   > h1 {
     background: url("../images/logo.png") no-repeat 10px 5px;
     padding: 5px 45px;
-    color: #393939;
+    color: $color-fg-default;
   }
 }
 
@@ -59,7 +59,7 @@ only screen and (resolution >= 192dpi) {
   @include github-header;
 
   #loggedas {
-    color: #222;
+    color: $color-fg-default;
   }
 
   a {
@@ -112,21 +112,21 @@ div.flash,
 #errorExplanation,
 .nodata,
 .warning {
-  background-color: #fcf8e3;
-  border: 1px solid #fbeed5;
-  color: #c09853;
+  background-color: $color-attention-subtle;
+  border: 1px solid $color-attention-muted;
+  color: $color-attention-fg;
   text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
 }
 
 #sidebar {
   background: whitesmoke;
-  border: 1px solid #ddd;
+  border: 1px solid $color-border-default;
   zoom: 1;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
 
   h3 {
-    color: #222;
+    color: $color-fg-default;
   }
 }
 
@@ -140,8 +140,8 @@ div#content {
   }
 
   > h2 {
-    border-bottom: 1px solid #d8e6ec;
-    background: #E6F1F6;
+    border-bottom: 1px solid $color-border-default;
+    background: $color-canvas-subtle;
     text-shadow: 0 1px white;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -158,8 +158,8 @@ div#content {
 
   > {
     div.filters h2, #add-news > h2, #add-message > h2, #add-document > h2 {
-      border-bottom: 1px solid #C5D5DD;
-      background: #E6F1F6;
+      border-bottom: 1px solid $color-border-default;
+      background: $color-canvas-subtle;
       text-shadow: 0 1px white;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
@@ -181,7 +181,7 @@ div#content {
     padding: 10px;
     background-color: white;
     margin: -10px;
-    border-bottom: 1px solid #AECCD7;
+    border-bottom: 1px solid $color-accent-muted;
   }
 }
 
@@ -203,20 +203,20 @@ p.subtitle {
 
 // stylelint-disable-next-line no-descending-specificity
 .contextual a {
-  color: #888;
+  color: $color-fg-muted;
 
   &:link, &:visited {
-    color: #888;
+    color: $color-fg-muted;
   }
 
   &:hover, &:visited:hover {
-    color: #333;
+    color: $color-fg-default;
   }
 }
 
 #content, #main.nosidebar #content {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: $color-canvas-default;
+  border: 1px solid $color-border-default;
   box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
   border-radius: 4px;
 }
@@ -234,9 +234,9 @@ a {
 /* stylelint-disable-next-line no-duplicate-selectors */
 div {
   &.issue {
-    background: #FFD;
+    background: $color-attention-subtle;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid $color-border-default;
     margin: -11px -11px 15px;
 
     &.tooltip {
@@ -247,10 +247,10 @@ div {
 }
 
 #footer {
-  background-color: #F8F8F8;
+  background-color: $color-canvas-subtle;
   border: 0;
-  border-top: 1px solid #E0E0E0;
-  color: #636363;
+  border-top: 1px solid $color-border-default;
+  color: $color-fg-muted;
   margin-top: 45px;
   padding: 15px;
 
@@ -277,11 +277,11 @@ h2, h3, h4 {
   &.wiki-page {
     // stylelint-disable-next-line no-descending-specificity
     h1 {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $color-border-default;
     }
 
     > h2 {
-      border-bottom: 1px solid #ccc;
+      border-bottom: 1px solid $color-border-default;
       padding-bottom: 6px;
     }
   }

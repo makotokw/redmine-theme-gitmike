@@ -2,7 +2,7 @@ $wiki-padding: 8px !default;
 
 div.wiki {
   text-size-adjust: 100%;
-  color: #333;
+  color: $color-fg-default;
   font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 1.6;
   overflow-wrap: break-word;
@@ -73,14 +73,14 @@ div.wiki {
     padding-bottom: 0.3em;
     font-size: 2.25em;
     line-height: 1.2;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $color-border-muted;
   }
 
   h2 {
     padding-bottom: 0.3em;
     font-size: 1.75em;
     line-height: 1.225;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $color-border-muted;
   }
 
   h3 {
@@ -99,19 +99,19 @@ div.wiki {
   h6 {
     //font-size: 11px;
     font-size: 1em;
-    color: #777;
+    color: $color-fg-muted;
   }
 
   &.wiki-page {
     & > h2 {
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid $color-border-muted;
     }
   }
 
   blockquote {
     padding: 0 15px;
-    color: #777;
-    border-left: 4px solid #ddd;
+    color: $color-fg-muted;
+    border-left: 4px solid $color-border-default;
 
     &>:first-child {
       margin-top: 0;
@@ -142,21 +142,21 @@ div.wiki {
     }
 
     th, td {
-      border: 1px solid #ddd;
+      border: 1px solid $color-border-default;
       padding: 6px 13px;
     }
 
     tr {
-      background-color: #fff;
-      border-top: 1px solid #ccc;
+      background-color: $color-canvas-default;
+      border-top: 1px solid $color-border-default;
 
       &:nth-child(2n) {
-        background-color: #f8f8f8;
+        background-color: $color-canvas-subtle;
       }
     }
 
     img {
-      background-color: #fff;
+      background-color: $color-canvas-default;
       box-sizing: content-box;
       max-width: 100%;
     }
@@ -165,8 +165,8 @@ div.wiki {
   pre {
     font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
     margin: 15px 0;
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
+    background-color: $color-canvas-subtle;
+    border: 1px solid $color-border-default;
     font-size: 13px;
     line-height: 19px;
     overflow: auto;
@@ -179,13 +179,13 @@ div.wiki {
     padding: 3px 5px;
     font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
     line-height: 10px;
-    color: #555;
+    color: $color-fg-muted;
     vertical-align: middle;
-    background-color: #fcfcfc;
-    border: solid 1px #ccc;
-    border-bottom-color: #bbb;
+    background-color: $color-canvas-subtle;
+    border: solid 1px $color-border-default;
+    border-bottom-color: $color-border-default;
     border-radius: 3px;
-    box-shadow: inset 0 -1px 0 #bbb;
+    box-shadow: inset 0 -1px 0 $color-border-default;
   }
 
   hr {
@@ -194,7 +194,7 @@ div.wiki {
     margin: 15px 0;
     background: transparent;
     border: 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid $color-border-muted;
     overflow: visible;
 
     &::before {
@@ -235,6 +235,5 @@ div.wiki {
     }
   }
 }
-
 
 

@@ -8,18 +8,18 @@ table.list {
   tbody {
     td,
     tr:hover td {
-      border: solid 1px #ddd;
+      border: solid 1px $color-border-default;
     }
   }
 
   tr {
     &:hover {
-      background-color: #EFF5F8;
+      background-color: $color-canvas-subtle;
     }
 
     &.issue {
       a {
-        color: #666;
+        color: $color-fg-muted;
       }
     }
 
@@ -30,8 +30,8 @@ table.list {
         font: 12px Helvetica, arial, freesans, clean, sans-serif;
         font-weight: bold;
         line-height: 1;
-        color: #555;
-        background-color: #eee;
+        color: $color-fg-muted;
+        background-color: $color-border-muted;
         border-radius: 20px;
       }
     }
@@ -39,107 +39,107 @@ table.list {
     // priority-highest
     &.odd.priority-highest,
     &.odd.priority-highest:hover {
-      color: #900;
+      color: $color-danger-fg;
       font-weight: bold;
-      background: #ffc4c4;
+      background: $color-danger-muted;
 
       td {
-        border-color: #ffc4c4;
+        border-color: $color-danger-muted;
       }
     }
 
     &.even.priority-highest,
     &.even.priority-highest:hover {
-      color: #900;
+      color: $color-danger-fg;
       font-weight: bold;
-      background: #ffd4d4;
+      background: $color-danger-muted;
 
       td {
-        border-color: #ffb4b4;
+        border-color: $color-danger-muted;
       }
     }
 
     &.priority-highest {
       a, &:hover a {
-        color: #900;
+        color: $color-danger-fg;
       }
     }
 
     // priority-high2
     &.odd.priority-high2,
     &.odd.priority-high2:hover {
-      color: #900;
-      background: #ffc4c4;
+      color: $color-danger-fg;
+      background: $color-danger-muted;
 
       td {
-        border-color: #ffc4c4;
+        border-color: $color-danger-muted;
       }
     }
 
     &.even.priority-high2,
     &.even.priority-high2:hover {
-      color: #900;
-      background: #ffd4d4;
+      color: $color-danger-fg;
+      background: $color-danger-muted;
 
       td {
-        border-color: #ffd4d4;
+        border-color: $color-danger-muted;
       }
     }
 
     &.priority-high2 {
       a, &:hover a {
-        color: #900;
+        color: $color-danger-fg;
       }
     }
 
     // priority-high3
     &.odd.priority-high3,
     &.odd.priority-high3:hover {
-      color: #900;
-      background: #fee;
+      color: $color-danger-fg;
+      background: $color-danger-subtle;
 
       td {
-        border-color: #fcc;
+        border-color: $color-danger-subtle;
       }
     }
 
     &.even.priority-high3,
     &.even.priority-high3:hover {
-      color: #900;
-      background: #fff2f2;
+      color: $color-danger-fg;
+      background: $color-danger-subtle;
 
       td {
-        border-color: #fcc;
+        border-color: $color-danger-subtle;
       }
     }
 
     &.priority-high3 a {
-      color: #900;
+      color: $color-danger-fg;
     }
 
     // priority-lowest
     &.odd.priority-lowest,
     &.odd.priority-lowest:hover {
-      color: #559;
-      background: #eaf7ff;
+      color: $color-accent-fg;
+      background: $color-accent-subtle;
 
       td {
-        border-color: #add7f3;
+        border-color: $color-accent-muted;
       }
     }
 
     &.even.priority-lowest,
     &.even.priority-lowest:hover {
-      color: #559;
-      background: #f2faff;
+      color: $color-accent-fg;
+      background: $color-accent-subtle;
 
       td {
-        border-color: #add7f3;
+        border-color: $color-accent-muted;
       }
     }
 
     &.priority-lowest a {
-      color: #559;
+      color: $color-accent-fg;
     }
   }
 
@@ -147,7 +147,7 @@ table.list {
     th {
       border-width: 1px;
       border-style: solid;
-      border-color: #ddd;
+      border-color: $color-border-default;
     }
   }
 

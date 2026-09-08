@@ -6,14 +6,14 @@ div.journal .details {
 
 table.progress td {
   &.closed {
-    background: #AECCD7 none repeat scroll 0;
+    background: $color-accent-muted none repeat scroll 0;
   }
 
   &.done {
-    background: #EAF2F5 none repeat scroll 0;
+    background: $color-accent-subtle none repeat scroll 0;
   }
 }
 
 #history div.journal {
-  border-top: 1px solid #DDD;
+  border-top: 1px solid $color-border-default;
 }

@@ -10,8 +10,8 @@ body.action-login {
   #login-form table {
     padding: 3em;
     background: white;
-    box-shadow: 0 0 3px #CCC;
-    border: 1px solid #ddd;
+    box-shadow: 0 0 3px $color-border-default;
+    border: 1px solid $color-border-default;
     border-radius: 8px;
   }
 }
@@ -20,7 +20,7 @@ body.action-login {
   &#username, &#password {
     outline: none;
     margin: 0;
-    border: 1px solid #ccc;
+    border: 1px solid $color-border-default;
     padding: 6px;
     font-size: 140%;
     border-radius: 2px;
@@ -29,8 +29,8 @@ body.action-login {
 
 div.wiki div.flash,
 .controller-account.action-login div.flash {
-  box-shadow: 0 0 3px #CCC;
-  border: 1px solid #ddd !important;
+  box-shadow: 0 0 3px $color-border-default;
+  border: 1px solid $color-border-default !important;
   border-radius: 8px;
   margin: 5px;
 }
