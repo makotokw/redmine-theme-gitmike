@@ -8,18 +8,18 @@ table.list {
   tbody {
     td,
     tr:hover td {
-      border: solid 1px $color-border-default;
+      border: solid 1px var(--color-border-default);
     }
   }
 
   tr {
     &:hover {
-      background-color: $color-canvas-subtle;
+      background-color: var(--color-canvas-subtle);
     }
 
     &.issue {
       a {
-        color: $color-fg-muted;
+        color: var(--color-fg-muted);
       }
     }
 
@@ -30,8 +30,8 @@ table.list {
         font: 12px Helvetica, arial, freesans, clean, sans-serif;
         font-weight: bold;
         line-height: 1;
-        color: $color-fg-muted;
-        background-color: $color-border-muted;
+        color: var(--color-fg-muted);
+        background-color: var(--color-border-muted);
         border-radius: 20px;
       }
     }
@@ -39,107 +39,107 @@ table.list {
     // priority-highest
     &.odd.priority-highest,
     &.odd.priority-highest:hover {
-      color: $color-danger-fg;
+      color: var(--color-danger-fg);
       font-weight: bold;
-      background: $color-danger-muted;
+      background: var(--color-danger-muted);
 
       td {
-        border-color: $color-danger-muted;
+        border-color: var(--color-danger-muted);
       }
     }
 
     &.even.priority-highest,
     &.even.priority-highest:hover {
-      color: $color-danger-fg;
+      color: var(--color-danger-fg);
       font-weight: bold;
-      background: $color-danger-muted;
+      background: var(--color-danger-muted);
 
       td {
-        border-color: $color-danger-muted;
+        border-color: var(--color-danger-muted);
       }
     }
 
     &.priority-highest {
       a, &:hover a {
-        color: $color-danger-fg;
+        color: var(--color-danger-fg);
       }
     }
 
     // priority-high2
     &.odd.priority-high2,
     &.odd.priority-high2:hover {
-      color: $color-danger-fg;
-      background: $color-danger-muted;
+      color: var(--color-danger-fg);
+      background: var(--color-danger-muted);
 
       td {
-        border-color: $color-danger-muted;
+        border-color: var(--color-danger-muted);
       }
     }
 
     &.even.priority-high2,
     &.even.priority-high2:hover {
-      color: $color-danger-fg;
-      background: $color-danger-muted;
+      color: var(--color-danger-fg);
+      background: var(--color-danger-muted);
 
       td {
-        border-color: $color-danger-muted;
+        border-color: var(--color-danger-muted);
       }
     }
 
     &.priority-high2 {
       a, &:hover a {
-        color: $color-danger-fg;
+        color: var(--color-danger-fg);
       }
     }
 
     // priority-high3
     &.odd.priority-high3,
     &.odd.priority-high3:hover {
-      color: $color-danger-fg;
-      background: $color-danger-subtle;
+      color: var(--color-danger-fg);
+      background: var(--color-danger-subtle);
 
       td {
-        border-color: $color-danger-subtle;
+        border-color: var(--color-danger-subtle);
       }
     }
 
     &.even.priority-high3,
     &.even.priority-high3:hover {
-      color: $color-danger-fg;
-      background: $color-danger-subtle;
+      color: var(--color-danger-fg);
+      background: var(--color-danger-subtle);
 
       td {
-        border-color: $color-danger-subtle;
+        border-color: var(--color-danger-subtle);
       }
     }
 
     &.priority-high3 a {
-      color: $color-danger-fg;
+      color: var(--color-danger-fg);
     }
 
     // priority-lowest
     &.odd.priority-lowest,
     &.odd.priority-lowest:hover {
-      color: $color-accent-fg;
-      background: $color-accent-subtle;
+      color: var(--color-accent-fg);
+      background: var(--color-accent-subtle);
 
       td {
-        border-color: $color-accent-muted;
+        border-color: var(--color-accent-muted);
       }
     }
 
     &.even.priority-lowest,
     &.even.priority-lowest:hover {
-      color: $color-accent-fg;
-      background: $color-accent-subtle;
+      color: var(--color-accent-fg);
+      background: var(--color-accent-subtle);
 
       td {
-        border-color: $color-accent-muted;
+        border-color: var(--color-accent-muted);
       }
     }
 
     &.priority-lowest a {
-      color: $color-accent-fg;
+      color: var(--color-accent-fg);
     }
   }
 
@@ -147,7 +147,7 @@ table.list {
     th {
       border-width: 1px;
       border-style: solid;
-      border-color: $color-border-default;
+      border-color: var(--color-border-default);
     }
   }
 

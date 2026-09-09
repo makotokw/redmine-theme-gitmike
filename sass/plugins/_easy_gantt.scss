@@ -20,8 +20,8 @@
     text-shadow: none;
 
     &.button-positive {
-      background-color: $color-success-emphasis;
-      border-color: $color-success-fg;
+      background-color: var(--color-success-emphasis);
+      border-color: var(--color-success-fg);
     }
 
     &#button_sample {

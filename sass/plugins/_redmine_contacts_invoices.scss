@@ -2,7 +2,7 @@
 
 table.invoice-lines {
   tbody tr.line-data:hover {
-    background-color: $color-canvas-subtle !important;
+    background-color: var(--color-canvas-subtle) !important;
   }
 
   th {
@@ -12,11 +12,11 @@ table.invoice-lines {
 
 span.invoice-status {
   &.draft {
-    background-color: $color-fg-subtle !important;
+    background-color: var(--color-fg-subtle) !important;
   }
 
   &.sent {
-    background-color: $color-accent-emphasis !important;
+    background-color: var(--color-accent-emphasis) !important;
   }
 
   &.paid {

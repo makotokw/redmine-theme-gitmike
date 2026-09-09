@@ -31,13 +31,15 @@ yarn lint:scss:fix    # stylelint --fix
 
 When adding rules for a specific Redmine area, prefer extending the matching `_<area>.scss` partial instead of adding more inline rules to `application.scss`.
 
-- `_variables.scss`: fonts, colors, and spacing tokens used across partials.
 - `_mixins.scss`: shared mixins, including gradients, grid helpers, and GitHub-style chrome mixins such as `github-header` and `github-page-head`.
 - Other root `_*.scss` files are single-purpose partials named after a Redmine feature or shared concern, such as forms, tables, components, issues, wiki, projects, settings, responsive, mainmenu, and login.
-- `_base.scss` holds global/base rules (element defaults, layout, header, sidebar, footer, flash messages, and headings). `_components.scss` holds reusable UI such as boxes, context menus, tooltips, and modals.
+- `_base.scss` holds global/base rules (element defaults, layout, header, sidebar, footer, flash messages, and headings) and the `:root` block that defines every design token.
+- `_components.scss` holds reusable UI such as boxes, context menus, tooltips, and modals.
 - `_plugins.scss` is the single plugin entry point. Plugin-specific rules live under `sass/plugins/`, one partial per plugin or tightly coupled plugin family.
 
-Use the modern `sass:color` module (`color.mix`, `color.adjust`) in new Sass code. Avoid deprecated global Sass color functions.
+All design tokens — colors (`--color-canvas-default`, `--color-fg-default`, `--color-accent-fg`, etc.), the font stack (`--fonts-main`, `--base-font-size`), and shared spacing (`--content-padding`, `--negative-margin-on-content`) — are CSS custom properties defined in the `:root` block in `_base.scss` and referenced directly as `var(--*)` throughout the theme. There is no Sass-level variable layer for any of them; `sass/_variables.scss` was removed for this reason. This is deliberate: it lets a future dark mode (or any other runtime theming) redefine tokens under `[data-theme="dark"]` or `prefers-color-scheme: dark` without recompiling Sass. Note `--fonts-main` is also consumed directly by Redmine core's own `responsive.css` (e.g. `.mobile-toggle-button:after`), so that name is an external contract — do not rename it. A handful of spots need a computed shade of a color token (button hover/active states, gradient stops); since Sass's `color.adjust()`/`color.mix()` can't operate on an opaque `var()` value, those use the runtime CSS `color-mix()` function instead (e.g. `color-mix(in srgb, var(--color-canvas-subtle) 96%, black)`).
+
+Use the modern `sass:color` module (`color.mix`, `color.adjust`) in new Sass code that doesn't touch color tokens. Avoid deprecated global Sass color functions.
 
 The codebase still uses legacy `@import` syntax throughout instead of `@use`/`@forward`. `vite.config.js` intentionally silences Sass's `@import` deprecation warning. Do not migrate imports piecemeal; treat that as a separate deliberate cleanup.
 

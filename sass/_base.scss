@@ -1,12 +1,39 @@
 :root {
-  --fonts-main: #{$base-font-family};
+  // Font and spacing tokens, referenced throughout the theme as var(--*).
+  --fonts-main: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  --base-font-size: 14px;
+  --content-padding: 10px 16px;
+  --negative-margin-on-content: -10px -16px 10px;
+
+  // GitHub Primer-inspired light theme color tokens, referenced throughout
+  // the theme as var(--color-*). A future dark mode redefines these under
+  // a `[data-theme="dark"]` or `prefers-color-scheme: dark` block.
+  --color-canvas-default: #fff;
+  --color-canvas-subtle: #f6f8fa;
+  --color-fg-default: #1f2328;
+  --color-fg-muted: #656d76;
+  --color-fg-subtle: #6e7781;
+  --color-border-default: #d0d7de;
+  --color-border-muted: #d8dee4;
+  --color-accent-fg: #0969da;
+  --color-accent-emphasis: #0969da;
+  --color-accent-subtle: #ddf4ff;
+  --color-accent-muted: #54aeff;
+  --color-success-fg: #1a7f37;
+  --color-success-emphasis: #2da44e;
+  --color-danger-fg: #d1242f;
+  --color-danger-subtle: #ffebe9;
+  --color-danger-muted: #ffcecb;
+  --color-attention-fg: #9a6700;
+  --color-attention-subtle: #fff8c5;
+  --color-attention-muted: #d4a72c;
 }
 
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  color: $text-color;
-  background-color: $background-color;
+  font-family: var(--fonts-main);
+  font-size: var(--base-font-size);
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
 }
 
 body, input, select, textarea, button {
@@ -18,8 +45,31 @@ tt, code, pre {
   font-size: 12px;
 }
 
+// Headers
+
+h2, h3, h4 {
+  border-bottom: 0;
+}
+
+.wiki {
+  h1, h2, h3 {
+    border-bottom: 0;
+  }
+
+  &.wiki-page {
+    h1 {
+      border-bottom: 1px solid var(--color-border-default);
+    }
+
+    > h2 {
+      border-bottom: 1px solid var(--color-border-default);
+      padding-bottom: 6px;
+    }
+  }
+}
+
 #content h1, h2, h3, h4 {
-  color: $text-color;
+  color: var(--color-fg-default);
 }
 
 #header {
@@ -29,13 +79,13 @@ tt, code, pre {
   background-position-y: 11%;
 
   a {
-    color: $link-color;
+    color: var(--color-accent-fg);
   }
 
   > h1 {
     background: url("../images/logo.png") no-repeat 10px 5px;
     padding: 5px 45px;
-    color: $color-fg-default;
+    color: var(--color-fg-default);
   }
 }
 
@@ -51,7 +101,7 @@ only screen and (resolution >= 192dpi) {
 
 #main {
   margin: 15px 15px 0;
-  background-color: $background-color;
+  background-color: var(--color-canvas-default);
 }
 
 #top-menu {
@@ -59,11 +109,11 @@ only screen and (resolution >= 192dpi) {
   @include github-header;
 
   #loggedas {
-    color: $color-fg-default;
+    color: var(--color-fg-default);
   }
 
   a {
-    color: $text-color;
+    color: var(--color-fg-default);
     font-weight: bold;
     padding: 5px;
     margin-right: 0;
@@ -71,7 +121,7 @@ only screen and (resolution >= 192dpi) {
     text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
 
     &:hover {
-      color: $link-color;
+      color: var(--color-accent-fg);
       text-decoration: none;
     }
   }
@@ -92,7 +142,7 @@ div {
     &:first-child {
       border-width: 0 0 1px;
       border-radius: 4px 4px 0 0;
-      margin: $negative-margin-on-content;
+      margin: var(--negative-margin-on-content);
     }
   }
 }
@@ -112,41 +162,41 @@ div.flash,
 #errorExplanation,
 .nodata,
 .warning {
-  background-color: $color-attention-subtle;
-  border: 1px solid $color-attention-muted;
-  color: $color-attention-fg;
+  background-color: var(--color-attention-subtle);
+  border: 1px solid var(--color-attention-muted);
+  color: var(--color-attention-fg);
   text-shadow: 0 1px 0 rgb(255 255 255 / 50%);
 }
 
 #sidebar {
   background: whitesmoke;
-  border: 1px solid $color-border-default;
+  border: 1px solid var(--color-border-default);
   zoom: 1;
   border-radius: 4px;
   box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
 
   h3 {
-    color: $color-fg-default;
+    color: var(--color-fg-default);
   }
 }
 
 div#content {
   margin-right: 15px;
   width: auto;
-  padding: $content-padding;
+  padding: var(--content-padding);
 
   #main.nosidebar & {
     margin-right: 0;
   }
 
   > h2 {
-    border-bottom: 1px solid $color-border-default;
-    background: $color-canvas-subtle;
+    border-bottom: 1px solid var(--color-border-default);
+    background: var(--color-canvas-subtle);
     text-shadow: 0 1px white;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 8px 20px;
-    margin: $negative-margin-on-content;
+    margin: var(--negative-margin-on-content);
 
     &.inline-flex {
       border: none;
@@ -158,13 +208,13 @@ div#content {
 
   > {
     div.filters h2, #add-news > h2, #add-message > h2, #add-document > h2 {
-      border-bottom: 1px solid $color-border-default;
-      background: $color-canvas-subtle;
+      border-bottom: 1px solid var(--color-border-default);
+      background: var(--color-canvas-subtle);
       text-shadow: 0 1px white;
       border-top-left-radius: 4px;
       border-top-right-radius: 4px;
       padding: 8px 20px;
-      margin: $negative-margin-on-content;
+      margin: var(--negative-margin-on-content);
     }
   }
 
@@ -181,7 +231,7 @@ div#content {
     padding: 10px;
     background-color: white;
     margin: -10px;
-    border-bottom: 1px solid $color-accent-muted;
+    border-bottom: 1px solid var(--color-accent-muted);
   }
 }
 
@@ -203,40 +253,40 @@ p.subtitle {
 
 // stylelint-disable-next-line no-descending-specificity
 .contextual a {
-  color: $color-fg-muted;
+  color: var(--color-fg-muted);
 
   &:link, &:visited {
-    color: $color-fg-muted;
+    color: var(--color-fg-muted);
   }
 
   &:hover, &:visited:hover {
-    color: $color-fg-default;
+    color: var(--color-fg-default);
   }
 }
 
 #content, #main.nosidebar #content {
-  background: $color-canvas-default;
-  border: 1px solid $color-border-default;
+  background: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
   box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
   border-radius: 4px;
 }
 
 // stylelint-disable-next-line no-descending-specificity
 a {
-  color: $link-color;
+  color: var(--color-accent-fg);
 
   &:link,
   &:visited {
-    color: $link-color;
+    color: var(--color-accent-fg);
   }
 }
 
 /* stylelint-disable-next-line no-duplicate-selectors */
 div {
   &.issue {
-    background: $color-attention-subtle;
+    background: var(--color-attention-subtle);
     padding: 20px;
-    border: 1px solid $color-border-default;
+    border: 1px solid var(--color-border-default);
     margin: -11px -11px 15px;
 
     &.tooltip {
@@ -247,10 +297,10 @@ div {
 }
 
 #footer {
-  background-color: $color-canvas-subtle;
+  background-color: var(--color-canvas-subtle);
   border: 0;
-  border-top: 1px solid $color-border-default;
-  color: $color-fg-muted;
+  border-top: 1px solid var(--color-border-default);
+  color: var(--color-fg-muted);
   margin-top: 45px;
   padding: 15px;
 
@@ -259,30 +309,6 @@ div {
       &::after {
         content: " and gitmike theme";
       }
-    }
-  }
-}
-
-// Headers
-
-h2, h3, h4 {
-  border-bottom: 0;
-}
-
-.wiki {
-  h1, h2, h3 {
-    border-bottom: 0;
-  }
-
-  &.wiki-page {
-    // stylelint-disable-next-line no-descending-specificity
-    h1 {
-      border-bottom: 1px solid $color-border-default;
-    }
-
-    > h2 {
-      border-bottom: 1px solid $color-border-default;
-      padding-bottom: 6px;
     }
   }
 }

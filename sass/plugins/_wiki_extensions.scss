@@ -4,7 +4,7 @@
 // #18 adjust margin
 .jstt_smiles {
   #group_of_smiles {
-    border: 1px solid $color-border-default !important;
+    border: 1px solid var(--color-border-default) !important;
     margin-top: -6px;
     padding: 6px;
   }

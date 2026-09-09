@@ -1,32 +1,33 @@
-@use "sass:color";
 @use "mixins" as mixin;
 
 // Buttons
 
-/*input[type="button"], input[type="submit"], input[type="reset"] { background-color: $color-canvas-subtle; color: $color-fg-default; border: 1px outset $color-border-default; }
-input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover { background-color: $color-border-muted; }
+/*input[type="button"], input[type="submit"], input[type="reset"] { background-color: var(--color-canvas-subtle); color: var(--color-fg-default); border: 1px outset var(--color-border-default); }
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover { background-color: var(--color-border-muted); }
 */
-$gray-dark: $color-fg-default !default;
-$gray: $color-fg-muted !default;
-$gray-light: $color-fg-subtle !default;
+$gray-dark: var(--color-fg-default) !default;
+$gray: var(--color-fg-muted) !default;
+$gray-light: var(--color-fg-subtle) !default;
 $btn-background: $gray-light;
-$btn-background-highlight: color.adjust($btn-background, $lightness: 10%);
-$btn-border: $color-border-default;
+// $btn-background resolves to a CSS custom property, so lightening it needs
+// the runtime color-mix() rather than Sass's compile-time color.adjust().
+$btn-background-highlight: color-mix(in srgb, $btn-background 90%, white);
+$btn-border: var(--color-border-default);
 
 %button {
   position: relative;
   display: inline-block;
   padding: 5px 11px;
   font-weight: bold;
-  color: $color-fg-default;
+  color: var(--color-fg-default);
   text-shadow: 0 1px 0 rgb(255 255 255 / 90%);
   white-space: nowrap;
-  background-color: $color-canvas-subtle;
+  background-color: var(--color-canvas-subtle);
   background-repeat: repeat-x;
-  background-image: linear-gradient($color-canvas-default, $color-canvas-subtle);
+  background-image: linear-gradient(var(--color-canvas-default), var(--color-canvas-subtle));
   border-radius: 3px;
-  border: 1px solid $color-border-default;
-  border-bottom-color: color.adjust($color-border-default, $lightness: -10%);
+  border: 1px solid var(--color-border-default);
+  border-bottom-color: color-mix(in srgb, var(--color-border-default) 90%, black);
   box-shadow: 0 1px 3px rgb(0 0 0 / 5%);
   vertical-align: middle;
   cursor: pointer;
@@ -36,15 +37,15 @@ $btn-border: $color-border-default;
 
   &:hover {
     text-decoration: none;
-    background-color: color.adjust($color-canvas-subtle, $lightness: -4%);
-    background-image: linear-gradient($color-canvas-subtle, color.adjust($color-canvas-subtle, $lightness: -4%));
-    border-color: $color-border-default $color-border-default color.adjust($color-border-default, $lightness: -10%)
+    background-color: color-mix(in srgb, var(--color-canvas-subtle) 96%, black);
+    background-image: linear-gradient(var(--color-canvas-subtle), color-mix(in srgb, var(--color-canvas-subtle) 96%, black));
+    border-color: var(--color-border-default) var(--color-border-default) color-mix(in srgb, var(--color-border-default) 90%, black)
   }
 
   &:active {
-    background-color: color.adjust($color-canvas-subtle, $lightness: -4%);
+    background-color: color-mix(in srgb, var(--color-canvas-subtle) 96%, black);
     background-image: none;
-    border-color: color.adjust($color-border-default, $lightness: -10%);
+    border-color: color-mix(in srgb, var(--color-border-default) 90%, black);
     box-shadow: inset 0 3px 5px rgb(0 0 0 / 15%);
   }
 
@@ -53,11 +54,11 @@ $btn-border: $color-border-default;
   &[disabled],
   &[disabled]:hover {
     opacity: .5;
-    color: $color-fg-muted;
+    color: var(--color-fg-muted);
     text-shadow: 0 1px 0 rgb(255 255 255 / 90%);
     background-image: none;
-    background-color: $color-canvas-subtle;
-    border-color: $color-border-default;
+    background-color: var(--color-canvas-subtle);
+    border-color: var(--color-border-default);
     cursor: default;
     box-shadow: none;
   }
@@ -76,7 +77,7 @@ $btn-border: $color-border-default;
   cursor: pointer;
   @include mixin.gradient-bar($btn-background, $btn-background-highlight, $gray-dark, 0 1px 1px rgba(255,255,255,.75));
   border: 1px solid $btn-border;
-  border-bottom-color: color.adjust($btn-border, $lightness: -10%);
+  border-bottom-color: color-mix(in srgb, $btn-border 90%, black);
   border-radius: 3px;
   box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
 
@@ -124,19 +125,19 @@ input[type="text"], input[type="password"], input[type="email"], input[type="num
 , select {
   outline: none;
   padding: 3px 4px;
-  color: $text-color;
-  background-color: $color-canvas-default;
-  border: 1px solid $color-border-default;
+  color: var(--color-fg-default);
+  background-color: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
   box-shadow: inset 0 1px 2px rgb(0 0 0 / 7.5%);
   border-radius: 3px;
   vertical-align: middle;
 
   #content & {
-    background-color: $color-canvas-subtle;
+    background-color: var(--color-canvas-subtle);
   }
 
   &:focus {
-    border-color: $color-accent-muted;
+    border-color: var(--color-accent-muted);
     box-shadow: inset 0 1px 2px rgb(0 0 0 / 7.5%), 0 0 5px rgb(81 167 232 / 50%);
   }
 }
@@ -162,13 +163,13 @@ textarea {
 }
 
 option {
-  border-bottom: 1px dotted $color-border-default;
+  border-bottom: 1px dotted var(--color-border-default);
 }
 
 // Form
 
 .controller-messages.action-show .message {
-  background: $color-accent-subtle;
+  background: var(--color-accent-subtle);
   padding: 0 15px 10px;
   border: 1px solid silver;
   margin: -11px -11px 15px;
@@ -177,7 +178,7 @@ option {
     padding: 0 10px;
     margin: -1px;
     background: white;
-    border: 1px solid $color-border-muted;
+    border: 1px solid var(--color-border-muted);
   }
 
   .contextual {
@@ -195,13 +196,13 @@ option {
   background-position-y: 9px !important;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  border-bottom: 1px solid $color-accent-muted;
+  border-bottom: 1px solid var(--color-accent-muted);
 }
 
 #add-news, #add-message, #add-document {
   background-color: white;
   position: relative;
-  border-bottom: 1px solid $color-accent-muted;
+  border-bottom: 1px solid var(--color-accent-muted);
   margin: -5px -10px 1px;
   padding: 5px 10px 10px;
   border-top-left-radius: 8px;
@@ -213,12 +214,12 @@ option {
 #quick-search #q {
   outline: none;
   padding: 3px 5px !important;
-  background-color: $color-canvas-default;
-  border: 1px solid $color-border-default;
-  border-top: 1px solid $color-border-muted;
-  box-shadow: 0 1px 0 $color-canvas-subtle, inset 0 1px 1px $color-border-muted;
+  background-color: var(--color-canvas-default);
+  border: 1px solid var(--color-border-default);
+  border-top: 1px solid var(--color-border-muted);
+  box-shadow: 0 1px 0 var(--color-canvas-subtle), inset 0 1px 1px var(--color-border-muted);
   border-radius: 3px;
   box-sizing: content-box;
-  color: $color-fg-default;
+  color: var(--color-fg-default);
   font-size: 12px;
 }

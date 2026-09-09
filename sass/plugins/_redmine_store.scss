@@ -2,12 +2,12 @@
 
 div#welcome-store-content {
   h1, h2, h3, h4 {
-    color: $color-fg-default;
+    color: var(--color-fg-default);
   }
 }
 
 a.buy-button.blue {
-  background: $color-accent-emphasis linear-gradient(to top, $color-accent-emphasis 0%, $color-accent-muted 100%) !important;
+  background: var(--color-accent-emphasis) linear-gradient(to top, var(--color-accent-emphasis) 0%, var(--color-accent-muted) 100%) !important;
 }
 
 #picture {

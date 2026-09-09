@@ -1,7 +1,7 @@
 // Shared components
 
 .box {
-  background-color: $color-canvas-subtle;
+  background-color: var(--color-canvas-subtle);
   border-radius: 8px;
   padding: 16px;
 }
@@ -11,27 +11,27 @@ img.gravatar {
 }
 
 #context-menu {
-  box-shadow: 0 0 3px $color-border-default;
+  box-shadow: 0 0 3px var(--color-border-default);
 
   ul {
-    border-top: 1px solid $color-border-default;
-    border-left: 1px solid $color-border-default;
-    border-bottom: 1px solid $color-border-default !important;
-    border-right: 1px solid $color-border-default !important;
+    border-top: 1px solid var(--color-border-default);
+    border-left: 1px solid var(--color-border-default);
+    border-bottom: 1px solid var(--color-border-default) !important;
+    border-right: 1px solid var(--color-border-default) !important;
   }
 
   ul li ul {
-    box-shadow: 0 0 3px $color-border-default;
+    box-shadow: 0 0 3px var(--color-border-default);
   }
 
   li:hover {
-    border: 1px solid $color-border-muted !important;
-    background-color: $color-border-muted;
+    border: 1px solid var(--color-border-muted) !important;
+    background-color: var(--color-border-muted);
   }
 }
 
 div.tooltip:hover span.tip {
-  border: 1px solid $color-border-muted;
+  border: 1px solid var(--color-border-muted);
   zoom: 1;
   box-shadow: 0 3px 5px rgb(0 0 0 / 5%);
 }
@@ -40,7 +40,7 @@ div.tooltip:hover span.tip {
 
 div.modal {
   border-radius: 8px;
-  border: 1px solid $color-border-default;
+  border: 1px solid var(--color-border-default);
   padding: 30px 42px;
   box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
 
