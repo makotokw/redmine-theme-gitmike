@@ -43,6 +43,12 @@
       }
     }
 
+    #project-jump {
+      .drdn-trigger {
+        font-weight: var(--base-text-weight-semibold);
+      }
+    }
+
     .flyout-menu {
       color: var(--color-fg-default);
       background-color: var(--color-canvas-default);

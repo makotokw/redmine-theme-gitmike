@@ -2,6 +2,10 @@
   // Font and spacing tokens, referenced throughout the theme as var(--*).
   --fonts-main: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --base-font-size: 14px;
+  --base-text-weight-light: 300;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
   --content-padding: 10px 16px;
   --negative-margin-on-content: -10px -16px 10px;
 
@@ -87,6 +91,7 @@ h2, h3, h4 {
     background: url("../images/logo.png") no-repeat 10px 5px;
     padding: 5px 45px;
     color: var(--color-fg-default);
+    font-weight: var(--base-text-weight-semibold);
   }
 }
 

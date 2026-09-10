@@ -10,6 +10,10 @@
 :root {
   --fonts-main: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   --base-font-size: 14px;
+  --base-text-weight-light: 300;
+  --base-text-weight-normal: 400;
+  --base-text-weight-medium: 500;
+  --base-text-weight-semibold: 600;
   --content-padding: 10px 16px;
   --negative-margin-on-content: -10px -16px 10px;
   --color-canvas-default: #fff;
@@ -84,6 +88,7 @@ h2, h3, h4 {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8wOC8xMtgzu/EAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzbovLKMAAADKklEQVRIicXXT2hcVRTH8c/MRJSCFdFiXAhBBYOiJr1DIZjiH4rWIq3opl2YZXctLtzYFP/ShaKIFASzUOjGLkqlG1G7CaYSqHPjiAqVgu1GKNRNGvwDOhkX776ZNy8TkozVHBjue/fe9/ved+fcc86rtNttm2HVTaFiKL+oVCqrThobG6vUarUJPIdJjOKWNLyICziH061Wa77ZbK7YxvLOVvKO1cAhhD04hrF1vkwT0zHGzwYChxBuxgz2l4SvJfEr6X44LWprad5JHIwxLq0bHEIYxpd4sDD3DI5jNsbYKi2yhsdwCPsKQ9/jyRjjlTXB6U2/LkAvYyrGOBdCuDvG+HMI4TBew9/4AO/iN9yPW3ECIwX4I41GY6kI7ufVMwXoAnYk6BDOhhBO4f0E2IZXcRFnsSvGOIcd6VlJa6YM6QEnR8r/08vYHWO8mu634HY832exd+AJbIf0zO6kAfvr9fqevuDx8fGKzHtzmypA4RUrHahsL4QQHi/Apwpjx+r1eseROuBqtTqhe2TOpC0DIYT7cHgNaG4fhRC2JPiczCkl7YkVYFlwyO14Sewt3LBO8AiOrKLVYRTBk6m9htm8M4QwqfeIrMdeCiHck65nk2aR0QMeTW2zdE6PbhAKN8q8XdJqlhg94Dz25hFJCGEUTw0AhgMhhG0lzZyxZnZ6ZkAoWQLau9pgEbyY2uFC34R/Z4+WNHNGD/hCasdS7KUb9ga1h5NWfkxzRg/4XGq3ygI+1PDHgNBPcWfSygNPzugBny5cH0rtIj4eEPwefsKL/RgdcLvdntd1+30hhJ0J/A7+2iB0QZbhhnQdtIn5FeCFhYU2pgsPn8BIjPESXt4A9EdZwLkNDxX6pxuNRicp98vHn+hmqN8xsry8/Gu1Wj2KN9aAtnCvLDd/LmUrnGw0GgeKE/ud44Oy5E2WCs9Xq9XJGOObsq3/Kv2u4k98gw8xh+9wF84XoBeTZo9ttPTZhaeLmSvNr8mc6dkEzu0X7IwxXtposTePB0qLXcK3/otir7SAvXjd/1XeFq1Q0L+Nm2QOVC7of8AXrVbr1HUp6K+XlcGb9u30DyeRLmJ/gl4UAAAAAElFTkSuQmCC") no-repeat 10px 5px;
   padding: 5px 45px;
   color: var(--color-fg-default);
+  font-weight: var(--base-text-weight-semibold);
 }
 
 @media only screen and (resolution >= 2dppx), only screen and (resolution >= 192dpi) {
@@ -1184,6 +1189,9 @@ a.buy-button.blue {
   html #header #quick-search .drdn,
   html #header #quick-search .drdn-trigger {
     color: var(--color-fg-default);
+  }
+  html #project-jump .drdn-trigger {
+    font-weight: var(--base-text-weight-semibold);
   }
   html .flyout-menu {
     color: var(--color-fg-default);
