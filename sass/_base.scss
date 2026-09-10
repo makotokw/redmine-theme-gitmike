@@ -120,6 +120,7 @@ only screen and (resolution >= 192dpi) {
     > h1 {
       background: url("../images/logo@2x.png") no-repeat 10px 5px;
       background-size: 30px 30px;
+      margin: 0;
     }
   }
 }
@@ -132,6 +133,7 @@ only screen and (resolution >= 192dpi) {
 #top-menu {
   padding: 10px;
   @include github-header;
+  font-size: var(--font-size-small);
 
   #loggedas {
     color: var(--color-fg-default);

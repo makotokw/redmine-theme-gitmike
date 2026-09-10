@@ -221,6 +221,15 @@ option {
   #quick-search #project-jump .drdn-trigger {
     box-sizing: border-box;
     height: 28px;
+    font-size: var(--font-size-small);
+  }
+
+  // Core's asymmetric vertical padding (1.5px / 3px) leaves the label riding
+  // high in the fixed-height box; drop it and let line-height center the text.
+  // Keep display:inline-block so core's text-overflow: ellipsis still works.
+  #quick-search #project-jump .drdn-trigger {
+    padding-block: 0;
+    line-height: 26px; // 28px box height minus 1px top + 1px bottom border
   }
 }
 

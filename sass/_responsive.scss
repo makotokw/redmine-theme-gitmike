@@ -46,6 +46,11 @@
     #project-jump {
       .drdn-trigger {
         font-weight: var(--base-text-weight-semibold);
+        // Core keeps its base 1.5px/3px vertical padding here and pairs a 50px
+        // height with a 40px line-height, so the label rides high. Drop the
+        // padding and match line-height to the height to center it.
+        padding-block: 0;
+        line-height: 50px;
       }
     }
 
