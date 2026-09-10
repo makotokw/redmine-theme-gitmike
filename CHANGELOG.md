@@ -2,6 +2,7 @@
 
 New features:
   - Support Redmine 6.0
+  - Added mobile styling for the header and flyout menu
 
 Breaking changes:
   - Removed legacy browser and IE-specific CSS hacks
