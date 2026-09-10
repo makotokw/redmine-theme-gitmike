@@ -99,7 +99,8 @@ h2, h3, h4 {
 #header {
   @include github-page-head;
   height: auto;
-  padding: 10px 0 0;
+  margin: 0;
+  padding: var(--base-size-8) var(--base-size-8) 0 var(--base-size-8);
   background-position-y: 11%;
 
   a {
@@ -107,8 +108,8 @@ h2, h3, h4 {
   }
 
   > h1 {
-    background: url("../images/logo.png") no-repeat 10px 5px;
-    padding: 5px 45px;
+    background: url("../images/logo.png") no-repeat 10px center;
+    padding: 5px 45px 5px 47px;
     color: var(--color-fg-default);
     font-weight: var(--base-text-weight-semibold);
   }
@@ -118,8 +119,8 @@ h2, h3, h4 {
 only screen and (resolution >= 192dpi) {
   #header {
     > h1 {
-      background: url("../images/logo@2x.png") no-repeat 10px 5px;
-      background-size: 30px 30px;
+      background: url("../images/logo@2x.png") no-repeat 10px center;
+      background-size: 32px 32px;
       margin: 0;
     }
   }

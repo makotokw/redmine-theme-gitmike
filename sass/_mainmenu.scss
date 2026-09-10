@@ -1,15 +1,14 @@
 // Menu
 
 #main-menu {
-  left: 0;
-  width: 100%;
-  box-sizing: border-box;
-  padding: var(--base-size-8) var(--base-size-16) 0;
+  position: relative;
+  inset: auto;
+  margin: var(--base-size-8) var(--base-size-8) 0 var(--base-size-8);
+  padding: 0;
   background: transparent;
   border: 0;
   border-radius: 0;
-  margin-right: 0;
-  position: relative;
+
 
   ul {
     margin-top: 0;
