@@ -18,7 +18,7 @@ $btn-border: var(--color-border-default);
   position: relative;
   display: inline-block;
   padding: 5px 11px;
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   color: var(--color-fg-default);
   text-shadow: 0 1px 0 rgb(255 255 255 / 90%);
   white-space: nowrap;
@@ -229,5 +229,5 @@ option {
   box-shadow: 0 1px 0 var(--color-canvas-subtle), inset 0 1px 1px var(--color-border-muted);
   border-radius: 3px;
   color: var(--color-fg-default);
-  font-size: 12px;
+  font-size: var(--font-size-small);
 }

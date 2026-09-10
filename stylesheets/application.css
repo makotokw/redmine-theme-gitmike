@@ -9,7 +9,19 @@
 @import url(../../../stylesheets/application.css);
 :root {
   --fonts-main: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --base-font-size: 14px;
+  --body-font-size: .875rem;
+  --font-size-xx-small: .5625rem;
+  --font-size-x-small: .6875rem;
+  --font-size-small: .75rem;
+  --font-size-medium: .9625rem;
+  --font-size-large: 1.225rem;
+  --font-size-wiki-pre: .8125rem;
+  --font-size-wiki-h1: 1.9688rem;
+  --font-size-wiki-h2: 1.5313rem;
+  --font-size-wiki-h3: 1.3125rem;
+  --font-size-wiki-h4: 1.0938rem;
+  --font-size-wiki-h5: .875rem;
+  --font-size-wiki-h6: .875rem;
   --base-text-weight-light: 300;
   --base-text-weight-normal: 400;
   --base-text-weight-medium: 500;
@@ -46,7 +58,7 @@
 
 body {
   font-family: var(--fonts-main);
-  font-size: var(--base-font-size);
+  font-size: var(--body-font-size);
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
 }
@@ -57,7 +69,7 @@ body, input, select, textarea, button {
 
 tt, code, pre {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-size: 12px;
+  font-size: var(--font-size-small);
 }
 
 h2, h3, h4 {
@@ -121,7 +133,7 @@ h2, h3, h4 {
 }
 #top-menu a {
   color: var(--color-fg-default);
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   padding: 5px;
   margin-right: 0;
   transition: color 0.15s ease-in;
@@ -155,7 +167,7 @@ div.flash,
 .conflict {
   padding: 8px 35px 8px 30px;
   margin-bottom: 20px;
-  font-size: 1.1em;
+  font-size: var(--font-size-medium);
   border: 1px solid;
   border-radius: 4px;
 }
@@ -326,7 +338,7 @@ a:link, a:visited {
   padding: 10px 12px;
   color: var(--color-fg-default);
   text-shadow: 0 1px 0 var(--color-canvas-default);
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   text-decoration: none;
   height: 20px;
   line-height: 20px;
@@ -358,8 +370,8 @@ table.list tr.issue a {
 table.list tr.group span.count {
   display: inline-block;
   padding: 2px 5px;
-  font: 12px Helvetica, arial, freesans, clean, sans-serif;
-  font-weight: bold;
+  font: var(--font-size-small) Helvetica, arial, freesans, clean, sans-serif;
+  font-weight: var(--base-text-weight-semibold);
   line-height: 1;
   color: var(--color-fg-muted);
   background-color: var(--color-border-muted);
@@ -367,7 +379,7 @@ table.list tr.group span.count {
 }
 table.list tr.odd.priority-highest, table.list tr.odd.priority-highest:hover {
   color: var(--color-danger-fg);
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   background: var(--color-danger-muted);
 }
 table.list tr.odd.priority-highest td, table.list tr.odd.priority-highest:hover td {
@@ -375,7 +387,7 @@ table.list tr.odd.priority-highest td, table.list tr.odd.priority-highest:hover 
 }
 table.list tr.even.priority-highest, table.list tr.even.priority-highest:hover {
   color: var(--color-danger-fg);
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   background: var(--color-danger-muted);
 }
 table.list tr.even.priority-highest td, table.list tr.even.priority-highest:hover td {
@@ -450,7 +462,7 @@ table.list input[type=checkbox] {
 
 tr.assigned-to-me td.assigned_to,
 tr.created-by-me td.author {
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
 }
 
 #quick-search {
@@ -467,7 +479,7 @@ input[type=submit], .button {
   position: relative;
   display: inline-block;
   padding: 5px 11px;
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   color: var(--color-fg-default);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
   white-space: nowrap;
@@ -650,7 +662,7 @@ option {
   box-shadow: 0 1px 0 var(--color-canvas-subtle), inset 0 1px 1px var(--color-border-muted);
   border-radius: 3px;
   color: var(--color-fg-default);
-  font-size: 12px;
+  font-size: var(--font-size-small);
 }
 
 .box {
@@ -755,34 +767,34 @@ div.wiki h5,
 div.wiki h6 {
   margin-top: 1em;
   margin-bottom: 16px;
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   line-height: 1.4;
 }
 div.wiki h1 {
   margin-top: 0;
   padding-bottom: 0.3em;
-  font-size: 2.25em;
+  font-size: var(--font-size-wiki-h1);
   line-height: 1.2;
   border-bottom: 1px solid var(--color-border-muted);
 }
 div.wiki h2 {
   padding-bottom: 0.3em;
-  font-size: 1.75em;
+  font-size: var(--font-size-wiki-h2);
   line-height: 1.225;
   border-bottom: 1px solid var(--color-border-muted);
 }
 div.wiki h3 {
-  font-size: 1.5em;
+  font-size: var(--font-size-wiki-h3);
   line-height: 1.43;
 }
 div.wiki h4 {
-  font-size: 1.25em;
+  font-size: var(--font-size-wiki-h4);
 }
 div.wiki h5 {
-  font-size: 1em;
+  font-size: var(--font-size-wiki-h5);
 }
 div.wiki h6 {
-  font-size: 1em;
+  font-size: var(--font-size-wiki-h6);
   color: var(--color-fg-muted);
 }
 div.wiki.wiki-page > h2 {
@@ -813,7 +825,7 @@ div.wiki table {
   word-break: keep-all;
 }
 div.wiki table th {
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
 }
 div.wiki table th, div.wiki table td {
   border: 1px solid var(--color-border-default);
@@ -836,7 +848,7 @@ div.wiki pre {
   margin: 15px 0;
   background-color: var(--color-canvas-subtle);
   border: 1px solid var(--color-border-default);
-  font-size: 13px;
+  font-size: var(--font-size-wiki-pre);
   line-height: 19px;
   overflow: auto;
   padding: 6px 10px;
@@ -845,7 +857,7 @@ div.wiki pre {
 div.wiki kbd {
   display: inline-block;
   padding: 3px 5px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font: var(--font-size-x-small) Consolas, "Liberation Mono", Menlo, Courier, monospace;
   line-height: 10px;
   color: var(--color-fg-muted);
   vertical-align: middle;
@@ -908,8 +920,8 @@ div.wiki hr::after {
   }
 }
 #projects-index ul.projects a.project {
-  font-weight: bold;
-  font-size: 1.1em;
+  font-weight: var(--base-text-weight-semibold);
+  font-size: var(--font-size-medium);
 }
 
 .projects li .wiki p {
@@ -961,7 +973,7 @@ body.action-login #login-form table {
   margin: 0;
   border: 1px solid var(--color-border-default);
   padding: 6px;
-  font-size: 140%;
+  font-size: var(--font-size-large);
   border-radius: 2px;
 }
 
@@ -983,7 +995,7 @@ div.wiki div.flash,
 #sidebar a.selected {
   background-color: transparent;
   color: gray;
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
 }
 
 .enabled_scm th {
@@ -1025,11 +1037,11 @@ input.live_search_field {
 
 .live_search input.live_search_field {
   margin-top: -6px;
-  font-size: 12px !important;
+  font-size: var(--font-size-small) !important;
 }
 
 label#search_overlabel {
-  font-size: 12px !important;
+  font-size: var(--font-size-small) !important;
   padding-left: 12px !important;
   margin-top: -3px !important;
   padding-right: 28px;
@@ -1055,11 +1067,11 @@ h2 span.tag a {
 span.tag a, span.deal-status {
   color: white;
   text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25);
-  font-size: 9px !important;
+  font-size: var(--font-size-xx-small) !important;
   line-height: 1 !important;
   margin: 2px 0;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
   display: inline-block;
   position: relative;
   text-align: center;

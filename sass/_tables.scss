@@ -27,8 +27,8 @@ table.list {
       span.count {
         display: inline-block;
         padding: 2px 5px;
-        font: 12px Helvetica, arial, freesans, clean, sans-serif;
-        font-weight: bold;
+        font: var(--font-size-small) Helvetica, arial, freesans, clean, sans-serif;
+        font-weight: var(--base-text-weight-semibold);
         line-height: 1;
         color: var(--color-fg-muted);
         background-color: var(--color-border-muted);
@@ -40,7 +40,7 @@ table.list {
     &.odd.priority-highest,
     &.odd.priority-highest:hover {
       color: var(--color-danger-fg);
-      font-weight: bold;
+      font-weight: var(--base-text-weight-semibold);
       background: var(--color-danger-muted);
 
       td {
@@ -51,7 +51,7 @@ table.list {
     &.even.priority-highest,
     &.even.priority-highest:hover {
       color: var(--color-danger-fg);
-      font-weight: bold;
+      font-weight: var(--base-text-weight-semibold);
       background: var(--color-danger-muted);
 
       td {
@@ -164,7 +164,7 @@ table.list {
 
 tr.assigned-to-me td.assigned_to,
 tr.created-by-me td.author {
-  font-weight: bold;
+  font-weight: var(--base-text-weight-semibold);
 }
 
 // Quick search

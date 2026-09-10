@@ -41,12 +41,12 @@ input.live_search_field {
 .live_search {
   input.live_search_field {
     margin-top: -6px;
-    font-size: 12px !important;
+    font-size: var(--font-size-small) !important;
   }
 }
 
 label#search_overlabel {
-  font-size: 12px !important;
+  font-size: var(--font-size-small) !important;
   padding-left: 12px !important;
   margin-top: -3px !important;
   padding-right: 28px;
@@ -78,11 +78,11 @@ span {
   &.tag a, &.deal-status {
     color: white;
     text-shadow: 0 -1px 1px rgb(0 0 0 / 25%);
-    font-size: 9px !important;
+    font-size: var(--font-size-xx-small) !important;
     line-height: 1 !important;
     margin: 2px 0;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: var(--base-text-weight-semibold);
     display: inline-block;
     position: relative;
     text-align: center;

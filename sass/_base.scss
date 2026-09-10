@@ -1,7 +1,19 @@
 :root {
   // Font and spacing tokens, referenced throughout the theme as var(--*).
   --fonts-main: -apple-system, blinkmacsystemfont, "Segoe UI", "Noto Sans", helvetica, arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  --base-font-size: 14px;
+  --body-font-size: .875rem;
+  --font-size-xx-small: .5625rem;
+  --font-size-x-small: .6875rem;
+  --font-size-small: .75rem;
+  --font-size-medium: .9625rem;
+  --font-size-large: 1.225rem;
+  --font-size-wiki-pre: .8125rem;
+  --font-size-wiki-h1: 1.9688rem;
+  --font-size-wiki-h2: 1.5313rem;
+  --font-size-wiki-h3: 1.3125rem;
+  --font-size-wiki-h4: 1.0938rem;
+  --font-size-wiki-h5: .875rem;
+  --font-size-wiki-h6: .875rem;
   --base-text-weight-light: 300;
   --base-text-weight-normal: 400;
   --base-text-weight-medium: 500;
@@ -43,7 +55,7 @@
 
 body {
   font-family: var(--fonts-main);
-  font-size: var(--base-font-size);
+  font-size: var(--body-font-size);
   color: var(--color-fg-default);
   background-color: var(--color-canvas-default);
 }
@@ -54,7 +66,7 @@ body, input, select, textarea, button {
 
 tt, code, pre {
   font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-size: 12px;
+  font-size: var(--font-size-small);
 }
 
 // Headers
@@ -127,7 +139,7 @@ only screen and (resolution >= 192dpi) {
 
   a {
     color: var(--color-fg-default);
-    font-weight: bold;
+    font-weight: var(--base-text-weight-semibold);
     padding: 5px;
     margin-right: 0;
     transition: color .15s ease-in;
@@ -167,7 +179,7 @@ div.flash,
 .conflict {
   padding: 8px 35px 8px 30px;
   margin-bottom: 20px;
-  font-size: 1.1em;
+  font-size: var(--font-size-medium);
   border: 1px solid;
   border-radius: 4px;
 }
