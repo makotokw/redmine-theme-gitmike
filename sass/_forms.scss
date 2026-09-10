@@ -213,11 +213,15 @@ option {
 
 // Redmine core gives both controls height: 24px, but the theme's #q overrides
 // below (padding + border, content-box) desync it. Pin both to one border-box
-// height so the input and the project-jump trigger line up.
-#quick-search #q,
-#quick-search #project-jump .drdn-trigger {
-  box-sizing: border-box;
-  height: 28px;
+// height so the input and the project-jump trigger line up. Desktop only: on
+// mobile these move into the flyout menu where the trigger holds the larger
+// project title, and a fixed 28px height would clip it.
+@media (width >= 900px) {
+  #quick-search #q,
+  #quick-search #project-jump .drdn-trigger {
+    box-sizing: border-box;
+    height: 28px;
+  }
 }
 
 #quick-search #q {

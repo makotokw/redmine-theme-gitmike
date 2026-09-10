@@ -647,12 +647,13 @@ option {
   border-top-right-radius: 8px;
 }
 
-#quick-search #q,
-#quick-search #project-jump .drdn-trigger {
-  box-sizing: border-box;
-  height: 28px;
+@media (width >= 900px) {
+  #quick-search #q,
+  #quick-search #project-jump .drdn-trigger {
+    box-sizing: border-box;
+    height: 28px;
+  }
 }
-
 #quick-search #q {
   outline: none;
   padding: 3px 5px !important;
