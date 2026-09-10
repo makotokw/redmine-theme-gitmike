@@ -3,6 +3,7 @@
 
 ### Node ###
 node_modules
+.yarn/install-state.gz
 
 ### Sass ###
 .sass-cache
@@ -27,4 +28,3 @@ node_modules
 *.local.md
 *.override.md
 doc/specs/
-

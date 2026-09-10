@@ -1,14 +1,31 @@
+## 2.0.0 (2026-xx-xx)
+
+New features:
+  - Support Redmine 6.0
+
+Breaking changes:
+  - Removed legacy browser and IE-specific CSS hacks
+
+Development:
+  - Replaced the legacy Gulp, Node Sass, and Compass build pipeline with Vite, Dart Sass, PostCSS, and Autoprefixer
+  - Added SCSS linting with stylelint and stylelint-config-standard-scss
+  - Modernized Sass sources for Dart Sass, including module-based color helpers and current CSS syntax
+  - Removed the Gulp development workflow; use `yarn dev`, `yarn build`, and `yarn lint:scss`
+  - Development now requires Node.js 20.19 or later, or Node.js 22.12 or later
+  - Upgraded Yarn to v4 and configured it through Corepack
 
 ## 1.2.1 (2021-04-10)
 
 New features:
   - Support Redmine 4.2
-  - Replaced Ruby Sass and Compass with Node Sass
 
 Bugfixes: 
   - Fixed the issue of huge left 300 px padding #43
   - Fixed the issue of inline-flex header #44
   - Fixed issue #42 for select_to_select2 plugin
+
+Development:
+- Replaced Ruby Sass and Compass with Node Sass
 
 ## 1.2.0 (2019-10-01)
 
@@ -53,23 +70,28 @@ Bugfixes:
 
 ## 1.0.4 (2013-07-21)
 
+New features:
   - Improvement Forms
 
 ## 1.0.3 (2013-07-12)
 
+New features:
   - Tested in Redmine 2.3
   - Updated to look like GitHub
   - Added assign_to and author column style on Issue Table when login user's one by @chocoby
 
 ## 1.0.2 (2013-01-16)
 
+New features:
   - Tested in Redmine 2.2
   - Added count style and changed priority-{#id} to priority-{position_name} on Issue Table
 
 ## 1.0.1 (2012-09-20)
 
+Development:
   - Removed Japanese font style in the master branch and added ja branch for Japanese
 
 ## 1.0.0 (2012-04-12)
 
+New features:
   - Supported Redmine 1.3.2
