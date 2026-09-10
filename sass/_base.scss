@@ -6,6 +6,8 @@
   --base-text-weight-normal: 400;
   --base-text-weight-medium: 500;
   --base-text-weight-semibold: 600;
+  --base-size-8: .5rem;
+  --base-size-16: 1rem;
   --content-padding: 10px 16px;
   --negative-margin-on-content: -10px -16px 10px;
 
@@ -17,8 +19,12 @@
   --color-fg-default: #1f2328;
   --color-fg-muted: #656d76;
   --color-fg-subtle: #6e7781;
+  --color-bg-muted: #f6f8fa;
+  --color-bg-neutral-emphasis: #59636e;
+  --color-bg-neutral-muted: #818b981f;
   --color-border-default: #d0d7de;
   --color-border-muted: #d8dee4;
+  --color-border-active: #fd8c73;
   --color-accent-fg: #0969da;
   --color-accent-emphasis: #0969da;
   --color-accent-subtle: #ddf4ff;
@@ -32,6 +38,7 @@
   --color-attention-subtle: #fff8c5;
   --color-attention-muted: #d4a72c;
   --color-issue-bg: #ffd;
+
 }
 
 body {
@@ -80,7 +87,7 @@ h2, h3, h4 {
 #header {
   @include github-page-head;
   height: auto;
-  padding: 10px 8px 10px 10px;
+  padding: 10px 0 0;
   background-position-y: 11%;
 
   a {

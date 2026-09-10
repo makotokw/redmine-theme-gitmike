@@ -3,15 +3,11 @@
 #main-menu {
   left: 0;
   width: 100%;
-  // height: 40px;
-  // overflow: hidden;
-  background: var(--color-canvas-subtle);
-  // var(--color-canvas-subtle) resolves to a CSS custom property, so darkening it
-  // needs the runtime color-mix() rather than Sass's compile-time color.adjust().
-  background: linear-gradient(to bottom, var(--color-canvas-subtle), color-mix(in srgb, var(--color-canvas-subtle) 97%, black));
-  border: 1px solid var(--color-border-muted);
-  border-bottom-color: var(--color-border-default);
-  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 0 var(--base-size-16);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   margin-right: 0;
   position: relative;
 
@@ -57,24 +53,19 @@
         text-shadow: 0 1px 0 var(--color-canvas-default);
         font-weight: bold;
         text-decoration: none;
-        border-bottom: 2px solid var(--color-border-default);
         height: 20px;
         line-height: 20px;
 
         &.selected {
           color: var(--color-fg-default);
-          border-bottom: 2px solid var(--color-attention-fg) !important;
-          background-color: var(--color-canvas-subtle);
-          background-image: linear-gradient(var(--color-canvas-default), var(--color-canvas-subtle));
-          background-repeat: repeat-x;
-
-          &:hover {
-            color: var(--color-fg-default);
-          }
+          border-bottom: 2px solid var(--color-border-active) !important;
         }
 
         &:hover {
-          color: var(--color-accent-fg);
+          background-color: var(--color-bg-neutral-muted) !important;
+          color: var(--color-fg-default);
+          text-decoration: none;
+          transition: background-color .12s ease-out;
         }
       }
     }

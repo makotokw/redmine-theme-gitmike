@@ -14,6 +14,8 @@
   --base-text-weight-normal: 400;
   --base-text-weight-medium: 500;
   --base-text-weight-semibold: 600;
+  --base-size-8: .5rem;
+  --base-size-16: 1rem;
   --content-padding: 10px 16px;
   --negative-margin-on-content: -10px -16px 10px;
   --color-canvas-default: #fff;
@@ -21,8 +23,12 @@
   --color-fg-default: #1f2328;
   --color-fg-muted: #656d76;
   --color-fg-subtle: #6e7781;
+  --color-bg-muted: #f6f8fa;
+  --color-bg-neutral-emphasis: #59636e;
+  --color-bg-neutral-muted: #818b981f;
   --color-border-default: #d0d7de;
   --color-border-muted: #d8dee4;
+  --color-border-active: #fd8c73;
   --color-accent-fg: #0969da;
   --color-accent-emphasis: #0969da;
   --color-accent-subtle: #ddf4ff;
@@ -78,7 +84,7 @@ h2, h3, h4 {
   box-shadow: inset 0 -1px 0 0 rgb(209, 217, 224);
   border-bottom: 1px solid var(--color-border-muted);
   height: auto;
-  padding: 10px 8px 10px 10px;
+  padding: 10px 0 0;
   background-position-y: 11%;
 }
 #header a {
@@ -275,11 +281,11 @@ a:link, a:visited {
 #main-menu {
   left: 0;
   width: 100%;
-  background: var(--color-canvas-subtle);
-  background: linear-gradient(to bottom, var(--color-canvas-subtle), color-mix(in srgb, var(--color-canvas-subtle) 97%, black));
-  border: 1px solid var(--color-border-muted);
-  border-bottom-color: var(--color-border-default);
-  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 0 var(--base-size-16);
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   margin-right: 0;
   position: relative;
 }
@@ -322,22 +328,18 @@ a:link, a:visited {
   text-shadow: 0 1px 0 var(--color-canvas-default);
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid var(--color-border-default);
   height: 20px;
   line-height: 20px;
 }
 #main-menu ul li a.selected {
   color: var(--color-fg-default);
-  border-bottom: 2px solid var(--color-attention-fg) !important;
-  background-color: var(--color-canvas-subtle);
-  background-image: linear-gradient(var(--color-canvas-default), var(--color-canvas-subtle));
-  background-repeat: repeat-x;
-}
-#main-menu ul li a.selected:hover {
-  color: var(--color-fg-default);
+  border-bottom: 2px solid var(--color-border-active) !important;
 }
 #main-menu ul li a:hover {
-  color: var(--color-accent-fg);
+  background-color: var(--color-bg-neutral-muted) !important;
+  color: var(--color-fg-default);
+  text-decoration: none;
+  transition: background-color 0.12s ease-out;
 }
 
 table.list td {
