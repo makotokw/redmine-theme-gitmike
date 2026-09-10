@@ -27,6 +27,7 @@
   --color-attention-fg: #9a6700;
   --color-attention-subtle: #fff8c5;
   --color-attention-muted: #d4a72c;
+  --color-issue-bg: #ffd;
 }
 
 body {
@@ -278,21 +279,6 @@ a {
   &:link,
   &:visited {
     color: var(--color-accent-fg);
-  }
-}
-
-/* stylelint-disable-next-line no-duplicate-selectors */
-div {
-  &.issue {
-    background: var(--color-attention-subtle);
-    padding: 20px;
-    border: 1px solid var(--color-border-default);
-    margin: -11px -11px 15px;
-
-    &.tooltip {
-      padding: 6px;
-      margin: 0 0 6px;
-    }
   }
 }
 

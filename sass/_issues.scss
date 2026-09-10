@@ -1,5 +1,18 @@
 // Issue details and history
 
+/* stylelint-disable-next-line no-duplicate-selectors */
+div.issue {
+  background: var(--color-issue-bg);
+  padding: 20px;
+  border: 1px solid var(--color-border-default);
+  margin: -11px -11px 15px;
+
+  &.tooltip {
+    padding: 6px;
+    margin: 0 0 6px;
+  }
+}
+
 div.journal .details {
   padding-left: 30px;
 }
